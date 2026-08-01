@@ -1,0 +1,36 @@
+# Scheduled metadata scoring: runs the MGC use-case scorer against the repositories
+# in config.json, commits the reports and the regenerated trend page back to the repo.
+# Fork this repository, edit config.json, enable Actions on your fork — that's the setup.
+name: Score metadata
+
+on:
+  schedule:
+    - cron: '0 6 1 * *'   # 06:00 UTC on the 1st of every month
+  workflow_dispatch:       # plus a "Run workflow" button in the Actions tab
+
+permissions:
+  contents: write          # the job commits reports back to this repository
+
+jobs:
+  score:
+    runs-on: ubuntu-latest  # jq is preinstalled on GitHub's ubuntu runners
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Score repositories
+        run: python3 scoreRepository.py --config config.json
+
+      - name: Rebuild trend page
+        run: python3 makeTrendPage.py
+
+      - name: Commit reports
+        run: |
+          git config user.name "metrics-watch"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reports docs
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Metrics run $(date -u +%Y-%m-%dT%H)"
+            git push
+          fi
