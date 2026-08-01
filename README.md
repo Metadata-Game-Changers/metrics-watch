@@ -73,6 +73,15 @@ python3 scoreRepository.py --config config.json
 python3 makeTrendPage.py
 ```
 
+## Updating your fork
+
+Improvements to the scorer, the trend page, and the use-case catalog land in
+this upstream repository — they do **not** reach your fork automatically. Your
+fork's front page shows a **Sync fork** button whenever upstream has news: one
+click merges the updates. Your `config.json` and accumulated `reports/` are
+yours alone (upstream never changes them after setup), so syncing is normally
+conflict-free.
+
 ## Good to know
 
 - **Scheduled workflows pause after ~60 days without repository activity.**
