@@ -9,11 +9,37 @@ it by enabling GitHub Pages on the /docs folder.
 """
 
 import json
+import os
+import re
+import subprocess
 from html import escape
 from pathlib import Path
 
 REPORTS = Path('reports')
 OUT = Path('docs/index.html')
+
+VIEWER = 'https://metadata-game-changers.github.io/recuration-watch/metricsViewer.html'
+
+
+def repo_slug_branch():
+    """(owner/repo, branch) for building raw file URLs — from the Actions environment
+    when scheduled, from git otherwise. (None, None) if neither is available."""
+    slug = os.environ.get('GITHUB_REPOSITORY')
+    branch = os.environ.get('GITHUB_REF_NAME') or 'main'
+    if slug:
+        return slug, branch
+    try:
+        url = subprocess.run(['git', 'remote', 'get-url', 'origin'],
+                             capture_output=True, text=True).stdout.strip()
+        m = re.search(r'github\.com[:/]+([^/]+/[^/]+?)(?:\.git)?$', url)
+        if m:
+            b = subprocess.run(['git', 'branch', '--show-current'],
+                               capture_output=True, text=True).stdout.strip()
+            return m.group(1), b or 'main'
+    except Exception:
+        pass
+    return None, None
+
 
 SERIES = [('fairTotal', 'FAIR', '#673289'),
           ('projectsTotal', 'Projects', '#EF9B20'),
@@ -21,7 +47,7 @@ SERIES = [('fairTotal', 'FAIR', '#673289'),
 
 
 def load_histories():
-    """[(client_dir, history-dict), …] for every series history file."""
+    """[(client_dir, history-file-path, history-dict), …] for every series history file."""
     out = []
     if not REPORTS.is_dir():
         return out
@@ -32,7 +58,7 @@ def load_histories():
             except Exception:
                 continue
             if h.get('snapshots'):
-                out.append((d.name, h))
+                out.append((d.name, f, h))
     return out
 
 
@@ -96,14 +122,20 @@ def main():
 Scores are completeness fractions of the sampled records at run time (current state, including any re-curation).</p>''']
     if not histories:
         parts.append('<p class="sub">No reports yet — the first scheduled run will populate this page.</p>')
-    for client_dir, h in histories:
+    slug, branch = repo_slug_branch()
+    for client_dir, hpath, h in histories:
         snaps = h['snapshots']
         repo = h.get('repository') or {}
         last = snaps[-1].get('repository') or {}
         name = last.get('name') or repo.get('id') or client_dir
         qlabel = repo.get('queryLabel') or ''
+        viewer = ''
+        if slug:
+            raw = f'https://raw.githubusercontent.com/{slug}/{branch}/{hpath.as_posix()}'
+            viewer = (f' <a style="font-size:.7rem;font-weight:600" href="{VIEWER}?src={escape(raw)}" '
+                      f'target="_blank" rel="noopener">Open in Metrics Viewer ↗</a>')
         parts.append(f'<h2>{escape(name)}<span>{escape(repo.get("id") or client_dir)}'
-                     + (f' · {escape(qlabel)}' if qlabel else '') + '</span></h2>')
+                     + (f' · {escape(qlabel)}' if qlabel else '') + f'</span>{viewer}</h2>')
         parts.append(chart_svg(snaps))
         parts.append('<table><tr><th>Run</th><th>Records</th><th>Sampling</th><th>FAIR</th><th>Projects</th><th>SHARE</th></tr>')
         for snap in reversed(snaps):
