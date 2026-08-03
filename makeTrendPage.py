@@ -101,11 +101,23 @@ def main():
     pct = lambda v: f'{v * 100:.0f}%' if isinstance(v, (int, float)) else '—'
     parts = ['''<!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Metadata metrics — automated use-case scores</title>
+<title>Metadata Metrics — automated use-case scores</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500&display=swap" rel="stylesheet"/>
 <style>
-  body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#1f2330;background:#fbfafe;margin:0;padding:2rem 1.25rem;line-height:1.5}
-  .wrap{max-width:760px;margin:0 auto}
-  h1{font-size:1.3rem;color:#673289;margin:0 0 .3rem}
+  body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#1f2330;background:#fbfafe;margin:0;line-height:1.5}
+  .topbar{border-bottom:2px solid #1f2330;background:#fff;padding:.55rem 1.25rem .35rem}
+  .topbar-inner{max-width:760px;margin:0 auto;display:flex;align-items:flex-end;gap:1rem}
+  .brand-logo{height:52px;width:auto;display:block}
+  .brand-name{font-family:Montserrat,sans-serif;font-size:1.55rem;letter-spacing:.02em;color:#673289;text-transform:uppercase;line-height:1;padding-bottom:.3rem}
+  .topbar-inner a.suite{margin-left:auto;font-size:.72rem;color:#6b7280;text-decoration:none;padding-bottom:.45rem;white-space:nowrap}
+  .topbar-inner a.suite:hover{color:#673289}
+  .hero{background:#f0eaf5;border-bottom:2px solid #9167b0;padding:.9rem 1.25rem}
+  .hero p{max-width:760px;margin:0 auto;font-size:.8rem;color:#1f2330}
+  .hero a{color:#673289;font-weight:600;text-decoration:none}
+  .hero a:hover{text-decoration:underline}
+  .wrap{max-width:760px;margin:0 auto;padding:1.4rem 1.25rem 2.5rem}
   .sub{font-size:.8rem;color:#6b7280;margin:0 0 1.6rem}
   .sub a,.foot a{color:#9167b0}
   h2{font-size:1rem;color:#673289;margin:1.8rem 0 .5rem}
@@ -114,12 +126,19 @@ def main():
   th,td{border:1px solid #e6e3ec;padding:.3rem .55rem;text-align:right}
   th:first-child,td:first-child{text-align:left}
   th{background:#f0eaf5;color:#673289}
-  .foot{margin-top:2rem;font-size:.72rem;color:#6b7280}
-</style></head><body><div class="wrap">
-<h1>Metadata metrics</h1>
-<p class="sub">Automated use-case scores, measured with the
-<a href="https://metadata-game-changers.github.io/recuration-watch/">MGC Repository Tools</a> use cases.
-Scores are completeness fractions of the sampled records at run time (current state, including any re-curation).</p>''']
+  .foot{border-top:1px solid #e6e3ec;margin-top:2.5rem;padding:1rem 1.25rem;background:#fff;font-size:.72rem;color:#6b7280}
+  .foot-inner{max-width:760px;margin:0 auto;display:flex;align-items:center;gap:.75rem;flex-wrap:wrap}
+  .foot-inner img{height:20px;width:auto;display:block}
+</style></head><body>
+<div class="topbar"><div class="topbar-inner">
+  <a href="https://metadatagamechangers.com" target="_blank" rel="noopener"><img class="brand-logo" src="https://images.squarespace-cdn.com/content/v1/52ffa419e4b05b374032e6d9/1577498408185-9LMHCVUJMNL2UBCIUOB9/Metadata+Game+Changers+Logo-Light.png?format=300w" alt="Metadata Game Changers" onerror="this.style.display=&#39;none&#39;"/></a>
+  <div class="brand-name">Metadata Metrics</div>
+  <a class="suite" href="https://metadata-game-changers.github.io/recuration-watch/" target="_blank" rel="noopener">MGC Repository Tools ↗</a>
+</div></div>
+<div class="hero"><p>Automated use-case scores for the repositories in this metrics-watch fork, measured with the
+<a href="https://metadata-game-changers.github.io/recuration-watch/useCases.html" target="_blank" rel="noopener">MGC use cases</a>.
+Every run scores the records <b>as they are that day</b> — a rising line is re-curation you can see.</p></div>
+<div class="wrap">''']
     if not histories:
         parts.append('<p class="sub">No reports yet — the first scheduled run will populate this page.</p>')
     slug, branch = repo_slug_branch()
@@ -145,11 +164,17 @@ Scores are completeness fractions of the sampled records at run time (current st
                          f'<td>{pct(r.get("fairTotal"))}</td><td>{pct(r.get("projectsTotal"))}</td>'
                          f'<td>{pct(r.get("shareTotal"))}</td></tr>')
         parts.append('</table>')
-    parts.append('<p class="foot">Per-run report JSONs and per-series history files live in this repository under '
-                 '<code>reports/</code> — the same formats the '
-                 '<a href="https://metadata-game-changers.github.io/recuration-watch/completeness.html">Metadata '
-                 'Completeness</a> tool downloads and the MGC score archive uses. CC BY-NC 4.0.</p>')
-    parts.append('</div></body></html>')
+    parts.append('</div>')
+    parts.append('<div class="foot"><div class="foot-inner">'
+                 '<a href="https://metadatagamechangers.com" target="_blank" rel="noopener">'
+                 '<img src="https://images.squarespace-cdn.com/content/v1/52ffa419e4b05b374032e6d9/1577498408185-9LMHCVUJMNL2UBCIUOB9/Metadata+Game+Changers+Logo-Light.png?format=300w" alt="Metadata Game Changers" onerror="this.style.display=&#39;none&#39;"/></a>'
+                 '<span>Report JSONs and history files live in this repository under <code>reports/</code> — the formats of the '
+                 '<a href="https://metadata-game-changers.github.io/recuration-watch/completeness.html" target="_blank" rel="noopener">Metadata Completeness</a> tool and the MGC score archive. '
+                 'Powered by <a href="https://github.com/Metadata-Game-Changers/metrics-watch" target="_blank" rel="noopener">metrics-watch</a> from '
+                 '<a href="https://metadatagamechangers.com" target="_blank" rel="noopener">Metadata Game Changers</a> — '
+                 'Better Documentation | Better Data | Better Science · '
+                 '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>'
+                 '</div></div></body></html>')
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text('\n'.join(parts) + '\n', encoding='utf-8')
     print(f'{OUT}: {len(histories)} series')

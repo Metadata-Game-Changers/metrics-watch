@@ -1,0 +1,4349 @@
+{
+ "repository": {
+  "id": "iris.iris"
+ },
+ "note": "Derived from the snapshot useCaseReport JSONs listed in each entry; regenerate with translateLegacyReports.py --concat rather than editing.",
+ "snapshots": [
+  {
+   "dateTime": "2025-03-03T09",
+   "source": "iris.iris_useCaseReport__2025-03-03T09.json",
+   "repository": {
+    "id": "iris.iris",
+    "name": "iris.iris",
+    "dateTime": "2025-03-03T09",
+    "records": 116886,
+    "totalInRepository": null,
+    "sampling": null,
+    "query": null,
+    "translatedFrom": [
+     "FAIR_AIR_Essential__2025-03-03T09.csv",
+     "FAIR_AIR_Support__2025-03-03T09.csv",
+     "iris.iris_FAIR_Connections_2025-03-03T09.csv",
+     "iris.iris_FAIR_Contacts_2025-03-03T09.csv",
+     "FAIR_Findable_Essential__2025-03-03T09.csv",
+     "FAIR_Findable_Support__2025-03-03T09.csv",
+     "iris.iris_FAIR_Identifiers_2025-03-03T09.csv",
+     "iris.iris_FAIR_Text_2025-03-03T09.csv"
+    ]
+   },
+   "useCases": [
+    {
+     "code": "FAIR_Connections",
+     "title": "FAIR Connections",
+     "dialect": "DataCite",
+     "average": 0.05717108977978543,
+     "exist": 7,
+     "complete": 1,
+     "records": 116886,
+     "items": [
+      {
+       "concept": "CitedBy",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Date Available",
+       "completeness": 0.006621836661362353
+      },
+      {
+       "concept": "DescribedBy",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Distribution Contact",
+       "completeness": 0.0
+      },
+      {
+       "concept": "DocumentedBy",
+       "completeness": 0.00045343325975737045
+      },
+      {
+       "concept": "HasMetadata",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Methods",
+       "completeness": 0.0
+      },
+      {
+       "concept": "ReferencedBy",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Contact",
+       "completeness": 0.0003849905035675787
+      },
+      {
+       "concept": "Resource Format",
+       "completeness": 0.01409065243057338
+      },
+      {
+       "concept": "Resource Size",
+       "completeness": 0.007331930256831443
+      },
+      {
+       "concept": "Resource URL",
+       "completeness": 1.0
+      },
+      {
+       "concept": "ReviewedBy",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Rights",
+       "completeness": 0.0001967729240456513
+      },
+      {
+       "concept": "RightsHolder",
+       "completeness": 0.0
+      },
+      {
+       "concept": "SourceOf",
+       "completeness": 0.0
+      },
+      {
+       "concept": "SupplementTo",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Technical Information",
+       "completeness": 0.0
+      }
+     ],
+     "legacyTitle": "FAIR_AIR_Essential"
+    },
+    {
+     "code": "FAIR_Contacts",
+     "title": "FAIR Contacts",
+     "dialect": "DataCite",
+     "average": 1.967729240456513e-05,
+     "exist": 1,
+     "complete": 0,
+     "records": 116886,
+     "items": [
+      {
+       "concept": "Distribution Contact Identifier",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Distribution Contact Identifier Scheme",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Distribution Contact Identifier Scheme URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Contact Identifier",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Contact Identifier Scheme",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Contact Identifier Scheme URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Rights Holder Identifier",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Rights Holder Identifier Scheme",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Rights Holder Identifier Scheme URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Rights URI",
+       "completeness": 0.0001967729240456513
+      }
+     ],
+     "legacyTitle": "FAIR_AIR_Support"
+    },
+    {
+     "code": "FAIR_Connections",
+     "title": "FAIR Connections",
+     "dialect": "DataCite",
+     "average": 0.05717108977978543,
+     "exist": 7,
+     "complete": 1,
+     "records": 116886,
+     "items": [
+      {
+       "concept": "CitedBy",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Date Available",
+       "completeness": 0.006621836661362353
+      },
+      {
+       "concept": "DescribedBy",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Distribution Contact",
+       "completeness": 0.0
+      },
+      {
+       "concept": "DocumentedBy",
+       "completeness": 0.00045343325975737045
+      },
+      {
+       "concept": "HasMetadata",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Methods",
+       "completeness": 0.0
+      },
+      {
+       "concept": "ReferencedBy",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Contact",
+       "completeness": 0.0003849905035675787
+      },
+      {
+       "concept": "Resource Format",
+       "completeness": 0.01409065243057338
+      },
+      {
+       "concept": "Resource Size",
+       "completeness": 0.007331930256831443
+      },
+      {
+       "concept": "Resource URL",
+       "completeness": 1.0
+      },
+      {
+       "concept": "ReviewedBy",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Rights",
+       "completeness": 0.0001967729240456513
+      },
+      {
+       "concept": "RightsHolder",
+       "completeness": 0.0
+      },
+      {
+       "concept": "SourceOf",
+       "completeness": 0.0
+      },
+      {
+       "concept": "SupplementTo",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Technical Information",
+       "completeness": 0.0
+      }
+     ]
+    },
+    {
+     "code": "FAIR_Contacts",
+     "title": "FAIR Contacts",
+     "dialect": "DataCite",
+     "average": 1.967729240456513e-05,
+     "exist": 1,
+     "complete": 0,
+     "records": 116886,
+     "items": [
+      {
+       "concept": "Distribution Contact Identifier",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Distribution Contact Identifier Scheme",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Distribution Contact Identifier Scheme URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Contact Identifier",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Contact Identifier Scheme",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Contact Identifier Scheme URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Rights Holder Identifier",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Rights Holder Identifier Scheme",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Rights Holder Identifier Scheme URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Rights URI",
+       "completeness": 0.0001967729240456513
+      }
+     ]
+    },
+    {
+     "code": "FAIR_Text",
+     "title": "FAIR Text",
+     "dialect": "DataCite",
+     "average": 0.3651466671229517,
+     "exist": 10,
+     "complete": 5,
+     "records": 116886,
+     "items": [
+      {
+       "concept": "Abstract",
+       "completeness": 0.01409065243057338
+      },
+      {
+       "concept": "Award Title",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Date Created",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Keyword",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Keyword Vocabulary",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Project Funder",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Author",
+       "completeness": 1.0
+      },
+      {
+       "concept": "Resource Author Affiliation",
+       "completeness": 0.0076484780042092295
+      },
+      {
+       "concept": "Resource Identifier",
+       "completeness": 1.0483034751809455
+      },
+      {
+       "concept": "Resource Publication Date",
+       "completeness": 1.0
+      },
+      {
+       "concept": "Resource Publisher",
+       "completeness": 1.0
+      },
+      {
+       "concept": "Resource Title",
+       "completeness": 1.0
+      },
+      {
+       "concept": "Resource Type General",
+       "completeness": 0.4275191211950105
+      },
+      {
+       "concept": "Spatial Extent",
+       "completeness": 0.013851102783909108
+      },
+      {
+       "concept": "Temporal Extent",
+       "completeness": 0.01409065243057338
+      }
+     ],
+     "legacyTitle": "FAIR_Findable_Essential"
+    },
+    {
+     "code": "FAIR_Identifiers",
+     "title": "FAIR Identifiers",
+     "dialect": "DataCite",
+     "average": 0.028105257354269213,
+     "exist": 11,
+     "complete": 0,
+     "records": 116886,
+     "items": [
+      {
+       "concept": "Award Number",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Award URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Date Submitted",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Funder Identifier",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Funder Identifier Type",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Keyword Value URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Keyword Vocabulary URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Publisher Identifier",
+       "completeness": 7.699810071351573e-05
+      },
+      {
+       "concept": "Publisher Identifier Scheme URI",
+       "completeness": 7.699810071351573e-05
+      },
+      {
+       "concept": "Publisher Identifier Type",
+       "completeness": 7.699810071351573e-05
+      },
+      {
+       "concept": "Resource Author Affiliation Identifier",
+       "completeness": 0.0018821757952192735
+      },
+      {
+       "concept": "Resource Author Affiliation Identifier Scheme URI",
+       "completeness": 0.0018821757952192735
+      },
+      {
+       "concept": "Resource Author Affiliation Identifier Type",
+       "completeness": 0.0018821757952192735
+      },
+      {
+       "concept": "Resource Author Identifier",
+       "completeness": 0.001197748233321356
+      },
+      {
+       "concept": "Resource Author Identifier Type",
+       "completeness": 0.001197748233321356
+      },
+      {
+       "concept": "Resource Author Type",
+       "completeness": 0.023107985558578445
+      },
+      {
+       "concept": "Resource Identifier Type",
+       "completeness": 0.048303475180945535
+      },
+      {
+       "concept": "Resource Type",
+       "completeness": 0.42621015348288077
+      }
+     ],
+     "legacyTitle": "FAIR_Findable_Support"
+    },
+    {
+     "code": "FAIR_Identifiers",
+     "title": "FAIR Identifiers",
+     "dialect": "DataCite",
+     "average": 0.028105257354269213,
+     "exist": 11,
+     "complete": 0,
+     "records": 116886,
+     "items": [
+      {
+       "concept": "Award Number",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Award URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Date Submitted",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Funder Identifier",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Funder Identifier Type",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Keyword Value URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Keyword Vocabulary URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Publisher Identifier",
+       "completeness": 7.699810071351573e-05
+      },
+      {
+       "concept": "Publisher Identifier Scheme URI",
+       "completeness": 7.699810071351573e-05
+      },
+      {
+       "concept": "Publisher Identifier Type",
+       "completeness": 7.699810071351573e-05
+      },
+      {
+       "concept": "Resource Author Affiliation Identifier",
+       "completeness": 0.0018821757952192735
+      },
+      {
+       "concept": "Resource Author Affiliation Identifier Scheme URI",
+       "completeness": 0.0018821757952192735
+      },
+      {
+       "concept": "Resource Author Affiliation Identifier Type",
+       "completeness": 0.0018821757952192735
+      },
+      {
+       "concept": "Resource Author Identifier",
+       "completeness": 0.001197748233321356
+      },
+      {
+       "concept": "Resource Author Identifier Type",
+       "completeness": 0.001197748233321356
+      },
+      {
+       "concept": "Resource Author Type",
+       "completeness": 0.023107985558578445
+      },
+      {
+       "concept": "Resource Identifier Type",
+       "completeness": 0.048303475180945535
+      },
+      {
+       "concept": "Resource Type",
+       "completeness": 0.42621015348288077
+      }
+     ]
+    },
+    {
+     "code": "FAIR_Text",
+     "title": "FAIR Text",
+     "dialect": "DataCite",
+     "average": 0.3651466671229517,
+     "exist": 10,
+     "complete": 5,
+     "records": 116886,
+     "items": [
+      {
+       "concept": "Abstract",
+       "completeness": 0.01409065243057338
+      },
+      {
+       "concept": "Award Title",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Date Created",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Keyword",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Keyword Vocabulary",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Project Funder",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Author",
+       "completeness": 1.0
+      },
+      {
+       "concept": "Resource Author Affiliation",
+       "completeness": 0.0076484780042092295
+      },
+      {
+       "concept": "Resource Identifier",
+       "completeness": 1.0483034751809455
+      },
+      {
+       "concept": "Resource Publication Date",
+       "completeness": 1.0
+      },
+      {
+       "concept": "Resource Publisher",
+       "completeness": 1.0
+      },
+      {
+       "concept": "Resource Title",
+       "completeness": 1.0
+      },
+      {
+       "concept": "Resource Type General",
+       "completeness": 0.4275191211950105
+      },
+      {
+       "concept": "Spatial Extent",
+       "completeness": 0.013851102783909108
+      },
+      {
+       "concept": "Temporal Extent",
+       "completeness": 0.01409065243057338
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "dateTime": "2025-05-14T00",
+   "source": "iris.iris_useCaseReport__2025-05-14T00.json",
+   "repository": {
+    "id": "iris.iris",
+    "name": "iris.iris",
+    "dateTime": "2025-05-14T00",
+    "records": 5000,
+    "totalInRepository": null,
+    "sampling": null,
+    "query": null,
+    "translatedFrom": [
+     "FAIR_AIR_Essential__2025-05-14T00.csv",
+     "FAIR_AIR_Support__2025-05-14T00.csv",
+     "FAIR_Findable_Essential__2025-05-14T00.csv",
+     "FAIR_Findable_Support__2025-05-14T00.csv"
+    ],
+    "fairTotal": 0.09869508196721312,
+    "summaryFrom": "spiralSummary__2025-05-14T00.csv"
+   },
+   "useCases": [
+    {
+     "code": "FAIR_Connections",
+     "title": "FAIR Connections",
+     "dialect": "DataCite",
+     "average": 0.05582222222222223,
+     "exist": 4,
+     "complete": 1,
+     "records": 5000,
+     "items": [
+      {
+       "concept": "CitedBy",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Date Available",
+       "completeness": 0.0014
+      },
+      {
+       "concept": "DescribedBy",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Distribution Contact",
+       "completeness": 0.0
+      },
+      {
+       "concept": "DocumentedBy",
+       "completeness": 0.0
+      },
+      {
+       "concept": "HasMetadata",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Methods",
+       "completeness": 0.0
+      },
+      {
+       "concept": "ReferencedBy",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Contact",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Format",
+       "completeness": 0.0022
+      },
+      {
+       "concept": "Resource Size",
+       "completeness": 0.0012
+      },
+      {
+       "concept": "Resource URL",
+       "completeness": 1.0
+      },
+      {
+       "concept": "ReviewedBy",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Rights",
+       "completeness": 0.0
+      },
+      {
+       "concept": "RightsHolder",
+       "completeness": 0.0
+      },
+      {
+       "concept": "SourceOf",
+       "completeness": 0.0
+      },
+      {
+       "concept": "SupplementTo",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Technical Information",
+       "completeness": 0.0
+      }
+     ],
+     "legacyTitle": "FAIR_AIR_Essential"
+    },
+    {
+     "code": "FAIR_Contacts",
+     "title": "FAIR Contacts",
+     "dialect": "DataCite",
+     "average": 0.0,
+     "exist": 0,
+     "complete": 0,
+     "records": 5000,
+     "items": [
+      {
+       "concept": "Distribution Contact Identifier",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Distribution Contact Identifier Scheme",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Distribution Contact Identifier Scheme URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Contact Identifier",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Contact Identifier Scheme",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Contact Identifier Scheme URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Rights Holder Identifier",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Rights Holder Identifier Scheme",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Rights Holder Identifier Scheme URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Rights URI",
+       "completeness": 0.0
+      }
+     ],
+     "legacyTitle": "FAIR_AIR_Support"
+    },
+    {
+     "code": "FAIR_Text",
+     "title": "FAIR Text",
+     "dialect": "DataCite",
+     "average": 0.3339866666666667,
+     "exist": 10,
+     "complete": 5,
+     "records": 5000,
+     "items": [
+      {
+       "concept": "Abstract",
+       "completeness": 0.0022
+      },
+      {
+       "concept": "Award Title",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Date Created",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Keyword",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Keyword Vocabulary",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Project Funder",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Author",
+       "completeness": 1.0
+      },
+      {
+       "concept": "Resource Author Affiliation",
+       "completeness": 0.0008
+      },
+      {
+       "concept": "Resource Identifier",
+       "completeness": 1.0
+      },
+      {
+       "concept": "Resource Publication Date",
+       "completeness": 1.0
+      },
+      {
+       "concept": "Resource Publisher",
+       "completeness": 1.0
+      },
+      {
+       "concept": "Resource Title",
+       "completeness": 1.0
+      },
+      {
+       "concept": "Resource Type General",
+       "completeness": 0.0024
+      },
+      {
+       "concept": "Spatial Extent",
+       "completeness": 0.0022
+      },
+      {
+       "concept": "Temporal Extent",
+       "completeness": 0.0022
+      }
+     ],
+     "legacyTitle": "FAIR_Findable_Essential"
+    },
+    {
+     "code": "FAIR_Identifiers",
+     "title": "FAIR Identifiers",
+     "dialect": "DataCite",
+     "average": 0.0003222222222222222,
+     "exist": 4,
+     "complete": 0,
+     "records": 5000,
+     "items": [
+      {
+       "concept": "Award Number",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Award URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Date Submitted",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Funder Identifier",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Funder Identifier Type",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Keyword Value URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Keyword Vocabulary URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Publisher Identifier",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Publisher Identifier Scheme URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Publisher Identifier Type",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Author Affiliation Identifier",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Author Affiliation Identifier Scheme URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Author Affiliation Identifier Type",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Author Identifier",
+       "completeness": 0.0006
+      },
+      {
+       "concept": "Resource Author Identifier Type",
+       "completeness": 0.0006
+      },
+      {
+       "concept": "Resource Author Type",
+       "completeness": 0.0024
+      },
+      {
+       "concept": "Resource Identifier Type",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Type",
+       "completeness": 0.0022
+      }
+     ],
+     "legacyTitle": "FAIR_Findable_Support"
+    }
+   ]
+  },
+  {
+   "dateTime": "2025-06-21T21",
+   "source": "iris.iris_useCaseReport__2025-06-21T21.json",
+   "repository": {
+    "id": "iris.iris",
+    "name": "iris.iris",
+    "dateTime": "2025-06-21T21",
+    "records": 117575,
+    "totalInRepository": null,
+    "sampling": null,
+    "query": null,
+    "translatedFrom": [
+     "iris.iris_FAIR_Connections_2025-06-21T21.csv",
+     "iris.iris_FAIR_Contacts_2025-06-21T21.csv",
+     "iris.iris_FAIR_Identifiers_2025-06-21T21.csv",
+     "iris.iris_FAIR_Text_2025-06-21T21.csv"
+    ],
+    "fairTotal": 0.16274760093836163,
+    "summaryFrom": "iris.iris_Total_2025-06-21T21.csv"
+   },
+   "useCases": [
+    {
+     "code": "FAIR_Connections",
+     "title": "FAIR Connections",
+     "dialect": "DataCite",
+     "average": 0.057196588465990975,
+     "exist": 8,
+     "complete": 1,
+     "records": 117575,
+     "items": [
+      {
+       "concept": "CitedBy",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Date Available",
+       "completeness": 0.006659578992132681
+      },
+      {
+       "concept": "DescribedBy",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Distribution Contact",
+       "completeness": 0.0
+      },
+      {
+       "concept": "DocumentedBy",
+       "completeness": 0.00047629172868381885
+      },
+      {
+       "concept": "HasMetadata",
+       "completeness": 8.505209440782479e-06
+      },
+      {
+       "concept": "Methods",
+       "completeness": 0.0
+      },
+      {
+       "concept": "ReferencedBy",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Contact",
+       "completeness": 0.00039123963427599407
+      },
+      {
+       "concept": "Resource Format",
+       "completeness": 0.014254731022751436
+      },
+      {
+       "concept": "Resource Size",
+       "completeness": 0.0075271103550924945
+      },
+      {
+       "concept": "Resource URL",
+       "completeness": 1.0
+      },
+      {
+       "concept": "ReviewedBy",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Rights",
+       "completeness": 0.00022113544546034446
+      },
+      {
+       "concept": "RightsHolder",
+       "completeness": 0.0
+      },
+      {
+       "concept": "SourceOf",
+       "completeness": 0.0
+      },
+      {
+       "concept": "SupplementTo",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Technical Information",
+       "completeness": 0.0
+      }
+     ]
+    },
+    {
+     "code": "FAIR_Contacts",
+     "title": "FAIR Contacts",
+     "dialect": "DataCite",
+     "average": 2.2113544546034448e-05,
+     "exist": 1,
+     "complete": 0,
+     "records": 117575,
+     "items": [
+      {
+       "concept": "Distribution Contact Identifier",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Distribution Contact Identifier Scheme",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Distribution Contact Identifier Scheme URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Contact Identifier",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Contact Identifier Scheme",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Contact Identifier Scheme URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Rights Holder Identifier",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Rights Holder Identifier Scheme",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Rights Holder Identifier Scheme URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Rights URI",
+       "completeness": 0.00022113544546034446
+      }
+     ]
+    },
+    {
+     "code": "FAIR_Identifiers",
+     "title": "FAIR Identifiers",
+     "dialect": "DataCite",
+     "average": 0.18981264913648496,
+     "exist": 13,
+     "complete": 0,
+     "records": 117575,
+     "items": [
+      {
+       "concept": "Award Number",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Award URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Date Submitted",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Funder Identifier",
+       "completeness": 8.505209440782479e-06
+      },
+      {
+       "concept": "Funder Identifier Type",
+       "completeness": 8.505209440782479e-06
+      },
+      {
+       "concept": "Keyword Value URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Keyword Vocabulary URI",
+       "completeness": 8.505209440782479e-06
+      },
+      {
+       "concept": "Publisher Identifier",
+       "completeness": 0.9857792898150117
+      },
+      {
+       "concept": "Publisher Identifier Scheme URI",
+       "completeness": 0.9857792898150117
+      },
+      {
+       "concept": "Publisher Identifier Type",
+       "completeness": 0.9857792898150117
+      },
+      {
+       "concept": "Resource Author Affiliation Identifier",
+       "completeness": 0.001964703380820753
+      },
+      {
+       "concept": "Resource Author Affiliation Identifier Scheme URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Author Affiliation Identifier Type",
+       "completeness": 0.001964703380820753
+      },
+      {
+       "concept": "Resource Author Identifier",
+       "completeness": 0.0012672762066765894
+      },
+      {
+       "concept": "Resource Author Identifier Type",
+       "completeness": 0.0012672762066765894
+      },
+      {
+       "concept": "Resource Author Type",
+       "completeness": 0.023321284286625558
+      },
+      {
+       "concept": "Resource Identifier Type",
+       "completeness": 8.505209440782479e-06
+      },
+      {
+       "concept": "Resource Type",
+       "completeness": 0.42947055071231127
+      }
+     ]
+    },
+    {
+     "code": "FAIR_Text",
+     "title": "FAIR Text",
+     "dialect": "DataCite",
+     "average": 0.36541441633000216,
+     "exist": 13,
+     "complete": 5,
+     "records": 117575,
+     "items": [
+      {
+       "concept": "Abstract",
+       "completeness": 0.014254731022751436
+      },
+      {
+       "concept": "Award Title",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Date Created",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Keyword",
+       "completeness": 8.505209440782479e-06
+      },
+      {
+       "concept": "Keyword Vocabulary",
+       "completeness": 8.505209440782479e-06
+      },
+      {
+       "concept": "Project Funder",
+       "completeness": 8.505209440782479e-06
+      },
+      {
+       "concept": "Resource Author",
+       "completeness": 1.0
+      },
+      {
+       "concept": "Resource Author Affiliation",
+       "completeness": 0.007782266638315968
+      },
+      {
+       "concept": "Resource Identifier",
+       "completeness": 1.0000085052094407
+      },
+      {
+       "concept": "Resource Publication Date",
+       "completeness": 1.0
+      },
+      {
+       "concept": "Resource Publisher",
+       "completeness": 1.0
+      },
+      {
+       "concept": "Resource Title",
+       "completeness": 1.0
+      },
+      {
+       "concept": "Resource Type General",
+       "completeness": 0.4308739102700404
+      },
+      {
+       "concept": "Spatial Extent",
+       "completeness": 0.014025090367850308
+      },
+      {
+       "concept": "Temporal Extent",
+       "completeness": 0.014254731022751436
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "dateTime": "2025-07-15T14",
+   "source": "iris.iris_useCaseReport__2025-07-15T14.json",
+   "repository": {
+    "id": "iris.iris",
+    "name": "iris.iris",
+    "dateTime": "2025-07-15T14",
+    "records": 117590,
+    "totalInRepository": null,
+    "sampling": null,
+    "query": null,
+    "translatedFrom": [
+     "iris.iris_FAIR_Connections_2025-07-15T14.csv",
+     "iris.iris_FAIR_Contacts_2025-07-15T14.csv",
+     "iris.iris_FAIR_Identifiers_2025-07-15T14.csv",
+     "iris.iris_FAIR_Text_2025-07-15T14.csv"
+    ],
+    "fairTotal": 0.1955206963902083,
+    "summaryFrom": "iris.iris_Total_2025-07-15T14.csv"
+   },
+   "useCases": [
+    {
+     "code": "FAIR_Connections",
+     "title": "FAIR Connections",
+     "dialect": "DataCite",
+     "average": 0.11273209173115628,
+     "exist": 9,
+     "complete": 1,
+     "records": 117590,
+     "items": [
+      {
+       "concept": "CitedBy",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Date Available",
+       "completeness": 0.006675737732800408
+      },
+      {
+       "concept": "DescribedBy",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Distribution Contact",
+       "completeness": 0.0
+      },
+      {
+       "concept": "DocumentedBy",
+       "completeness": 0.00047623097202143037
+      },
+      {
+       "concept": "HasMetadata",
+       "completeness": 8.504124500382685e-06
+      },
+      {
+       "concept": "Methods",
+       "completeness": 0.0
+      },
+      {
+       "concept": "ReferencedBy",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Contact",
+       "completeness": 0.0003911897270176035
+      },
+      {
+       "concept": "Resource Format",
+       "completeness": 0.014286929160642912
+      },
+      {
+       "concept": "Resource Size",
+       "completeness": 0.007543158431839442
+      },
+      {
+       "concept": "Resource URL",
+       "completeness": 1.0
+      },
+      {
+       "concept": "ReviewedBy",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Rights",
+       "completeness": 0.9997873968874904
+      },
+      {
+       "concept": "RightsHolder",
+       "completeness": 8.504124500382685e-06
+      },
+      {
+       "concept": "SourceOf",
+       "completeness": 0.0
+      },
+      {
+       "concept": "SupplementTo",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Technical Information",
+       "completeness": 0.0
+      }
+     ]
+    },
+    {
+     "code": "FAIR_Contacts",
+     "title": "FAIR Contacts",
+     "dialect": "DataCite",
+     "average": 0.09998129092609916,
+     "exist": 4,
+     "complete": 0,
+     "records": 117590,
+     "items": [
+      {
+       "concept": "Distribution Contact Identifier",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Distribution Contact Identifier Scheme",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Distribution Contact Identifier Scheme URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Contact Identifier",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Contact Identifier Scheme",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Contact Identifier Scheme URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Rights Holder Identifier",
+       "completeness": 8.504124500382685e-06
+      },
+      {
+       "concept": "Rights Holder Identifier Scheme",
+       "completeness": 8.504124500382685e-06
+      },
+      {
+       "concept": "Rights Holder Identifier Scheme URI",
+       "completeness": 8.504124500382685e-06
+      },
+      {
+       "concept": "Rights URI",
+       "completeness": 0.9997873968874904
+      }
+     ]
+    },
+    {
+     "code": "FAIR_Identifiers",
+     "title": "FAIR Identifiers",
+     "dialect": "DataCite",
+     "average": 0.18979835775906873,
+     "exist": 13,
+     "complete": 0,
+     "records": 117590,
+     "items": [
+      {
+       "concept": "Award Number",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Award URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Date Submitted",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Funder Identifier",
+       "completeness": 8.504124500382685e-06
+      },
+      {
+       "concept": "Funder Identifier Type",
+       "completeness": 8.504124500382685e-06
+      },
+      {
+       "concept": "Keyword Value URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Keyword Vocabulary URI",
+       "completeness": 8.504124500382685e-06
+      },
+      {
+       "concept": "Publisher Identifier",
+       "completeness": 0.9856535419678544
+      },
+      {
+       "concept": "Publisher Identifier Scheme URI",
+       "completeness": 0.9856535419678544
+      },
+      {
+       "concept": "Publisher Identifier Type",
+       "completeness": 0.9856535419678544
+      },
+      {
+       "concept": "Resource Author Affiliation Identifier",
+       "completeness": 0.001972956884088783
+      },
+      {
+       "concept": "Resource Author Affiliation Identifier Scheme URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Author Affiliation Identifier Type",
+       "completeness": 0.001972956884088783
+      },
+      {
+       "concept": "Resource Author Identifier",
+       "completeness": 0.00126711455055702
+      },
+      {
+       "concept": "Resource Author Identifier Type",
+       "completeness": 0.00126711455055702
+      },
+      {
+       "concept": "Resource Author Type",
+       "completeness": 0.023445871247555063
+      },
+      {
+       "concept": "Resource Identifier Type",
+       "completeness": 8.504124500382685e-06
+      },
+      {
+       "concept": "Resource Type",
+       "completeness": 0.42944978314482524
+      }
+     ]
+    },
+    {
+     "code": "FAIR_Text",
+     "title": "FAIR Text",
+     "dialect": "DataCite",
+     "average": 0.36542676531451085,
+     "exist": 13,
+     "complete": 5,
+     "records": 117590,
+     "items": [
+      {
+       "concept": "Abstract",
+       "completeness": 0.014286929160642912
+      },
+      {
+       "concept": "Award Title",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Date Created",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Keyword",
+       "completeness": 8.504124500382685e-06
+      },
+      {
+       "concept": "Keyword Vocabulary",
+       "completeness": 8.504124500382685e-06
+      },
+      {
+       "concept": "Project Funder",
+       "completeness": 8.504124500382685e-06
+      },
+      {
+       "concept": "Resource Author",
+       "completeness": 1.0
+      },
+      {
+       "concept": "Resource Author Affiliation",
+       "completeness": 0.007798282166850923
+      },
+      {
+       "concept": "Resource Identifier",
+       "completeness": 1.0000085041245004
+      },
+      {
+       "concept": "Resource Publication Date",
+       "completeness": 1.0
+      },
+      {
+       "concept": "Resource Publisher",
+       "completeness": 1.0
+      },
+      {
+       "concept": "Resource Title",
+       "completeness": 1.0
+      },
+      {
+       "concept": "Resource Type General",
+       "completeness": 0.4309465090568926
+      },
+      {
+       "concept": "Spatial Extent",
+       "completeness": 0.01405731779913258
+      },
+      {
+       "concept": "Temporal Extent",
+       "completeness": 0.014286929160642912
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "dateTime": "2025-07-15T15",
+   "source": "iris.iris_useCaseReport__2025-07-15T15.json",
+   "repository": {
+    "id": "iris.iris",
+    "name": "iris.iris",
+    "dateTime": "2025-07-15T15",
+    "records": 117590,
+    "totalInRepository": null,
+    "sampling": null,
+    "query": null,
+    "translatedFrom": [
+     "iris.iris_FAIR_Connections_2025-07-15T15.csv",
+     "iris.iris_FAIR_Contacts_2025-07-15T15.csv",
+     "iris.iris_FAIR_Identifiers_2025-07-15T15.csv",
+     "iris.iris_FAIR_Text_2025-07-15T15.csv"
+    ],
+    "fairTotal": 0.1955206963902083,
+    "summaryFrom": "iris.iris_Total_2025-07-15T15.csv"
+   },
+   "useCases": [
+    {
+     "code": "FAIR_Connections",
+     "title": "FAIR Connections",
+     "dialect": "DataCite",
+     "average": 0.11273209173115628,
+     "exist": 9,
+     "complete": 1,
+     "records": 117590,
+     "items": [
+      {
+       "concept": "CitedBy",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Date Available",
+       "completeness": 0.006675737732800408
+      },
+      {
+       "concept": "DescribedBy",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Distribution Contact",
+       "completeness": 0.0
+      },
+      {
+       "concept": "DocumentedBy",
+       "completeness": 0.00047623097202143037
+      },
+      {
+       "concept": "HasMetadata",
+       "completeness": 8.504124500382685e-06
+      },
+      {
+       "concept": "Methods",
+       "completeness": 0.0
+      },
+      {
+       "concept": "ReferencedBy",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Contact",
+       "completeness": 0.0003911897270176035
+      },
+      {
+       "concept": "Resource Format",
+       "completeness": 0.014286929160642912
+      },
+      {
+       "concept": "Resource Size",
+       "completeness": 0.007543158431839442
+      },
+      {
+       "concept": "Resource URL",
+       "completeness": 1.0
+      },
+      {
+       "concept": "ReviewedBy",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Rights",
+       "completeness": 0.9997873968874904
+      },
+      {
+       "concept": "RightsHolder",
+       "completeness": 8.504124500382685e-06
+      },
+      {
+       "concept": "SourceOf",
+       "completeness": 0.0
+      },
+      {
+       "concept": "SupplementTo",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Technical Information",
+       "completeness": 0.0
+      }
+     ]
+    },
+    {
+     "code": "FAIR_Contacts",
+     "title": "FAIR Contacts",
+     "dialect": "DataCite",
+     "average": 0.09998129092609916,
+     "exist": 4,
+     "complete": 0,
+     "records": 117590,
+     "items": [
+      {
+       "concept": "Distribution Contact Identifier",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Distribution Contact Identifier Scheme",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Distribution Contact Identifier Scheme URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Contact Identifier",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Contact Identifier Scheme",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Contact Identifier Scheme URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Rights Holder Identifier",
+       "completeness": 8.504124500382685e-06
+      },
+      {
+       "concept": "Rights Holder Identifier Scheme",
+       "completeness": 8.504124500382685e-06
+      },
+      {
+       "concept": "Rights Holder Identifier Scheme URI",
+       "completeness": 8.504124500382685e-06
+      },
+      {
+       "concept": "Rights URI",
+       "completeness": 0.9997873968874904
+      }
+     ]
+    },
+    {
+     "code": "FAIR_Identifiers",
+     "title": "FAIR Identifiers",
+     "dialect": "DataCite",
+     "average": 0.18979835775906873,
+     "exist": 13,
+     "complete": 0,
+     "records": 117590,
+     "items": [
+      {
+       "concept": "Award Number",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Award URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Date Submitted",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Funder Identifier",
+       "completeness": 8.504124500382685e-06
+      },
+      {
+       "concept": "Funder Identifier Type",
+       "completeness": 8.504124500382685e-06
+      },
+      {
+       "concept": "Keyword Value URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Keyword Vocabulary URI",
+       "completeness": 8.504124500382685e-06
+      },
+      {
+       "concept": "Publisher Identifier",
+       "completeness": 0.9856535419678544
+      },
+      {
+       "concept": "Publisher Identifier Scheme URI",
+       "completeness": 0.9856535419678544
+      },
+      {
+       "concept": "Publisher Identifier Type",
+       "completeness": 0.9856535419678544
+      },
+      {
+       "concept": "Resource Author Affiliation Identifier",
+       "completeness": 0.001972956884088783
+      },
+      {
+       "concept": "Resource Author Affiliation Identifier Scheme URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Author Affiliation Identifier Type",
+       "completeness": 0.001972956884088783
+      },
+      {
+       "concept": "Resource Author Identifier",
+       "completeness": 0.00126711455055702
+      },
+      {
+       "concept": "Resource Author Identifier Type",
+       "completeness": 0.00126711455055702
+      },
+      {
+       "concept": "Resource Author Type",
+       "completeness": 0.023445871247555063
+      },
+      {
+       "concept": "Resource Identifier Type",
+       "completeness": 8.504124500382685e-06
+      },
+      {
+       "concept": "Resource Type",
+       "completeness": 0.42944978314482524
+      }
+     ]
+    },
+    {
+     "code": "FAIR_Text",
+     "title": "FAIR Text",
+     "dialect": "DataCite",
+     "average": 0.36542676531451085,
+     "exist": 13,
+     "complete": 5,
+     "records": 117590,
+     "items": [
+      {
+       "concept": "Abstract",
+       "completeness": 0.014286929160642912
+      },
+      {
+       "concept": "Award Title",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Date Created",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Keyword",
+       "completeness": 8.504124500382685e-06
+      },
+      {
+       "concept": "Keyword Vocabulary",
+       "completeness": 8.504124500382685e-06
+      },
+      {
+       "concept": "Project Funder",
+       "completeness": 8.504124500382685e-06
+      },
+      {
+       "concept": "Resource Author",
+       "completeness": 1.0
+      },
+      {
+       "concept": "Resource Author Affiliation",
+       "completeness": 0.007798282166850923
+      },
+      {
+       "concept": "Resource Identifier",
+       "completeness": 1.0000085041245004
+      },
+      {
+       "concept": "Resource Publication Date",
+       "completeness": 1.0
+      },
+      {
+       "concept": "Resource Publisher",
+       "completeness": 1.0
+      },
+      {
+       "concept": "Resource Title",
+       "completeness": 1.0
+      },
+      {
+       "concept": "Resource Type General",
+       "completeness": 0.4309465090568926
+      },
+      {
+       "concept": "Spatial Extent",
+       "completeness": 0.01405731779913258
+      },
+      {
+       "concept": "Temporal Extent",
+       "completeness": 0.014286929160642912
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "dateTime": "2025-07-20T14",
+   "source": "iris.iris_useCaseReport__2025-07-20T14.json",
+   "repository": {
+    "id": "iris.iris",
+    "name": "iris.iris",
+    "dateTime": "2025-07-20T14",
+    "records": 117590,
+    "totalInRepository": null,
+    "sampling": null,
+    "query": null,
+    "translatedFrom": [
+     "iris.iris_FAIR_Connections_2025-07-20T14.csv",
+     "iris.iris_FAIR_Contacts_2025-07-20T14.csv",
+     "iris.iris_FAIR_Identifiers_2025-07-20T14.csv",
+     "iris.iris_FAIR_Text_2025-07-20T14.csv"
+    ],
+    "fairTotal": 0.26101277152205704,
+    "summaryFrom": "iris.iris_Total_2025-07-20T14.csv"
+   },
+   "useCases": [
+    {
+     "code": "FAIR_Connections",
+     "title": "FAIR Connections",
+     "dialect": "DataCite",
+     "average": 0.1682186693879865,
+     "exist": 9,
+     "complete": 1,
+     "records": 117590,
+     "items": [
+      {
+       "concept": "CitedBy",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Date Available",
+       "completeness": 0.006675737732800408
+      },
+      {
+       "concept": "DescribedBy",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Distribution Contact",
+       "completeness": 0.0
+      },
+      {
+       "concept": "DocumentedBy",
+       "completeness": 0.00047623097202143037
+      },
+      {
+       "concept": "HasMetadata",
+       "completeness": 8.504124500382685e-06
+      },
+      {
+       "concept": "Methods",
+       "completeness": 0.0
+      },
+      {
+       "concept": "ReferencedBy",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Contact",
+       "completeness": 0.0003911897270176035
+      },
+      {
+       "concept": "Resource Format",
+       "completeness": 0.014286929160642912
+      },
+      {
+       "concept": "Resource Size",
+       "completeness": 0.007543158431839442
+      },
+      {
+       "concept": "Resource URL",
+       "completeness": 1.0
+      },
+      {
+       "concept": "ReviewedBy",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Rights",
+       "completeness": 0.9997873968874904
+      },
+      {
+       "concept": "RightsHolder",
+       "completeness": 0.9987669019474446
+      },
+      {
+       "concept": "SourceOf",
+       "completeness": 0.0
+      },
+      {
+       "concept": "SupplementTo",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Technical Information",
+       "completeness": 0.0
+      }
+     ]
+    },
+    {
+     "code": "FAIR_Contacts",
+     "title": "FAIR Contacts",
+     "dialect": "DataCite",
+     "average": 0.3996088102729824,
+     "exist": 4,
+     "complete": 0,
+     "records": 117590,
+     "items": [
+      {
+       "concept": "Distribution Contact Identifier",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Distribution Contact Identifier Scheme",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Distribution Contact Identifier Scheme URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Contact Identifier",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Contact Identifier Scheme",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Contact Identifier Scheme URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Rights Holder Identifier",
+       "completeness": 0.9987669019474446
+      },
+      {
+       "concept": "Rights Holder Identifier Scheme",
+       "completeness": 0.9987669019474446
+      },
+      {
+       "concept": "Rights Holder Identifier Scheme URI",
+       "completeness": 0.9987669019474446
+      },
+      {
+       "concept": "Rights URI",
+       "completeness": 0.9997873968874904
+      }
+     ]
+    },
+    {
+     "code": "FAIR_Identifiers",
+     "title": "FAIR Identifiers",
+     "dialect": "DataCite",
+     "average": 0.18979741285634644,
+     "exist": 13,
+     "complete": 0,
+     "records": 117590,
+     "items": [
+      {
+       "concept": "Award Number",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Award URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Date Submitted",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Funder Identifier",
+       "completeness": 8.504124500382685e-06
+      },
+      {
+       "concept": "Funder Identifier Type",
+       "completeness": 8.504124500382685e-06
+      },
+      {
+       "concept": "Keyword Value URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Keyword Vocabulary URI",
+       "completeness": 8.504124500382685e-06
+      },
+      {
+       "concept": "Publisher Identifier",
+       "completeness": 0.9856535419678544
+      },
+      {
+       "concept": "Publisher Identifier Scheme URI",
+       "completeness": 0.9856535419678544
+      },
+      {
+       "concept": "Publisher Identifier Type",
+       "completeness": 0.9856535419678544
+      },
+      {
+       "concept": "Resource Author Affiliation Identifier",
+       "completeness": 0.001972956884088783
+      },
+      {
+       "concept": "Resource Author Affiliation Identifier Scheme URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Author Affiliation Identifier Type",
+       "completeness": 0.001972956884088783
+      },
+      {
+       "concept": "Resource Author Identifier",
+       "completeness": 0.0012586104260566375
+      },
+      {
+       "concept": "Resource Author Identifier Type",
+       "completeness": 0.0012586104260566375
+      },
+      {
+       "concept": "Resource Author Type",
+       "completeness": 0.023445871247555063
+      },
+      {
+       "concept": "Resource Identifier Type",
+       "completeness": 8.504124500382685e-06
+      },
+      {
+       "concept": "Resource Type",
+       "completeness": 0.42944978314482524
+      }
+     ]
+    },
+    {
+     "code": "FAIR_Text",
+     "title": "FAIR Text",
+     "dialect": "DataCite",
+     "average": 0.36542676531451085,
+     "exist": 13,
+     "complete": 5,
+     "records": 117590,
+     "items": [
+      {
+       "concept": "Abstract",
+       "completeness": 0.014286929160642912
+      },
+      {
+       "concept": "Award Title",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Date Created",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Keyword",
+       "completeness": 8.504124500382685e-06
+      },
+      {
+       "concept": "Keyword Vocabulary",
+       "completeness": 8.504124500382685e-06
+      },
+      {
+       "concept": "Project Funder",
+       "completeness": 8.504124500382685e-06
+      },
+      {
+       "concept": "Resource Author",
+       "completeness": 1.0
+      },
+      {
+       "concept": "Resource Author Affiliation",
+       "completeness": 0.007798282166850923
+      },
+      {
+       "concept": "Resource Identifier",
+       "completeness": 1.0000085041245004
+      },
+      {
+       "concept": "Resource Publication Date",
+       "completeness": 1.0
+      },
+      {
+       "concept": "Resource Publisher",
+       "completeness": 1.0
+      },
+      {
+       "concept": "Resource Title",
+       "completeness": 1.0
+      },
+      {
+       "concept": "Resource Type General",
+       "completeness": 0.4309465090568926
+      },
+      {
+       "concept": "Spatial Extent",
+       "completeness": 0.01405731779913258
+      },
+      {
+       "concept": "Temporal Extent",
+       "completeness": 0.014286929160642912
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "dateTime": "2025-07-23T08",
+   "source": "iris.iris_useCaseReport__2025-07-23T08.json",
+   "repository": {
+    "id": "iris.iris",
+    "name": "iris.iris",
+    "dateTime": "2025-07-23T08",
+    "records": 117592,
+    "totalInRepository": null,
+    "sampling": null,
+    "query": null,
+    "translatedFrom": [
+     "iris.iris_FAIR_Connections_2025-07-23T08.csv",
+     "iris.iris_FAIR_Contacts_2025-07-23T08.csv",
+     "iris.iris_FAIR_Identifiers_2025-07-23T08.csv",
+     "iris.iris_FAIR_Text_2025-07-23T08.csv"
+    ],
+    "fairTotal": 0.27965282014277765,
+    "summaryFrom": "iris.iris_Total_2025-07-23T08.csv"
+   },
+   "useCases": [
+    {
+     "code": "FAIR_Connections",
+     "title": "FAIR Connections",
+     "dialect": "DataCite",
+     "average": 0.16822006032156384,
+     "exist": 9,
+     "complete": 1,
+     "records": 117592,
+     "items": [
+      {
+       "concept": "CitedBy",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Date Available",
+       "completeness": 0.006692632151847064
+      },
+      {
+       "concept": "DescribedBy",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Distribution Contact",
+       "completeness": 0.0
+      },
+      {
+       "concept": "DocumentedBy",
+       "completeness": 0.0004762228723042384
+      },
+      {
+       "concept": "HasMetadata",
+       "completeness": 8.503979862575686e-06
+      },
+      {
+       "concept": "Methods",
+       "completeness": 0.0
+      },
+      {
+       "concept": "ReferencedBy",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Contact",
+       "completeness": 0.00039118307367848153
+      },
+      {
+       "concept": "Resource Format",
+       "completeness": 0.014303694128852303
+      },
+      {
+       "concept": "Resource Size",
+       "completeness": 0.007560038097829784
+      },
+      {
+       "concept": "Resource URL",
+       "completeness": 1.0
+      },
+      {
+       "concept": "ReviewedBy",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Rights",
+       "completeness": 0.999778896523573
+      },
+      {
+       "concept": "RightsHolder",
+       "completeness": 0.9987499149602014
+      },
+      {
+       "concept": "SourceOf",
+       "completeness": 0.0
+      },
+      {
+       "concept": "SupplementTo",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Technical Information",
+       "completeness": 0.0
+      }
+     ]
+    },
+    {
+     "code": "FAIR_Contacts",
+     "title": "FAIR Contacts",
+     "dialect": "DataCite",
+     "average": 0.3996028641404177,
+     "exist": 4,
+     "complete": 0,
+     "records": 117592,
+     "items": [
+      {
+       "concept": "Distribution Contact Identifier",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Distribution Contact Identifier Scheme",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Distribution Contact Identifier Scheme URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Contact Identifier",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Contact Identifier Scheme",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Contact Identifier Scheme URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Rights Holder Identifier",
+       "completeness": 0.9987499149602014
+      },
+      {
+       "concept": "Rights Holder Identifier Scheme",
+       "completeness": 0.9987499149602014
+      },
+      {
+       "concept": "Rights Holder Identifier Scheme URI",
+       "completeness": 0.9987499149602014
+      },
+      {
+       "concept": "Rights URI",
+       "completeness": 0.999778896523573
+      }
+     ]
+    },
+    {
+     "code": "FAIR_Identifiers",
+     "title": "FAIR Identifiers",
+     "dialect": "DataCite",
+     "average": 0.24453666538162086,
+     "exist": 14,
+     "complete": 0,
+     "records": 117592,
+     "items": [
+      {
+       "concept": "Award Number",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Award URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Date Submitted",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Funder Identifier",
+       "completeness": 8.503979862575686e-06
+      },
+      {
+       "concept": "Funder Identifier Type",
+       "completeness": 8.503979862575686e-06
+      },
+      {
+       "concept": "Keyword Value URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Keyword Vocabulary URI",
+       "completeness": 8.503979862575686e-06
+      },
+      {
+       "concept": "Publisher Identifier",
+       "completeness": 0.9856367780121097
+      },
+      {
+       "concept": "Publisher Identifier Scheme URI",
+       "completeness": 0.9856367780121097
+      },
+      {
+       "concept": "Publisher Identifier Type",
+       "completeness": 0.9856367780121097
+      },
+      {
+       "concept": "Resource Author Affiliation Identifier",
+       "completeness": 0.1551125926933805
+      },
+      {
+       "concept": "Resource Author Affiliation Identifier Scheme URI",
+       "completeness": 0.15338628478127764
+      },
+      {
+       "concept": "Resource Author Affiliation Identifier Type",
+       "completeness": 0.1551125926933805
+      },
+      {
+       "concept": "Resource Author Identifier",
+       "completeness": 0.17713790053745151
+      },
+      {
+       "concept": "Resource Author Identifier Type",
+       "completeness": 0.17713790053745151
+      },
+      {
+       "concept": "Resource Author Type",
+       "completeness": 0.19736886863051908
+      },
+      {
+       "concept": "Resource Identifier Type",
+       "completeness": 8.503979862575686e-06
+      },
+      {
+       "concept": "Resource Type",
+       "completeness": 0.4294594870399347
+      }
+     ]
+    },
+    {
+     "code": "FAIR_Text",
+     "title": "FAIR Text",
+     "dialect": "DataCite",
+     "average": 0.37554482164319564,
+     "exist": 13,
+     "complete": 5,
+     "records": 117592,
+     "items": [
+      {
+       "concept": "Abstract",
+       "completeness": 0.014303694128852303
+      },
+      {
+       "concept": "Award Title",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Date Created",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Keyword",
+       "completeness": 8.503979862575686e-06
+      },
+      {
+       "concept": "Keyword Vocabulary",
+       "completeness": 8.503979862575686e-06
+      },
+      {
+       "concept": "Project Funder",
+       "completeness": 8.503979862575686e-06
+      },
+      {
+       "concept": "Resource Author",
+       "completeness": 1.0
+      },
+      {
+       "concept": "Resource Author Affiliation",
+       "completeness": 0.15950915028233212
+      },
+      {
+       "concept": "Resource Identifier",
+       "completeness": 1.0000085039798625
+      },
+      {
+       "concept": "Resource Publication Date",
+       "completeness": 1.0
+      },
+      {
+       "concept": "Resource Publisher",
+       "completeness": 1.0
+      },
+      {
+       "concept": "Resource Title",
+       "completeness": 1.0
+      },
+      {
+       "concept": "Resource Type General",
+       "completeness": 0.430956187495748
+      },
+      {
+       "concept": "Spatial Extent",
+       "completeness": 0.01407408667256276
+      },
+      {
+       "concept": "Temporal Extent",
+       "completeness": 0.014303694128852303
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "dateTime": "2025-08-12T17",
+   "source": "iris.iris_useCaseReport__2025-08-12T17.json",
+   "repository": {
+    "id": "iris.iris",
+    "name": "iris.iris",
+    "dateTime": "2025-08-12T17",
+    "records": 117612,
+    "totalInRepository": null,
+    "sampling": null,
+    "query": null,
+    "translatedFrom": [
+     "iris.iris_FAIR_Connections_2025-08-12T17.csv",
+     "iris.iris_FAIR_Contacts_2025-08-12T17.csv",
+     "iris.iris_FAIR_Identifiers_2025-08-12T17.csv",
+     "iris.iris_FAIR_Text_2025-08-12T17.csv"
+    ],
+    "fairTotal": 0.2798950480685867,
+    "summaryFrom": "iris.iris_Total_2025-08-12T17.csv"
+   },
+   "useCases": [
+    {
+     "code": "FAIR_Connections",
+     "title": "FAIR Connections",
+     "dialect": "DataCite",
+     "average": 0.1682259368847472,
+     "exist": 9,
+     "complete": 1,
+     "records": 117612,
+     "items": [
+      {
+       "concept": "CitedBy",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Date Available",
+       "completeness": 0.006827534605312383
+      },
+      {
+       "concept": "DescribedBy",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Distribution Contact",
+       "completeness": 0.0
+      },
+      {
+       "concept": "DocumentedBy",
+       "completeness": 0.0004761418902833044
+      },
+      {
+       "concept": "HasMetadata",
+       "completeness": 8.502533755059007e-06
+      },
+      {
+       "concept": "Methods",
+       "completeness": 0.0
+      },
+      {
+       "concept": "ReferencedBy",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Contact",
+       "completeness": 0.0005101520253035404
+      },
+      {
+       "concept": "Resource Format",
+       "completeness": 0.014462809917355372
+      },
+      {
+       "concept": "Resource Size",
+       "completeness": 0.007592762643267694
+      },
+      {
+       "concept": "Resource URL",
+       "completeness": 1.0
+      },
+      {
+       "concept": "ReviewedBy",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Rights",
+       "completeness": 0.9996088834472673
+      },
+      {
+       "concept": "RightsHolder",
+       "completeness": 0.9985800768629052
+      },
+      {
+       "concept": "SourceOf",
+       "completeness": 0.0
+      },
+      {
+       "concept": "SupplementTo",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Technical Information",
+       "completeness": 0.0
+      }
+     ]
+    },
+    {
+     "code": "FAIR_Contacts",
+     "title": "FAIR Contacts",
+     "dialect": "DataCite",
+     "average": 0.3995349114035983,
+     "exist": 4,
+     "complete": 0,
+     "records": 117612,
+     "items": [
+      {
+       "concept": "Distribution Contact Identifier",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Distribution Contact Identifier Scheme",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Distribution Contact Identifier Scheme URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Contact Identifier",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Contact Identifier Scheme",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Contact Identifier Scheme URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Rights Holder Identifier",
+       "completeness": 0.9985800768629052
+      },
+      {
+       "concept": "Rights Holder Identifier Scheme",
+       "completeness": 0.9985800768629052
+      },
+      {
+       "concept": "Rights Holder Identifier Scheme URI",
+       "completeness": 0.9985800768629052
+      },
+      {
+       "concept": "Rights URI",
+       "completeness": 0.9996088834472673
+      }
+     ]
+    },
+    {
+     "code": "FAIR_Identifiers",
+     "title": "FAIR Identifiers",
+     "dialect": "DataCite",
+     "average": 0.24536375728856086,
+     "exist": 14,
+     "complete": 0,
+     "records": 117612,
+     "items": [
+      {
+       "concept": "Award Number",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Award URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Date Submitted",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Funder Identifier",
+       "completeness": 8.502533755059007e-06
+      },
+      {
+       "concept": "Funder Identifier Type",
+       "completeness": 8.502533755059007e-06
+      },
+      {
+       "concept": "Keyword Value URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Keyword Vocabulary URI",
+       "completeness": 8.502533755059007e-06
+      },
+      {
+       "concept": "Publisher Identifier",
+       "completeness": 0.9854691698126041
+      },
+      {
+       "concept": "Publisher Identifier Scheme URI",
+       "completeness": 0.9854691698126041
+      },
+      {
+       "concept": "Publisher Identifier Type",
+       "completeness": 0.9854691698126041
+      },
+      {
+       "concept": "Resource Author Affiliation Identifier",
+       "completeness": 0.15511172329354148
+      },
+      {
+       "concept": "Resource Author Affiliation Identifier Scheme URI",
+       "completeness": 0.1533602013399993
+      },
+      {
+       "concept": "Resource Author Affiliation Identifier Type",
+       "completeness": 0.15511172329354148
+      },
+      {
+       "concept": "Resource Author Identifier",
+       "completeness": 0.18473455089616705
+      },
+      {
+       "concept": "Resource Author Identifier Type",
+       "completeness": 0.18473455089616705
+      },
+      {
+       "concept": "Resource Author Type",
+       "completeness": 0.1975053565962657
+      },
+      {
+       "concept": "Resource Identifier Type",
+       "completeness": 8.502533755059007e-06
+      },
+      {
+       "concept": "Resource Type",
+       "completeness": 0.42954800530558107
+      }
+     ]
+    },
+    {
+     "code": "FAIR_Text",
+     "title": "FAIR Text",
+     "dialect": "DataCite",
+     "average": 0.3755756215352175,
+     "exist": 13,
+     "complete": 5,
+     "records": 117612,
+     "items": [
+      {
+       "concept": "Abstract",
+       "completeness": 0.014462809917355372
+      },
+      {
+       "concept": "Award Title",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Date Created",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Keyword",
+       "completeness": 8.502533755059007e-06
+      },
+      {
+       "concept": "Keyword Vocabulary",
+       "completeness": 8.502533755059007e-06
+      },
+      {
+       "concept": "Project Funder",
+       "completeness": 8.502533755059007e-06
+      },
+      {
+       "concept": "Resource Author",
+       "completeness": 1.0
+      },
+      {
+       "concept": "Resource Author Affiliation",
+       "completeness": 0.1595245383124171
+      },
+      {
+       "concept": "Resource Identifier",
+       "completeness": 1.000008502533755
+      },
+      {
+       "concept": "Resource Publication Date",
+       "completeness": 1.0
+      },
+      {
+       "concept": "Resource Publisher",
+       "completeness": 1.0
+      },
+      {
+       "concept": "Resource Title",
+       "completeness": 1.0
+      },
+      {
+       "concept": "Resource Type General",
+       "completeness": 0.4310529537802265
+      },
+      {
+       "concept": "Spatial Extent",
+       "completeness": 0.014105703499642894
+      },
+      {
+       "concept": "Temporal Extent",
+       "completeness": 0.014462809917355372
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "dateTime": "2025-08-16T09",
+   "source": "iris.iris_useCaseReport__2025-08-16T09.json",
+   "repository": {
+    "id": "iris.iris",
+    "name": "iris.iris",
+    "dateTime": "2025-08-16T09",
+    "records": 117614,
+    "totalInRepository": null,
+    "sampling": null,
+    "query": null,
+    "translatedFrom": [
+     "iris.iris_FAIR_Connections_2025-08-16T09.csv",
+     "iris.iris_FAIR_Contacts_2025-08-16T09.csv",
+     "iris.iris_FAIR_Identifiers_2025-08-16T09.csv",
+     "iris.iris_FAIR_Text_2025-08-16T09.csv"
+    ],
+    "fairTotal": 0.27990450562509706,
+    "summaryFrom": "iris.iris_Total_2025-08-16T09.csv"
+   },
+   "useCases": [
+    {
+     "code": "FAIR_Connections",
+     "title": "FAIR Connections",
+     "dialect": "DataCite",
+     "average": 0.16822779978951863,
+     "exist": 9,
+     "complete": 1,
+     "records": 117614,
+     "items": [
+      {
+       "concept": "CitedBy",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Date Available",
+       "completeness": 0.006844423282942507
+      },
+      {
+       "concept": "DescribedBy",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Distribution Contact",
+       "completeness": 0.0
+      },
+      {
+       "concept": "DocumentedBy",
+       "completeness": 0.0004761337935960005
+      },
+      {
+       "concept": "HasMetadata",
+       "completeness": 8.502389171357152e-06
+      },
+      {
+       "concept": "Methods",
+       "completeness": 0.0
+      },
+      {
+       "concept": "ReferencedBy",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Contact",
+       "completeness": 0.0005101433502814291
+      },
+      {
+       "concept": "Resource Format",
+       "completeness": 0.014479568758821228
+      },
+      {
+       "concept": "Resource Size",
+       "completeness": 0.007609638308364651
+      },
+      {
+       "concept": "Resource URL",
+       "completeness": 1.0
+      },
+      {
+       "concept": "ReviewedBy",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Rights",
+       "completeness": 0.9996088900981176
+      },
+      {
+       "concept": "RightsHolder",
+       "completeness": 0.9985630962300407
+      },
+      {
+       "concept": "SourceOf",
+       "completeness": 0.0
+      },
+      {
+       "concept": "SupplementTo",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Technical Information",
+       "completeness": 0.0
+      }
+     ]
+    },
+    {
+     "code": "FAIR_Contacts",
+     "title": "FAIR Contacts",
+     "dialect": "DataCite",
+     "average": 0.39952981787882397,
+     "exist": 4,
+     "complete": 0,
+     "records": 117614,
+     "items": [
+      {
+       "concept": "Distribution Contact Identifier",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Distribution Contact Identifier Scheme",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Distribution Contact Identifier Scheme URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Contact Identifier",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Contact Identifier Scheme",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Contact Identifier Scheme URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Rights Holder Identifier",
+       "completeness": 0.9985630962300407
+      },
+      {
+       "concept": "Rights Holder Identifier Scheme",
+       "completeness": 0.9985630962300407
+      },
+      {
+       "concept": "Rights Holder Identifier Scheme URI",
+       "completeness": 0.9985630962300407
+      },
+      {
+       "concept": "Rights URI",
+       "completeness": 0.9996088900981176
+      }
+     ]
+    },
+    {
+     "code": "FAIR_Identifiers",
+     "title": "FAIR Identifiers",
+     "dialect": "DataCite",
+     "average": 0.24539264977903233,
+     "exist": 14,
+     "complete": 0,
+     "records": 117614,
+     "items": [
+      {
+       "concept": "Award Number",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Award URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Date Submitted",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Funder Identifier",
+       "completeness": 8.502389171357152e-06
+      },
+      {
+       "concept": "Funder Identifier Type",
+       "completeness": 8.502389171357152e-06
+      },
+      {
+       "concept": "Keyword Value URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Keyword Vocabulary URI",
+       "completeness": 8.502389171357152e-06
+      },
+      {
+       "concept": "Publisher Identifier",
+       "completeness": 0.9854524121278079
+      },
+      {
+       "concept": "Publisher Identifier Scheme URI",
+       "completeness": 0.9854524121278079
+      },
+      {
+       "concept": "Publisher Identifier Type",
+       "completeness": 0.9854524121278079
+      },
+      {
+       "concept": "Resource Author Affiliation Identifier",
+       "completeness": 0.15512609043141123
+      },
+      {
+       "concept": "Resource Author Affiliation Identifier Scheme URI",
+       "completeness": 0.15335759348376893
+      },
+      {
+       "concept": "Resource Author Affiliation Identifier Type",
+       "completeness": 0.15512609043141123
+      },
+      {
+       "concept": "Resource Author Identifier",
+       "completeness": 0.1849949835903889
+      },
+      {
+       "concept": "Resource Author Identifier Type",
+       "completeness": 0.1849949835903889
+      },
+      {
+       "concept": "Resource Author Type",
+       "completeness": 0.19751900283979798
+      },
+      {
+       "concept": "Resource Identifier Type",
+       "completeness": 8.502389171357152e-06
+      },
+      {
+       "concept": "Resource Type",
+       "completeness": 0.429557705715306
+      }
+     ]
+    },
+    {
+     "code": "FAIR_Text",
+     "title": "FAIR Text",
+     "dialect": "DataCite",
+     "average": 0.3755805714739175,
+     "exist": 13,
+     "complete": 5,
+     "records": 117614,
+     "items": [
+      {
+       "concept": "Abstract",
+       "completeness": 0.014479568758821228
+      },
+      {
+       "concept": "Award Title",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Date Created",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Keyword",
+       "completeness": 8.502389171357152e-06
+      },
+      {
+       "concept": "Keyword Vocabulary",
+       "completeness": 8.502389171357152e-06
+      },
+      {
+       "concept": "Project Funder",
+       "completeness": 8.502389171357152e-06
+      },
+      {
+       "concept": "Resource Author",
+       "completeness": 1.0
+      },
+      {
+       "concept": "Resource Author Affiliation",
+       "completeness": 0.1595388304113456
+      },
+      {
+       "concept": "Resource Identifier",
+       "completeness": 1.0000085023891714
+      },
+      {
+       "concept": "Resource Publication Date",
+       "completeness": 1.0
+      },
+      {
+       "concept": "Resource Publisher",
+       "completeness": 1.0
+      },
+      {
+       "concept": "Resource Title",
+       "completeness": 1.0
+      },
+      {
+       "concept": "Resource Type General",
+       "completeness": 0.4310626285986362
+      },
+      {
+       "concept": "Spatial Extent",
+       "completeness": 0.014122468413624228
+      },
+      {
+       "concept": "Temporal Extent",
+       "completeness": 0.014479568758821228
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "dateTime": "2025-08-25T17",
+   "source": "iris.iris_useCaseReport__2025-08-25T17.json",
+   "repository": {
+    "id": "iris.iris",
+    "name": "iris.iris",
+    "dateTime": "2025-08-25T17",
+    "records": 117619,
+    "totalInRepository": null,
+    "sampling": null,
+    "query": null,
+    "translatedFrom": [
+     "iris.iris_FAIR_Connections_2025-08-25T17.csv",
+     "iris.iris_FAIR_Contacts_2025-08-25T17.csv",
+     "iris.iris_FAIR_Identifiers_2025-08-25T17.csv",
+     "iris.iris_FAIR_Text_2025-08-25T17.csv"
+    ],
+    "fairTotal": 0.29487610663995817,
+    "summaryFrom": "iris.iris_Total_2025-08-25T17.csv"
+   },
+   "useCases": [
+    {
+     "code": "FAIR_Connections",
+     "title": "FAIR Connections",
+     "dialect": "DataCite",
+     "average": 0.1682319844393999,
+     "exist": 9,
+     "complete": 1,
+     "records": 117619,
+     "items": [
+      {
+       "concept": "CitedBy",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Date Available",
+       "completeness": 0.0068781404364941035
+      },
+      {
+       "concept": "DescribedBy",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Distribution Contact",
+       "completeness": 0.0
+      },
+      {
+       "concept": "DocumentedBy",
+       "completeness": 0.0004761135530824102
+      },
+      {
+       "concept": "HasMetadata",
+       "completeness": 8.502027733614466e-06
+      },
+      {
+       "concept": "Methods",
+       "completeness": 0.0
+      },
+      {
+       "concept": "ReferencedBy",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Contact",
+       "completeness": 0.0005186236917504825
+      },
+      {
+       "concept": "Resource Format",
+       "completeness": 0.014521463369013509
+      },
+      {
+       "concept": "Resource Size",
+       "completeness": 0.007643322932519406
+      },
+      {
+       "concept": "Resource URL",
+       "completeness": 1.0
+      },
+      {
+       "concept": "ReviewedBy",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Rights",
+       "completeness": 0.9996089067242537
+      },
+      {
+       "concept": "RightsHolder",
+       "completeness": 0.9985206471743511
+      },
+      {
+       "concept": "SourceOf",
+       "completeness": 0.0
+      },
+      {
+       "concept": "SupplementTo",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Technical Information",
+       "completeness": 0.0
+      }
+     ]
+    },
+    {
+     "code": "FAIR_Contacts",
+     "title": "FAIR Contacts",
+     "dialect": "DataCite",
+     "average": 0.3995170848247307,
+     "exist": 4,
+     "complete": 0,
+     "records": 117619,
+     "items": [
+      {
+       "concept": "Distribution Contact Identifier",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Distribution Contact Identifier Scheme",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Distribution Contact Identifier Scheme URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Contact Identifier",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Contact Identifier Scheme",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Contact Identifier Scheme URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Rights Holder Identifier",
+       "completeness": 0.9985206471743511
+      },
+      {
+       "concept": "Rights Holder Identifier Scheme",
+       "completeness": 0.9985206471743511
+      },
+      {
+       "concept": "Rights Holder Identifier Scheme URI",
+       "completeness": 0.9985206471743511
+      },
+      {
+       "concept": "Rights URI",
+       "completeness": 0.9996089067242537
+      }
+     ]
+    },
+    {
+     "code": "FAIR_Identifiers",
+     "title": "FAIR Identifiers",
+     "dialect": "DataCite",
+     "average": 0.28888426000712275,
+     "exist": 14,
+     "complete": 0,
+     "records": 117619,
+     "items": [
+      {
+       "concept": "Award Number",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Award URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Date Submitted",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Funder Identifier",
+       "completeness": 8.502027733614466e-06
+      },
+      {
+       "concept": "Funder Identifier Type",
+       "completeness": 8.502027733614466e-06
+      },
+      {
+       "concept": "Keyword Value URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Keyword Vocabulary URI",
+       "completeness": 8.502027733614466e-06
+      },
+      {
+       "concept": "Publisher Identifier",
+       "completeness": 0.9854105204091176
+      },
+      {
+       "concept": "Publisher Identifier Scheme URI",
+       "completeness": 0.9854105204091176
+      },
+      {
+       "concept": "Publisher Identifier Type",
+       "completeness": 0.9854105204091176
+      },
+      {
+       "concept": "Resource Author Affiliation Identifier",
+       "completeness": 0.285472585211573
+      },
+      {
+       "concept": "Resource Author Affiliation Identifier Scheme URI",
+       "completeness": 0.2836786573597803
+      },
+      {
+       "concept": "Resource Author Affiliation Identifier Type",
+       "completeness": 0.285472585211573
+      },
+      {
+       "concept": "Resource Author Identifier",
+       "completeness": 0.3157993181373758
+      },
+      {
+       "concept": "Resource Author Identifier Type",
+       "completeness": 0.3157993181373758
+      },
+      {
+       "concept": "Resource Author Type",
+       "completeness": 0.32784669143590744
+      },
+      {
+       "concept": "Resource Identifier Type",
+       "completeness": 8.502027733614466e-06
+      },
+      {
+       "concept": "Resource Type",
+       "completeness": 0.4295819552963382
+      }
+     ]
+    },
+    {
+     "code": "FAIR_Text",
+     "title": "FAIR Text",
+     "dialect": "DataCite",
+     "average": 0.3842786171168491,
+     "exist": 13,
+     "complete": 5,
+     "records": 117619,
+     "items": [
+      {
+       "concept": "Abstract",
+       "completeness": 0.014521463369013509
+      },
+      {
+       "concept": "Award Title",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Date Created",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Keyword",
+       "completeness": 8.502027733614466e-06
+      },
+      {
+       "concept": "Keyword Vocabulary",
+       "completeness": 8.502027733614466e-06
+      },
+      {
+       "concept": "Project Funder",
+       "completeness": 8.502027733614466e-06
+      },
+      {
+       "concept": "Resource Author",
+       "completeness": 1.0
+      },
+      {
+       "concept": "Resource Author Affiliation",
+       "completeness": 0.289859631522118
+      },
+      {
+       "concept": "Resource Identifier",
+       "completeness": 1.0000085020277336
+      },
+      {
+       "concept": "Resource Publication Date",
+       "completeness": 1.0
+      },
+      {
+       "concept": "Resource Publisher",
+       "completeness": 1.0
+      },
+      {
+       "concept": "Resource Title",
+       "completeness": 1.0
+      },
+      {
+       "concept": "Resource Type General",
+       "completeness": 0.43108681420518796
+      },
+      {
+       "concept": "Spatial Extent",
+       "completeness": 0.014164378204201702
+      },
+      {
+       "concept": "Temporal Extent",
+       "completeness": 0.014521463369013509
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "dateTime": "2025-08-28T12",
+   "source": "iris.iris_useCaseReport__2025-08-28T12.json",
+   "repository": {
+    "id": "iris.iris",
+    "name": "iris.iris",
+    "dateTime": "2025-08-28T12",
+    "records": 117622,
+    "totalInRepository": null,
+    "sampling": null,
+    "query": null,
+    "translatedFrom": [
+     "iris.iris_FAIR_Connections_2025-08-28T12.csv",
+     "iris.iris_FAIR_Contacts_2025-08-28T12.csv",
+     "iris.iris_FAIR_Identifiers_2025-08-28T12.csv",
+     "iris.iris_FAIR_Text_2025-08-28T12.csv"
+    ],
+    "fairTotal": 0.36574943741705507,
+    "summaryFrom": "iris.iris_Total_2025-08-28T12.csv"
+   },
+   "useCases": [
+    {
+     "code": "FAIR_Connections",
+     "title": "FAIR Connections",
+     "dialect": "DataCite",
+     "average": 0.16823430612942777,
+     "exist": 9,
+     "complete": 1,
+     "records": 117622,
+     "items": [
+      {
+       "concept": "CitedBy",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Date Available",
+       "completeness": 0.006894968628317831
+      },
+      {
+       "concept": "DescribedBy",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Distribution Contact",
+       "completeness": 0.0
+      },
+      {
+       "concept": "DocumentedBy",
+       "completeness": 0.0004761014096002449
+      },
+      {
+       "concept": "HasMetadata",
+       "completeness": 8.501810885718658e-06
+      },
+      {
+       "concept": "Methods",
+       "completeness": 0.0
+      },
+      {
+       "concept": "ReferencedBy",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Contact",
+       "completeness": 0.0005186104640288381
+      },
+      {
+       "concept": "Resource Format",
+       "completeness": 0.014546598425464624
+      },
+      {
+       "concept": "Resource Size",
+       "completeness": 0.007668633418918229
+      },
+      {
+       "concept": "Resource URL",
+       "completeness": 1.0
+      },
+      {
+       "concept": "ReviewedBy",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Rights",
+       "completeness": 0.9995919130774855
+      },
+      {
+       "concept": "RightsHolder",
+       "completeness": 0.9985121830949992
+      },
+      {
+       "concept": "SourceOf",
+       "completeness": 0.0
+      },
+      {
+       "concept": "SupplementTo",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Technical Information",
+       "completeness": 0.0
+      }
+     ]
+    },
+    {
+     "code": "FAIR_Contacts",
+     "title": "FAIR Contacts",
+     "dialect": "DataCite",
+     "average": 0.3995128462362483,
+     "exist": 4,
+     "complete": 0,
+     "records": 117622,
+     "items": [
+      {
+       "concept": "Distribution Contact Identifier",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Distribution Contact Identifier Scheme",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Distribution Contact Identifier Scheme URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Contact Identifier",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Contact Identifier Scheme",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Contact Identifier Scheme URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Rights Holder Identifier",
+       "completeness": 0.9985121830949992
+      },
+      {
+       "concept": "Rights Holder Identifier Scheme",
+       "completeness": 0.9985121830949992
+      },
+      {
+       "concept": "Rights Holder Identifier Scheme URI",
+       "completeness": 0.9985121830949992
+      },
+      {
+       "concept": "Rights URI",
+       "completeness": 0.9995919130774855
+      }
+     ]
+    },
+    {
+     "code": "FAIR_Identifiers",
+     "title": "FAIR Identifiers",
+     "dialect": "DataCite",
+     "average": 0.4947491871324148,
+     "exist": 14,
+     "complete": 0,
+     "records": 117622,
+     "items": [
+      {
+       "concept": "Award Number",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Award URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Date Submitted",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Funder Identifier",
+       "completeness": 8.501810885718658e-06
+      },
+      {
+       "concept": "Funder Identifier Type",
+       "completeness": 8.501810885718658e-06
+      },
+      {
+       "concept": "Keyword Value URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Keyword Vocabulary URI",
+       "completeness": 8.501810885718658e-06
+      },
+      {
+       "concept": "Publisher Identifier",
+       "completeness": 0.9853853870874496
+      },
+      {
+       "concept": "Publisher Identifier Scheme URI",
+       "completeness": 0.9853853870874496
+      },
+      {
+       "concept": "Publisher Identifier Type",
+       "completeness": 0.9853853870874496
+      },
+      {
+       "concept": "Resource Author Affiliation Identifier",
+       "completeness": 0.9030793559028073
+      },
+      {
+       "concept": "Resource Author Affiliation Identifier Scheme URI",
+       "completeness": 0.901276971995035
+      },
+      {
+       "concept": "Resource Author Affiliation Identifier Type",
+       "completeness": 0.9030793559028073
+      },
+      {
+       "concept": "Resource Author Identifier",
+       "completeness": 0.93339681352128
+      },
+      {
+       "concept": "Resource Author Identifier Type",
+       "completeness": 0.93339681352128
+      },
+      {
+       "concept": "Resource Author Type",
+       "completeness": 0.9454693849790006
+      },
+      {
+       "concept": "Resource Identifier Type",
+       "completeness": 8.501810885718658e-06
+      },
+      {
+       "concept": "Resource Type",
+       "completeness": 0.4295965040553638
+      }
+     ]
+    },
+    {
+     "code": "FAIR_Text",
+     "title": "FAIR Text",
+     "dialect": "DataCite",
+     "average": 0.4254589560909807,
+     "exist": 13,
+     "complete": 5,
+     "records": 117622,
+     "items": [
+      {
+       "concept": "Abstract",
+       "completeness": 0.014546598425464624
+      },
+      {
+       "concept": "Award Title",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Date Created",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Keyword",
+       "completeness": 8.501810885718658e-06
+      },
+      {
+       "concept": "Keyword Vocabulary",
+       "completeness": 8.501810885718658e-06
+      },
+      {
+       "concept": "Project Funder",
+       "completeness": 8.501810885718658e-06
+      },
+      {
+       "concept": "Resource Author",
+       "completeness": 1.0
+      },
+      {
+       "concept": "Resource Author Affiliation",
+       "completeness": 0.9074747921307238
+      },
+      {
+       "concept": "Resource Identifier",
+       "completeness": 1.0000085018108857
+      },
+      {
+       "concept": "Resource Publication Date",
+       "completeness": 1.0
+      },
+      {
+       "concept": "Resource Publisher",
+       "completeness": 1.0
+      },
+      {
+       "concept": "Resource Title",
+       "completeness": 1.0
+      },
+      {
+       "concept": "Resource Type General",
+       "completeness": 0.431101324582136
+      },
+      {
+       "concept": "Spatial Extent",
+       "completeness": 0.014189522368264441
+      },
+      {
+       "concept": "Temporal Extent",
+       "completeness": 0.014546598425464624
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "dateTime": "2025-10-06T17",
+   "source": "iris.iris_useCaseReport__2025-10-06T17.json",
+   "repository": {
+    "id": "iris.iris",
+    "name": "iris.iris",
+    "dateTime": "2025-10-06T17",
+    "records": 117634,
+    "totalInRepository": null,
+    "sampling": null,
+    "query": null,
+    "translatedFrom": [
+     "iris.iris_FAIR_Connections_2025-10-06T17.csv",
+     "iris.iris_FAIR_Contacts_2025-10-06T17.csv",
+     "iris.iris_FAIR_Identifiers_2025-10-06T17.csv",
+     "iris.iris_FAIR_Text_2025-10-06T17.csv"
+    ],
+    "fairTotal": 0.36812737033482845,
+    "summaryFrom": "iris.iris_Total_2025-10-06T17.csv"
+   },
+   "useCases": [
+    {
+     "code": "FAIR_Connections",
+     "title": "FAIR Connections",
+     "dialect": "DataCite",
+     "average": 0.1667474256309117,
+     "exist": 9,
+     "complete": 1,
+     "records": 117634,
+     "items": [
+      {
+       "concept": "CitedBy",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Date Available",
+       "completeness": 0.007030280361120084
+      },
+      {
+       "concept": "DescribedBy",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Distribution Contact",
+       "completeness": 0.0
+      },
+      {
+       "concept": "DocumentedBy",
+       "completeness": 0.0004845537854701872
+      },
+      {
+       "concept": "HasMetadata",
+       "completeness": 8.500943604740126e-06
+      },
+      {
+       "concept": "Methods",
+       "completeness": 0.0
+      },
+      {
+       "concept": "ReferencedBy",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Contact",
+       "completeness": 0.0005270585034938878
+      },
+      {
+       "concept": "Resource Format",
+       "completeness": 0.014647125830967238
+      },
+      {
+       "concept": "Resource Size",
+       "completeness": 0.007752860567522995
+      },
+      {
+       "concept": "Resource URL",
+       "completeness": 1.0
+      },
+      {
+       "concept": "ReviewedBy",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Rights",
+       "completeness": 0.9856249043643844
+      },
+      {
+       "concept": "RightsHolder",
+       "completeness": 0.985378376999847
+      },
+      {
+       "concept": "SourceOf",
+       "completeness": 0.0
+      },
+      {
+       "concept": "SupplementTo",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Technical Information",
+       "completeness": 0.0
+      }
+     ]
+    },
+    {
+     "code": "FAIR_Contacts",
+     "title": "FAIR Contacts",
+     "dialect": "DataCite",
+     "average": 0.3941760035363925,
+     "exist": 4,
+     "complete": 0,
+     "records": 117634,
+     "items": [
+      {
+       "concept": "Distribution Contact Identifier",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Distribution Contact Identifier Scheme",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Distribution Contact Identifier Scheme URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Contact Identifier",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Contact Identifier Scheme",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Contact Identifier Scheme URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Rights Holder Identifier",
+       "completeness": 0.985378376999847
+      },
+      {
+       "concept": "Rights Holder Identifier Scheme",
+       "completeness": 0.985378376999847
+      },
+      {
+       "concept": "Rights Holder Identifier Scheme URI",
+       "completeness": 0.985378376999847
+      },
+      {
+       "concept": "Rights URI",
+       "completeness": 0.9856249043643844
+      }
+     ]
+    },
+    {
+     "code": "FAIR_Identifiers",
+     "title": "FAIR Identifiers",
+     "dialect": "DataCite",
+     "average": 0.5058354255100093,
+     "exist": 15,
+     "complete": 0,
+     "records": 117634,
+     "items": [
+      {
+       "concept": "Award Number",
+       "completeness": 8.500943604740126e-06
+      },
+      {
+       "concept": "Award URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Date Submitted",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Funder Identifier",
+       "completeness": 1.7001887209480252e-05
+      },
+      {
+       "concept": "Funder Identifier Type",
+       "completeness": 1.7001887209480252e-05
+      },
+      {
+       "concept": "Keyword Value URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Keyword Vocabulary URI",
+       "completeness": 1.7001887209480252e-05
+      },
+      {
+       "concept": "Publisher Identifier",
+       "completeness": 0.9990563952598739
+      },
+      {
+       "concept": "Publisher Identifier Scheme URI",
+       "completeness": 0.9990563952598739
+      },
+      {
+       "concept": "Publisher Identifier Type",
+       "completeness": 0.9990563952598739
+      },
+      {
+       "concept": "Resource Author Affiliation Identifier",
+       "completeness": 0.930717309621368
+      },
+      {
+       "concept": "Resource Author Affiliation Identifier Scheme URI",
+       "completeness": 0.9303262662155499
+      },
+      {
+       "concept": "Resource Author Affiliation Identifier Type",
+       "completeness": 0.930717309621368
+      },
+      {
+       "concept": "Resource Author Identifier",
+       "completeness": 0.9585238961524729
+      },
+      {
+       "concept": "Resource Author Identifier Type",
+       "completeness": 0.9585238961524729
+      },
+      {
+       "concept": "Resource Author Type",
+       "completeness": 0.9693370964177024
+      },
+      {
+       "concept": "Resource Identifier Type",
+       "completeness": 8.500943604740126e-06
+      },
+      {
+       "concept": "Resource Type",
+       "completeness": 0.42965469167077547
+      }
+     ]
+    },
+    {
+     "code": "FAIR_Text",
+     "title": "FAIR Text",
+     "dialect": "DataCite",
+     "average": 0.4271678823016022,
+     "exist": 13,
+     "complete": 5,
+     "records": 117634,
+     "items": [
+      {
+       "concept": "Abstract",
+       "completeness": 0.014647125830967238
+      },
+      {
+       "concept": "Award Title",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Date Created",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Keyword",
+       "completeness": 1.7001887209480252e-05
+      },
+      {
+       "concept": "Keyword Vocabulary",
+       "completeness": 1.7001887209480252e-05
+      },
+      {
+       "concept": "Project Funder",
+       "completeness": 1.7001887209480252e-05
+      },
+      {
+       "concept": "Resource Author",
+       "completeness": 1.0
+      },
+      {
+       "concept": "Resource Author Affiliation",
+       "completeness": 0.9327405341992961
+      },
+      {
+       "concept": "Resource Identifier",
+       "completeness": 1.0000085009436048
+      },
+      {
+       "concept": "Resource Publication Date",
+       "completeness": 1.0
+      },
+      {
+       "concept": "Resource Publisher",
+       "completeness": 1.0
+      },
+      {
+       "concept": "Resource Title",
+       "completeness": 1.0
+      },
+      {
+       "concept": "Resource Type General",
+       "completeness": 0.43115935868881444
+      },
+      {
+       "concept": "Spatial Extent",
+       "completeness": 0.014273084312358672
+      },
+      {
+       "concept": "Temporal Extent",
+       "completeness": 0.014647125830967238
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "dateTime": "2025-12-31T14",
+   "source": "iris.iris_useCaseReport__2025-12-31T14.json",
+   "repository": {
+    "id": "iris.iris",
+    "name": "iris.iris",
+    "dateTime": "2025-12-31T14",
+    "records": 10000,
+    "totalInRepository": null,
+    "sampling": null,
+    "query": null,
+    "translatedFrom": [
+     "iris.iris_FAIR_Connections_2025-12-31T14.csv",
+     "iris.iris_FAIR_Contacts_2025-12-31T14.csv",
+     "iris.iris_FAIR_Identifiers_2025-12-31T14.csv",
+     "iris.iris_FAIR_Text_2025-12-31T14.csv"
+    ],
+    "fairTotal": 0.36060000000000003,
+    "summaryFrom": "iris.iris_Total_2025-12-31T14.csv"
+   },
+   "useCases": [
+    {
+     "code": "FAIR_Connections",
+     "title": "FAIR Connections",
+     "dialect": "DataCite",
+     "average": 0.16667777777777779,
+     "exist": 6,
+     "complete": 1,
+     "records": 10000,
+     "items": [
+      {
+       "concept": "CitedBy",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Date Available",
+       "completeness": 0.0007
+      },
+      {
+       "concept": "DescribedBy",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Distribution Contact",
+       "completeness": 0.0
+      },
+      {
+       "concept": "DocumentedBy",
+       "completeness": 0.0
+      },
+      {
+       "concept": "HasMetadata",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Methods",
+       "completeness": 0.0
+      },
+      {
+       "concept": "ReferencedBy",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Contact",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Format",
+       "completeness": 0.0011
+      },
+      {
+       "concept": "Resource Size",
+       "completeness": 0.0006
+      },
+      {
+       "concept": "Resource URL",
+       "completeness": 1.0
+      },
+      {
+       "concept": "ReviewedBy",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Rights",
+       "completeness": 0.9989
+      },
+      {
+       "concept": "RightsHolder",
+       "completeness": 0.9989
+      },
+      {
+       "concept": "SourceOf",
+       "completeness": 0.0
+      },
+      {
+       "concept": "SupplementTo",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Technical Information",
+       "completeness": 0.0
+      }
+     ]
+    },
+    {
+     "code": "FAIR_Contacts",
+     "title": "FAIR Contacts",
+     "dialect": "DataCite",
+     "average": 0.39956,
+     "exist": 4,
+     "complete": 0,
+     "records": 10000,
+     "items": [
+      {
+       "concept": "Distribution Contact Identifier",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Distribution Contact Identifier Scheme",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Distribution Contact Identifier Scheme URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Contact Identifier",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Contact Identifier Scheme",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Contact Identifier Scheme URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Rights Holder Identifier",
+       "completeness": 0.9989
+      },
+      {
+       "concept": "Rights Holder Identifier Scheme",
+       "completeness": 0.9989
+      },
+      {
+       "concept": "Rights Holder Identifier Scheme URI",
+       "completeness": 0.9989
+      },
+      {
+       "concept": "Rights URI",
+       "completeness": 0.9989
+      }
+     ]
+    },
+    {
+     "code": "FAIR_Identifiers",
+     "title": "FAIR Identifiers",
+     "dialect": "DataCite",
+     "average": 0.49983333333333335,
+     "exist": 10,
+     "complete": 1,
+     "records": 10000,
+     "items": [
+      {
+       "concept": "Award Number",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Award URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Date Submitted",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Funder Identifier",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Funder Identifier Type",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Keyword Value URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Keyword Vocabulary URI",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Publisher Identifier",
+       "completeness": 0.9999
+      },
+      {
+       "concept": "Publisher Identifier Scheme URI",
+       "completeness": 0.9999
+      },
+      {
+       "concept": "Publisher Identifier Type",
+       "completeness": 0.9999
+      },
+      {
+       "concept": "Resource Author Affiliation Identifier",
+       "completeness": 0.999
+      },
+      {
+       "concept": "Resource Author Affiliation Identifier Scheme URI",
+       "completeness": 0.999
+      },
+      {
+       "concept": "Resource Author Affiliation Identifier Type",
+       "completeness": 0.999
+      },
+      {
+       "concept": "Resource Author Identifier",
+       "completeness": 0.9996
+      },
+      {
+       "concept": "Resource Author Identifier Type",
+       "completeness": 0.9996
+      },
+      {
+       "concept": "Resource Author Type",
+       "completeness": 1.0
+      },
+      {
+       "concept": "Resource Identifier Type",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Type",
+       "completeness": 0.0011
+      }
+     ]
+    },
+    {
+     "code": "FAIR_Text",
+     "title": "FAIR Text",
+     "dialect": "DataCite",
+     "average": 0.40025333333333335,
+     "exist": 10,
+     "complete": 5,
+     "records": 10000,
+     "items": [
+      {
+       "concept": "Abstract",
+       "completeness": 0.0011
+      },
+      {
+       "concept": "Award Title",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Date Created",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Keyword",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Keyword Vocabulary",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Project Funder",
+       "completeness": 0.0
+      },
+      {
+       "concept": "Resource Author",
+       "completeness": 1.0
+      },
+      {
+       "concept": "Resource Author Affiliation",
+       "completeness": 0.9993
+      },
+      {
+       "concept": "Resource Identifier",
+       "completeness": 1.0
+      },
+      {
+       "concept": "Resource Publication Date",
+       "completeness": 1.0
+      },
+      {
+       "concept": "Resource Publisher",
+       "completeness": 1.0
+      },
+      {
+       "concept": "Resource Title",
+       "completeness": 1.0
+      },
+      {
+       "concept": "Resource Type General",
+       "completeness": 0.0012
+      },
+      {
+       "concept": "Spatial Extent",
+       "completeness": 0.0011
+      },
+      {
+       "concept": "Temporal Extent",
+       "completeness": 0.0011
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

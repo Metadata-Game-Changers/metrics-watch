@@ -73,6 +73,13 @@ python3 scoreRepository.py --config config.json
 python3 makeTrendPage.py
 ```
 
+## What does it look like in practice?
+
+[`example/`](example/) holds a real history file from the IRIS seismology
+repository, captured during an active 2025 re-curation project — FAIR total
+climbing from 11% to 37% run by run.
+[Open it in the Metrics Viewer ↗](https://metadata-game-changers.github.io/recuration-watch/metricsViewer.html?src=https://raw.githubusercontent.com/Metadata-Game-Changers/metrics-watch/main/example/iris.iris_useCaseHistory.json)
+
 ## Updating your fork
 
 Improvements to the scorer, the trend page, and the use-case catalog land in
