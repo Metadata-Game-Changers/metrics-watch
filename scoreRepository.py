@@ -305,13 +305,16 @@ def query_label(query, max_len=80):
     return label[:max_len].rstrip('_')
 
 
-def series_label(args):
-    """Filename label for this run's filters: resource type and/or query."""
+def series_label(target):
+    """Filename label for a target's filters — an explicit "label" wins, else it is
+    derived from the resource type and/or query. Distinct labels = distinct series."""
+    if target.get('label'):
+        return re.sub(r'_+', '_', safe_id(target['label'])).strip('_')
     parts = []
-    if args.resource_type:
-        parts.append(f'Resource-type-id_{safe_id(args.resource_type)}')
-    if args.query:
-        parts.append(query_label(args.query))
+    if target['resource_type']:
+        parts.append(f"Resource-type-id_{safe_id(target['resource_type'])}")
+    if target['query']:
+        parts.append(query_label(target['query']))
     return '_'.join(p for p in parts if p)
 
 
@@ -340,21 +343,23 @@ def build_history(dest, stem, repo_id, label):
     return target
 
 
-def score_one(client_id, spirals, args, out_dir, stamp):
-    print(f'  {client_id}: fetching…', flush=True)
+def score_one(target, spirals, out_dir, stamp):
+    client_id = target['client']
+    tag = f"{client_id}{' · ' + target['label'] if target.get('label') else (' · query' if target['query'] else '')}"
+    print(f'  {tag}: fetching…', flush=True)
     records, matching, used_random = fetch_records(
-        client_id, args.max, args.random, args.resource_type, args.query)
+        client_id, target['max'], target['random'], target['resource_type'], target['query'])
     if not records:
-        print(f'  {client_id}: no matching records — skipped', flush=True)
+        print(f'  {tag}: no matching records — skipped', flush=True)
         return None
-    print(f'  {client_id}: scoring {len(records)} records '
+    print(f'  {tag}: scoring {len(records)} records '
           f'({matching if matching is not None else "?"} matching)…', flush=True)
     by_code = score(records, spirals)
     meta = fetch_client_meta(client_id)
     report = build_report(client_id, meta['name'], by_code, spirals,
-                          records, matching, used_random, args.query, stamp)
+                          records, matching, used_random, target['query'], stamp)
     safe = safe_id(client_id)
-    label = series_label(args)
+    label = series_label(target)
     stem = f'{safe}_{label}' if label else safe
     dest = out_dir / safe
     dest.mkdir(parents=True, exist_ok=True)
@@ -362,8 +367,73 @@ def score_one(client_id, spirals, args, out_dir, stamp):
     path.write_text(json.dumps(report, indent=2) + '\n', encoding='utf-8')
     build_history(dest, stem, client_id, label)
     fair = report['repository']['fairTotal']
-    print(f'  {client_id}: FAIR total {fair * 100:.0f}% → {path}', flush=True)
+    print(f'  {tag}: FAIR total {fair * 100:.0f}% → {path}', flush=True)
     return path
+
+
+def schedule_due(schedule, today=None):
+    """Is a set's schedule due today? daily: every day; weekly: Mondays;
+    monthly: the 1st. The workflow cron fires daily so these checks line up."""
+    today = today or datetime.now()
+    return {'daily': True,
+            'weekly': today.weekday() == 0,
+            'monthly': today.day == 1}.get(schedule, today.day == 1)
+
+
+def make_target(entry, defaults):
+    """One scoring target from a config entry (a bare client-id string, or an object
+    overriding query / resourceType / label / max / random) merged over set defaults."""
+    if isinstance(entry, str):
+        return {**defaults, 'client': entry}
+    return {'client': entry.get('client') or entry.get('id') or '',
+            'max': entry.get('max', defaults['max']),
+            'random': defaults['random'] if entry.get('random') is None else bool(entry['random']),
+            'resource_type': entry.get('resourceType', defaults['resource_type']),
+            'query': entry.get('query', defaults['query']),
+            'label': entry.get('label', '')}
+
+
+def build_sets(args, cfg):
+    """Resolve CLI + config into scoring sets: {name, schedule, targets}. A config with
+    "sets" gets one per entry (each with its own schedule and defaults); a flat config
+    or bare CLI flags become a single set."""
+    # explicit CLI flags beat config values; otherwise config (set, then flat) wins
+    cli = {'max': '--max' in sys.argv, 'random': '--sequential' in sys.argv,
+           'resource_type': bool(args.resource_type), 'query': bool(args.query)}
+
+    def defaults_from(over, base):
+        return {'max': base['max'] if cli['max'] else over.get('max', base['max']),
+                'random': base['random'] if (cli['random'] or over.get('random') is None) else bool(over['random']),
+                'resource_type': base['resource_type'] if cli['resource_type'] else over.get('resourceType', base['resource_type']),
+                'query': base['query'] if cli['query'] else over.get('query', base['query']),
+                'label': ''}
+
+    base = {'max': args.max, 'random': args.random,
+            'resource_type': args.resource_type, 'query': args.query}
+    key = lambda t: (t['client'], t['resource_type'], t['query'], t['label'])
+
+    def targets_for(over, clients, consortium):
+        d = defaults_from(over, base)
+        targets = [make_target(e, d) for e in clients]
+        if consortium:
+            seen = {key(t) for t in targets}
+            targets += [t for r in consortium_repositories(consortium)
+                        if key(t := {**d, 'client': r}) not in seen]
+        out, seen = [], set()
+        for t in targets:
+            if t['client'] and key(t) not in seen:
+                seen.add(key(t)); out.append(t)
+        return out
+
+    if cfg.get('sets'):
+        return [{'name': cs.get('name') or f'set{i + 1}',
+                 'schedule': (cs.get('schedule') or 'monthly').lower(),
+                 'targets': targets_for(cs, cs.get('repositories', []), cs.get('consortium') or '')}
+                for i, cs in enumerate(cfg['sets'])]
+    clients = args.client or cfg.get('repositories', [])
+    consortium = args.consortium or cfg.get('consortium') or ''
+    return [{'name': 'default', 'schedule': (cfg.get('schedule') or 'monthly').lower(),
+             'targets': targets_for(cfg, clients, consortium)}]
 
 
 def main():
@@ -379,24 +449,24 @@ def main():
     ap.add_argument('--query', default='', help='DataCite query filter (e.g. IOOS)')
     ap.add_argument('--spirals', default='FAIR_spirals.json', help='use-case catalog (default FAIR_spirals.json)')
     ap.add_argument('--out', default='reports', help='output directory (default reports/)')
+    ap.add_argument('--due', action='store_true',
+                    help='score only the sets whose schedule is due today (the scheduled '
+                         'workflow passes this; without it every set runs)')
     args = ap.parse_args()
 
-    if args.config:
-        cfg = json.loads(Path(args.config).read_text(encoding='utf-8'))
-        args.client = args.client or cfg.get('repositories', [])
-        args.consortium = args.consortium or cfg.get('consortium', '') or ''
-        if '--max' not in sys.argv:
-            args.max = cfg.get('max', args.max)
-        if cfg.get('random') is False:
-            args.random = False
-        args.resource_type = args.resource_type or cfg.get('resourceType', '') or ''
-        args.query = args.query or cfg.get('query', '') or ''
+    cfg = json.loads(Path(args.config).read_text(encoding='utf-8')) if args.config else {}
+    sets = build_sets(args, cfg)
+    if not any(st['targets'] for st in sets):
+        ap.error('nothing to score — give --client, --consortium, or a --config with repositories/sets')
 
-    targets = list(dict.fromkeys(args.client))   # keep order, drop duplicates
-    if args.consortium:
-        targets += [r for r in consortium_repositories(args.consortium) if r not in targets]
-    if not targets:
-        ap.error('nothing to score — give --client, --consortium, or a --config with repositories')
+    if args.due:
+        skipped = [st['name'] for st in sets if not schedule_due(st['schedule'])]
+        sets = [st for st in sets if schedule_due(st['schedule'])]
+        if skipped:
+            print(f'Not due today: {", ".join(skipped)}', flush=True)
+        if not sets:
+            print('Nothing due today — done.', flush=True)
+            return
 
     if subprocess.run(['jq', '--version'], capture_output=True).returncode != 0:
         sys.exit('jq is required but not on PATH (https://jqlang.org/download/)')
@@ -404,17 +474,18 @@ def main():
     spirals = json.loads(Path(args.spirals).read_text(encoding='utf-8'))
     out_dir = Path(args.out)
     stamp = datetime.now().strftime('%Y-%m-%dT%H')   # to the hour, matches the web tool
-    print(f'Scoring {len(targets)} repositor{"y" if len(targets) == 1 else "ies"} '
-          f'({args.max} records each, {"random" if args.random else "sequential"} sample) — {stamp}', flush=True)
 
     written, failed = 0, []
-    for client_id in targets:
-        try:
-            if score_one(client_id, spirals, args, out_dir, stamp):
-                written += 1
-        except Exception as e:
-            failed.append(client_id)
-            print(f'  {client_id}: FAILED — {e}', flush=True)
+    for st in sets:
+        n = len(st['targets'])
+        print(f"Set {st['name']} ({st['schedule']}): {n} target{'' if n == 1 else 's'} — {stamp}", flush=True)
+        for target in st['targets']:
+            try:
+                if score_one(target, spirals, out_dir, stamp):
+                    written += 1
+            except Exception as e:
+                failed.append(target['client'])
+                print(f"  {target['client']}: FAILED — {e}", flush=True)
     print(f'Done — {written} report{"" if written == 1 else "s"} written'
           + (f', {len(failed)} failed: {", ".join(failed)}' if failed else ''), flush=True)
     sys.exit(1 if failed and not written else 0)

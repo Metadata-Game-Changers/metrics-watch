@@ -19,29 +19,77 @@ downloads, and the MGC score archive all speak one format.
 1. **Fork** this repository (button at the top right).
 2. On your fork, open the **Actions** tab and click **"I understand my workflows,
    go ahead and enable them"** (GitHub disables workflows on forks until you opt in).
-3. Edit [`config.json`](config.json): list your repository ids (the DataCite
+3. Still in **Actions**, click **Score metadata** in the left sidebar — if a banner
+   says the scheduled workflow is disabled, click **Enable workflow** (GitHub also
+   switches off *schedules* in forks until you opt in).
+4. Edit [`config.json`](config.json): list your repository ids (the DataCite
    *client id*, e.g. `sjyq.oozvia` — find yours by searching your repository name
    in any of the web tools), or set `"consortium"` to a DataCite consortium id to
    score every member repository.
-4. Optionally, run it now: **Actions → Score metadata → Run workflow**.
-   Otherwise the schedule (first of each month, 06:00 UTC) takes it from there.
-5. Optionally, publish the trend page: **Settings → Pages → Deploy from a
-   branch → `main` / `docs`**. Your page appears at
-   `https://<you>.github.io/metrics-watch/`.
+5. Optionally, run it now: **Actions → Score metadata → Run workflow**.
+   Otherwise the schedule takes it from there (monthly by default — see below).
+6. Optionally, publish the trend page: **Settings → Pages → Deploy from a
+   branch**, then choose branch `main` and folder **`/docs`** and Save. The page
+   appears at `https://<you>.github.io/<fork-name>/` — with the `/docs` folder
+   selected it is served at the site root, no `/docs` suffix needed. (If you pick
+   `/ (root)` instead, the page lives at `…/<fork-name>/docs/`.)
 
 Each run commits its results, so the repository accumulates a public, versioned
 history of your metadata's improvement.
 
 ### config.json
 
+The simple form scores everything on one schedule:
+
 | key | meaning |
 |---|---|
 | `repositories` | list of DataCite client ids to score |
 | `consortium` | a DataCite consortium id — adds every member repository |
+| `schedule` | `daily`, `weekly` (Mondays), or `monthly` (the 1st — the default) |
 | `max` | records sampled per repository (default 500) |
 | `random` | `true` for a random sample; `false` for most-recent records |
 | `resourceType` | optional DataCite resource-type-id filter (e.g. `dataset`) |
 | `query` | optional DataCite query filter — filtered runs form their own series |
+
+### Sets: different repositories, queries, and schedules in one fork
+
+For anything beyond one uniform watch, replace the flat keys with `"sets"` —
+each set has its own schedule and defaults, and each repository entry can be a
+plain client id or an object with its own filters:
+
+```json
+{
+  "sets": [
+    { "name": "everything", "schedule": "monthly", "max": 500,
+      "repositories": ["tdl.tamu", "tdl.utl"] },
+    { "name": "recuration-project", "schedule": "weekly", "max": 1000,
+      "repositories": [
+        "iris.iris",
+        { "client": "iris.iris", "query": "types.resourceTypeGeneral:Dataset", "label": "datasets" }
+      ] }
+  ]
+}
+```
+
+- **Different queries against the same repository are monitored separately**:
+  each query (or explicit `label`) gets its own report files, its own history,
+  its own trend-page section, and its own viewer link — series never mix.
+- **Schedules are per set**: an active re-curation project can run `daily` or
+  `weekly` while the rest of your repositories stay `monthly`. (Under the hood
+  the Action wakes daily and scores only the sets due that day; the manual
+  **Run workflow** button always scores every set.)
+- Set-level `max` / `random` / `resourceType` / `query` are defaults for that
+  set's repositories; entry-level values override them.
+
+### Watching many things — or making more repositories like this one
+
+One fork covers many repositories, many query series, and many schedules via
+sets, and that is usually all you need. GitHub allows only **one fork per
+account**, so if you want fully independent copies (say, one per project or
+department), use **Use this template** on this repository's front page instead
+of forking — template copies are unlimited and independent. The tradeoff:
+copies have no **Sync fork** button, so they don't receive upstream
+improvements (set them up once and let them run).
 
 ## What a run produces
 
@@ -91,6 +139,8 @@ conflict-free.
 
 ## Good to know
 
+- **The Action wakes daily but only commits when a set is due** — quiet days
+  produce a short run with "Nothing due today" and no commit.
 - **Scheduled workflows pause after ~60 days without repository activity.**
   Each run's commit counts as activity, so a healthy setup keeps itself alive —
   but if runs start failing silently, GitHub will eventually email you to

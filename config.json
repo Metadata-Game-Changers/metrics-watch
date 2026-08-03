@@ -1,6 +1,9 @@
 {
-  "repositories": ["sjyq.oozvia"],
+  "repositories": [
+    "sjyq.oozvia"
+  ],
   "consortium": "",
+  "schedule": "monthly",
   "max": 500,
   "random": true,
   "resourceType": "",
