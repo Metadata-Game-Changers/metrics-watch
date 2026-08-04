@@ -436,6 +436,27 @@ def build_sets(args, cfg):
              'targets': targets_for(cfg, clients, consortium)}]
 
 
+def write_manifest(sets, out_dir):
+    """docs/sets.json — which series belong to which set, for the suite's Set Viewer.
+    History paths are repo-root-relative so the viewer can resolve them against the
+    manifest's own URL. Regenerated every run from the full config (all sets, due or
+    not); only series whose history file exists are listed."""
+    manifest = {'generated': datetime.now().strftime('%Y-%m-%dT%H'), 'sets': []}
+    for st in sets:
+        series = []
+        for t in st['targets']:
+            safe = safe_id(t['client'])
+            label = series_label(t)
+            stem = f'{safe}_{label}' if label else safe
+            path = out_dir / safe / f'{stem}_useCaseHistory.json'
+            if path.exists():
+                series.append({'client': t['client'], 'label': label, 'history': path.as_posix()})
+        manifest['sets'].append({'name': st['name'], 'schedule': st['schedule'], 'series': series})
+    Path('docs').mkdir(exist_ok=True)
+    Path('docs/sets.json').write_text(json.dumps(manifest, indent=1) + '\n', encoding='utf-8')
+    print(f"docs/sets.json: {len(manifest['sets'])} set{'' if len(manifest['sets']) == 1 else 's'}", flush=True)
+
+
 def main():
     ap = argparse.ArgumentParser(description='Score DataCite repositories against the MGC use cases.')
     ap.add_argument('--client', action='append', default=[],
@@ -456,6 +477,7 @@ def main():
 
     cfg = json.loads(Path(args.config).read_text(encoding='utf-8')) if args.config else {}
     sets = build_sets(args, cfg)
+    all_sets = sets   # pre-due-filter: the manifest always reflects the whole config
     if not any(st['targets'] for st in sets):
         ap.error('nothing to score — give --client, --consortium, or a --config with repositories/sets')
 
@@ -486,6 +508,8 @@ def main():
             except Exception as e:
                 failed.append(target['client'])
                 print(f"  {target['client']}: FAILED — {e}", flush=True)
+    if args.config and args.out == 'reports':
+        write_manifest(all_sets, out_dir)   # config-driven runs keep the Set Viewer manifest fresh
     print(f'Done — {written} report{"" if written == 1 else "s"} written'
           + (f', {len(failed)} failed: {", ".join(failed)}' if failed else ''), flush=True)
     sys.exit(1 if failed and not written else 0)

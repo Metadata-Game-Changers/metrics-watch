@@ -60,8 +60,7 @@ plain client id or an object with its own filters:
 ```json
 {
   "sets": [
-    { "name": "everything", "schedule": "monthly", "max": 500,
-      "repositories": ["tdl.tamu", "tdl.utl"] },
+    { "name": "texas", "schedule": "monthly", "consortium": "tdlco", "max": 5000 },
     { "name": "recuration-project", "schedule": "weekly", "max": 1000,
       "repositories": [
         "iris.iris",
@@ -78,8 +77,13 @@ plain client id or an object with its own filters:
   `weekly` while the rest of your repositories stay `monthly`. (Under the hood
   the Action wakes daily and scores only the sets due that day; the manual
   **Run workflow** button always scores every set.)
+- **A set can be a whole consortium**: give it `"consortium"` instead of (or as
+  well as) `repositories`, and every member repository joins the set.
 - Set-level `max` / `random` / `resourceType` / `query` are defaults for that
   set's repositories; entry-level values override them.
+- Every run publishes **`docs/sets.json`**, and the trend page links each set
+  into the suite's [Set Viewer](https://metadata-game-changers.github.io/recuration-watch/setViewer.html)
+  — a radar grid of all members for one run, bright spots first.
 
 ### Watching many things — or making more repositories like this one
 

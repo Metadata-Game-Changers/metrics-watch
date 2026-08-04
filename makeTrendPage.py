@@ -19,6 +19,7 @@ REPORTS = Path('reports')
 OUT = Path('docs/index.html')
 
 VIEWER = 'https://metadata-game-changers.github.io/recuration-watch/metricsViewer.html'
+SET_VIEWER = 'https://metadata-game-changers.github.io/recuration-watch/setViewer.html'
 
 
 def repo_slug_branch():
@@ -142,6 +143,20 @@ Every run scores the records <b>as they are that day</b> — a rising line is re
     if not histories:
         parts.append('<p class="sub">No reports yet — the first scheduled run will populate this page.</p>')
     slug, branch = repo_slug_branch()
+    # sets line: every set links into the suite's Set Viewer (whole-set radar grid, one run)
+    manifest = Path('docs/sets.json')
+    if slug and manifest.exists():
+        try:
+            m = json.loads(manifest.read_text(encoding='utf-8'))
+        except Exception:
+            m = None
+        with_series = [st for st in (m.get('sets', []) if m else []) if st.get('series')]
+        if with_series:
+            raw = f'https://raw.githubusercontent.com/{slug}/{branch}/docs/sets.json'
+            links = ' · '.join(
+                f'<a href="{SET_VIEWER}?src={escape(raw)}&amp;set={escape(st["name"])}" target="_blank" '
+                f'rel="noopener">{escape(st["name"])} ({len(st["series"])})</a>' for st in with_series)
+            parts.append(f'<p class="sub"><b>Sets</b> — compare all members side by side in the Set Viewer: {links}</p>')
     for client_dir, hpath, h in histories:
         snaps = h['snapshots']
         repo = h.get('repository') or {}
