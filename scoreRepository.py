@@ -371,6 +371,35 @@ def score_one(target, spirals, out_dir, stamp):
     return path
 
 
+def strip_json_comments(text):
+    """Allow // line comments and /* block */ comments in config.json — a character
+    scan that respects strings, so a // inside a query value is never touched.
+    (The files this tool WRITES stay strictly comment-free JSON.)"""
+    out, i, n, in_str = [], 0, len(text), False
+    while i < n:
+        ch = text[i]
+        if in_str:
+            out.append(ch)
+            if ch == '\\' and i + 1 < n:
+                out.append(text[i + 1]); i += 2; continue
+            if ch == '"':
+                in_str = False
+            i += 1
+        elif ch == '"':
+            in_str = True; out.append(ch); i += 1
+        elif ch == '/' and i + 1 < n and text[i + 1] == '/':
+            while i < n and text[i] != '\n':
+                i += 1
+        elif ch == '/' and i + 1 < n and text[i + 1] == '*':
+            i += 2
+            while i + 1 < n and not (text[i] == '*' and text[i + 1] == '/'):
+                i += 1
+            i += 2
+        else:
+            out.append(ch); i += 1
+    return ''.join(out)
+
+
 def schedule_due(schedule, today=None):
     """Is a set's schedule due today? daily: every day; weekly: Mondays;
     monthly: the 1st. The workflow cron fires daily so these checks line up."""
@@ -475,7 +504,7 @@ def main():
                          'workflow passes this; without it every set runs)')
     args = ap.parse_args()
 
-    cfg = json.loads(Path(args.config).read_text(encoding='utf-8')) if args.config else {}
+    cfg = json.loads(strip_json_comments(Path(args.config).read_text(encoding='utf-8'))) if args.config else {}
     sets = build_sets(args, cfg)
     all_sets = sets   # pre-due-filter: the manifest always reflects the whole config
     if not any(st['targets'] for st in sets):

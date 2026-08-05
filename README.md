@@ -51,6 +51,10 @@ The simple form scores everything on one schedule:
 | `resourceType` | optional DataCite resource-type-id filter (e.g. `dataset`) |
 | `query` | optional DataCite query filter — filtered runs form their own series |
 
+The config may carry `// line` and `/* block */` comments — handy for noting why
+a set exists or parking a repository you'll add later. (Editors may underline
+them since strict JSON has no comments; the scorer accepts them regardless.)
+
 ### Sets: different repositories, queries, and schedules in one fork
 
 For anything beyond one uniform watch, replace the flat keys with `"sets"` —
