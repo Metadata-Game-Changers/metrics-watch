@@ -814,6 +814,14 @@
         "jq_query": ".data[] | select((.attributes.relatedIdentifiers | type == \"array\") and (.attributes.relatedIdentifiers | length > 0) and any((.attributes.relatedIdentifiers // [])[]; type == \"object\" and .relationType == \"IsObsoletedBy\" and has(\"relatedIdentifier\") and .relatedIdentifier != null)) | {id: .id, concept: \"IsObsoletedBy\", count: (([(.attributes.relatedIdentifiers // [])[] | select(type == \"object\" and .relationType == \"IsObsoletedBy\" and has(\"relatedIdentifier\") and .relatedIdentifier != null)]) | length), values: (([(.attributes.relatedIdentifiers // [])[] | select(type == \"object\" and .relationType == \"IsObsoletedBy\" and has(\"relatedIdentifier\") and .relatedIdentifier != null) | .relatedIdentifier]))}"
       },
       {
+        "concept": "RelatedItems Item Type",
+        "jq_query": ".data[] | select((.attributes.relatedItems | type == \"array\") and (.attributes.relatedItems | length > 0) and any((.attributes.relatedItems // [])[]; type == \"object\" and has(\"relatedItemType\") and .relatedItemType != null)) | {id: .id, concept: \"RelatedItems Item Type\", count: (([(.attributes.relatedItems // [])[] | select(type == \"object\" and has(\"relatedItemType\") and .relatedItemType != null)]) | length), values: (([(.attributes.relatedItems // [])[] | select(type == \"object\" and has(\"relatedItemType\") and .relatedItemType != null) | .relatedItemType]))}"
+      },
+      {
+        "concept": "RelatedItems Relation Type",
+        "jq_query": ".data[] | select((.attributes.relatedItems | type == \"array\") and (.attributes.relatedItems | length > 0) and any((.attributes.relatedItems // [])[]; type == \"object\" and has(\"relationType\") and .relationType != null)) | {id: .id, concept: \"RelatedItems Relation Type\", count: (([(.attributes.relatedItems // [])[] | select(type == \"object\" and has(\"relationType\") and .relationType != null)]) | length), values: (([(.attributes.relatedItems // [])[] | select(type == \"object\" and has(\"relationType\") and .relationType != null) | .relationType]))}"
+      },
+      {
         "concept": "IsPartOf",
         "jq_query": ".data[] | select((.attributes.relatedIdentifiers | type == \"array\") and (.attributes.relatedIdentifiers | length > 0) and any((.attributes.relatedIdentifiers // [])[]; type == \"object\" and .relationType == \"IsPartOf\" and has(\"relatedIdentifier\") and .relatedIdentifier != null)) | {id: .id, concept: \"IsPartOf\", count: (([(.attributes.relatedIdentifiers // [])[] | select(type == \"object\" and .relationType == \"IsPartOf\" and has(\"relatedIdentifier\") and .relatedIdentifier != null)]) | length), values: (([(.attributes.relatedIdentifiers // [])[] | select(type == \"object\" and .relationType == \"IsPartOf\" and has(\"relatedIdentifier\") and .relatedIdentifier != null) | .relatedIdentifier]))}"
       },
