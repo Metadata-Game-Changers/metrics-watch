@@ -1,0 +1,1405 @@
+Client,Use_Case,Concept,Records,Current_Matched,Strict_Matched,Current_Completeness,Strict_Completeness,Empty_Values,Total_Values
+ethz.wsl,FAIR_Text,Abstract,200,200,200,1.0,1.0,0,200
+ethz.wsl,FAIR_Text,Date Created,200,102,102,0.51,0.51,0,105
+ethz.wsl,FAIR_Text,Keyword,200,200,200,1.0,1.0,0,1430
+ethz.wsl,FAIR_Text,Keyword Vocabulary,200,0,0,0.0,0.0,0,0
+ethz.wsl,FAIR_Text,Resource Author Affiliation,200,200,200,1.0,1.0,0,919
+ethz.wsl,FAIR_Text,Resource Author,200,200,200,1.0,1.0,0,802
+ethz.wsl,FAIR_Text,Resource Identifier,200,200,200,1.0,1.0,0,437
+ethz.wsl,FAIR_Text,Resource Publication Date,200,200,200,1.0,1.0,0,200
+ethz.wsl,FAIR_Text,Resource Publisher,200,200,200,1.0,1.0,0,200
+ethz.wsl,FAIR_Text,Resource Title,200,200,200,1.0,1.0,0,200
+ethz.wsl,FAIR_Text,Resource Type General,200,200,200,1.0,1.0,0,200
+ethz.wsl,FAIR_Text,Project Funder,200,200,200,1.0,1.0,0,281
+ethz.wsl,FAIR_Text,Award Title,200,0,0,0.0,0.0,0,0
+ethz.wsl,FAIR_Text,Temporal Extent,200,132,132,0.66,0.66,0,132
+ethz.wsl,FAIR_Text,Spatial Extent,200,193,193,0.965,0.965,0,926
+ethz.wsl,FAIR_Identifiers,Date Submitted,200,0,0,0.0,0.0,0,0
+ethz.wsl,FAIR_Identifiers,Keyword Value URI,200,0,0,0.0,0.0,0,0
+ethz.wsl,FAIR_Identifiers,Keyword Vocabulary URI,200,0,0,0.0,0.0,0,0
+ethz.wsl,FAIR_Identifiers,Resource Author Type,200,0,0,0.0,0.0,0,0
+ethz.wsl,FAIR_Identifiers,Resource Author Identifier,200,138,138,0.69,0.69,0,373
+ethz.wsl,FAIR_Identifiers,Resource Author Identifier Type,200,140,140,0.7,0.7,0,382
+ethz.wsl,FAIR_Identifiers,Publisher Identifier,200,200,200,1.0,1.0,0,200
+ethz.wsl,FAIR_Identifiers,Publisher Identifier Type,200,200,200,1.0,1.0,0,200
+ethz.wsl,FAIR_Identifiers,Publisher Identifier Scheme URI,200,200,200,1.0,1.0,0,200
+ethz.wsl,FAIR_Identifiers,Resource Author Affiliation Identifier,200,193,193,0.965,0.965,0,757
+ethz.wsl,FAIR_Identifiers,Resource Author Affiliation Identifier Type,200,193,193,0.965,0.965,0,757
+ethz.wsl,FAIR_Identifiers,Resource Author Affiliation Identifier Scheme URI,200,193,193,0.965,0.965,0,757
+ethz.wsl,FAIR_Identifiers,Resource Identifier Type,200,200,200,1.0,1.0,0,237
+ethz.wsl,FAIR_Identifiers,Resource Type,200,200,200,1.0,1.0,0,200
+ethz.wsl,FAIR_Identifiers,Funder Identifier,200,0,0,0.0,0.0,0,0
+ethz.wsl,FAIR_Identifiers,Funder Identifier Type,200,0,0,0.0,0.0,0,0
+ethz.wsl,FAIR_Identifiers,Award URI,200,70,70,0.35,0.35,0,92
+ethz.wsl,FAIR_Identifiers,Award Number,200,102,102,0.51,0.51,0,150
+ethz.wsl,FAIR_Connections,CitedBy,200,0,0,0.0,0.0,0,0
+ethz.wsl,FAIR_Connections,Date Available,200,0,0,0.0,0.0,0,0
+ethz.wsl,FAIR_Connections,DescribedBy,200,0,0,0.0,0.0,0,0
+ethz.wsl,FAIR_Connections,Distribution Contact,200,0,0,0.0,0.0,0,0
+ethz.wsl,FAIR_Connections,DocumentedBy,200,0,0,0.0,0.0,0,0
+ethz.wsl,FAIR_Connections,Resource Contact,200,200,200,1.0,1.0,0,200
+ethz.wsl,FAIR_Connections,HasMetadata,200,0,0,0.0,0.0,0,0
+ethz.wsl,FAIR_Connections,Resource Format,200,200,200,1.0,1.0,0,710
+ethz.wsl,FAIR_Connections,Resource Size,200,200,200,1.0,1.0,0,710
+ethz.wsl,FAIR_Connections,Resource URL,200,200,200,1.0,1.0,0,200
+ethz.wsl,FAIR_Connections,Rights,200,200,200,1.0,1.0,0,200
+ethz.wsl,FAIR_Connections,RightsHolder,200,0,0,0.0,0.0,0,0
+ethz.wsl,FAIR_Connections,Methods,200,0,0,0.0,0.0,0,0
+ethz.wsl,FAIR_Connections,Technical Information,200,0,0,0.0,0.0,0,0
+ethz.wsl,FAIR_Connections,ReferencedBy,200,0,0,0.0,0.0,0,0
+ethz.wsl,FAIR_Connections,ReviewedBy,200,0,0,0.0,0.0,0,0
+ethz.wsl,FAIR_Connections,SourceOf,200,0,0,0.0,0.0,0,0
+ethz.wsl,FAIR_Connections,SupplementTo,200,55,55,0.275,0.275,0,89
+ethz.wsl,FAIR_Contacts,Resource Contact Identifier,200,61,61,0.305,0.305,0,61
+ethz.wsl,FAIR_Contacts,Resource Contact Identifier Scheme,200,64,64,0.32,0.32,0,64
+ethz.wsl,FAIR_Contacts,Resource Contact Identifier Scheme URI,200,64,64,0.32,0.32,0,64
+ethz.wsl,FAIR_Contacts,Distribution Contact Identifier,200,0,0,0.0,0.0,0,0
+ethz.wsl,FAIR_Contacts,Distribution Contact Identifier Scheme,200,0,0,0.0,0.0,0,0
+ethz.wsl,FAIR_Contacts,Distribution Contact Identifier Scheme URI,200,0,0,0.0,0.0,0,0
+ethz.wsl,FAIR_Contacts,Rights Holder Identifier,200,0,0,0.0,0.0,0,0
+ethz.wsl,FAIR_Contacts,Rights Holder Identifier Scheme,200,0,0,0.0,0.0,0,0
+ethz.wsl,FAIR_Contacts,Rights Holder Identifier Scheme URI,200,0,0,0.0,0.0,0,0
+ethz.wsl,FAIR_Contacts,Rights URI,200,177,177,0.885,0.885,0,177
+ethz.wsl,DataCite_Relations,Related Identifier,200,200,200,1.0,1.0,0,865
+ethz.wsl,DataCite_Relations,Related Identifier Type,200,200,200,1.0,1.0,0,865
+ethz.wsl,DataCite_Relations,Related Item Type,200,0,0,0.0,0.0,0,0
+ethz.wsl,DataCite_Relations,Cites,200,32,32,0.16,0.16,0,66
+ethz.wsl,DataCite_Relations,IsCitedBy,200,0,0,0.0,0.0,0,0
+ethz.wsl,DataCite_Relations,Collects,200,0,0,0.0,0.0,0,0
+ethz.wsl,DataCite_Relations,IsCollectedBy,200,0,0,0.0,0.0,0,0
+ethz.wsl,DataCite_Relations,IsSupplementTo,200,55,55,0.275,0.275,0,89
+ethz.wsl,DataCite_Relations,IsSupplementedBy,200,0,0,0.0,0.0,0,0
+ethz.wsl,DataCite_Relations,IsTranslationOf,200,0,0,0.0,0.0,0,0
+ethz.wsl,DataCite_Relations,HasTranslation,200,0,0,0.0,0.0,0,0
+ethz.wsl,DataCite_Relations,Continues,200,0,0,0.0,0.0,0,0
+ethz.wsl,DataCite_Relations,IsContinuedBy,200,0,0,0.0,0.0,0,0
+ethz.wsl,DataCite_Relations,IsNewVersionOf,200,0,0,0.0,0.0,0,0
+ethz.wsl,DataCite_Relations,IsPreviousVersionOf,200,0,0,0.0,0.0,0,0
+ethz.wsl,DataCite_Relations,IsPartOf,200,0,0,0.0,0.0,0,0
+ethz.wsl,DataCite_Relations,HasPart,200,0,0,0.0,0.0,0,0
+ethz.wsl,DataCite_Relations,IsPublishedIn,200,0,0,0.0,0.0,0,0
+ethz.wsl,DataCite_Relations,IsReferencedBy,200,0,0,0.0,0.0,0,0
+ethz.wsl,DataCite_Relations,References,200,0,0,0.0,0.0,0,0
+ethz.wsl,DataCite_Relations,Documents,200,0,0,0.0,0.0,0,0
+ethz.wsl,DataCite_Relations,IsDocumentedBy,200,0,0,0.0,0.0,0,0
+ethz.wsl,DataCite_Relations,IsCompiledBy,200,0,0,0.0,0.0,0,0
+ethz.wsl,DataCite_Relations,Compiles,200,0,0,0.0,0.0,0,0
+ethz.wsl,DataCite_Relations,IsVariantFormOf,200,0,0,0.0,0.0,0,0
+ethz.wsl,DataCite_Relations,IsOriginalFormOf,200,0,0,0.0,0.0,0,0
+ethz.wsl,DataCite_Relations,IsIdenticalTo,200,0,0,0.0,0.0,0,0
+ethz.wsl,DataCite_Relations,HasMetadata,200,0,0,0.0,0.0,0,0
+ethz.wsl,DataCite_Relations,IsMetadataFor,200,0,0,0.0,0.0,0,0
+ethz.wsl,DataCite_Relations,Reviews,200,0,0,0.0,0.0,0,0
+ethz.wsl,DataCite_Relations,IsReviewedBy,200,0,0,0.0,0.0,0,0
+ethz.wsl,DataCite_Relations,IsDerivedFrom,200,0,0,0.0,0.0,0,0
+ethz.wsl,DataCite_Relations,IsSourceOf,200,0,0,0.0,0.0,0,0
+ethz.wsl,DataCite_Relations,Describes,200,0,0,0.0,0.0,0,0
+ethz.wsl,DataCite_Relations,IsDescribedBy,200,0,0,0.0,0.0,0,0
+ethz.wsl,DataCite_Relations,HasVersion,200,0,0,0.0,0.0,0,0
+ethz.wsl,DataCite_Relations,IsVersionOf,200,0,0,0.0,0.0,0,0
+ethz.wsl,DataCite_Relations,Requires,200,0,0,0.0,0.0,0,0
+ethz.wsl,DataCite_Relations,IsRequiredBy,200,200,200,1.0,1.0,0,710
+ethz.wsl,DataCite_Relations,Obsoletes,200,0,0,0.0,0.0,0,0
+ethz.wsl,DataCite_Relations,IsObsoletedBy,200,0,0,0.0,0.0,0,0
+ethz.wsl,DataCite_ContributorTypes,ContactPerson,200,200,200,1.0,1.0,0,200
+ethz.wsl,DataCite_ContributorTypes,DataCollector,200,0,0,0.0,0.0,0,0
+ethz.wsl,DataCite_ContributorTypes,DataCurator,200,0,0,0.0,0.0,0,0
+ethz.wsl,DataCite_ContributorTypes,DataManager,200,0,0,0.0,0.0,0,0
+ethz.wsl,DataCite_ContributorTypes,Distributor,200,0,0,0.0,0.0,0,0
+ethz.wsl,DataCite_ContributorTypes,HostingInstitution,200,0,0,0.0,0.0,0,0
+ethz.wsl,DataCite_ContributorTypes,OtherContributor,200,0,0,0.0,0.0,0,0
+ethz.wsl,DataCite_ContributorTypes,Producer,200,0,0,0.0,0.0,0,0
+ethz.wsl,DataCite_ContributorTypes,ProjectLeader,200,0,0,0.0,0.0,0,0
+ethz.wsl,DataCite_ContributorTypes,ProjectManager,200,0,0,0.0,0.0,0,0
+ethz.wsl,DataCite_ContributorTypes,ProjectMember,200,0,0,0.0,0.0,0,0
+ethz.wsl,DataCite_ContributorTypes,RegistrationAgency,200,0,0,0.0,0.0,0,0
+ethz.wsl,DataCite_ContributorTypes,RegistrationAuthority,200,0,0,0.0,0.0,0,0
+ethz.wsl,DataCite_ContributorTypes,RelatedPerson,200,0,0,0.0,0.0,0,0
+ethz.wsl,DataCite_ContributorTypes,ResearchGroup,200,200,200,1.0,1.0,0,200
+ethz.wsl,DataCite_ContributorTypes,RightsHolder,200,0,0,0.0,0.0,0,0
+ethz.wsl,DataCite_ContributorTypes,Researcher,200,0,0,0.0,0.0,0,0
+ethz.wsl,DataCite_ContributorTypes,Sponsor,200,0,0,0.0,0.0,0,0
+ethz.wsl,DataCite_ContributorTypes,Supervisor,200,0,0,0.0,0.0,0,0
+ethz.wsl,DataCite_ContributorTypes,WorkPackageLeader,200,0,0,0.0,0.0,0,0
+ethz.wsl,Project_Team,Resource Author,200,200,200,1.0,1.0,0,802
+ethz.wsl,Project_Team,Resource Author Type,200,0,0,0.0,0.0,0,0
+ethz.wsl,Project_Team,Resource Author Identifier,200,138,138,0.69,0.69,0,373
+ethz.wsl,Project_Team,Resource Author Identifier Type,200,140,140,0.7,0.7,0,382
+ethz.wsl,Project_Team,Resource Author Affiliation,200,200,200,1.0,1.0,0,919
+ethz.wsl,Project_Team,Resource Author Affiliation Identifier,200,193,193,0.965,0.965,0,757
+ethz.wsl,Project_Team,Resource Author Affiliation Identifier Type,200,193,193,0.965,0.965,0,757
+ethz.wsl,Project_Team,Temporal Extent,200,0,0,0.0,0.0,0,0
+ethz.wsl,Project_Team,Resource Contributor Name,200,200,200,1.0,1.0,0,400
+ethz.wsl,Project_Team,Resource Contributor Identifier,200,61,61,0.305,0.305,0,61
+ethz.wsl,Project_Team,Resource Contributor Identifier Type,200,64,64,0.32,0.32,0,64
+ethz.wsl,Project_Team,Resource Contributor Affiliation,200,126,126,0.63,0.63,0,126
+ethz.wsl,Project_Team,Resource Contributor Affiliation Identifier,200,116,116,0.58,0.58,0,116
+ethz.wsl,Project_Team,Funder Name,200,200,200,1.0,1.0,0,281
+ethz.wsl,Project_Team,Funder Identifier,200,0,0,0.0,0.0,0,0
+ethz.wsl,Project_Team,ContactPerson,200,200,200,1.0,1.0,0,200
+ethz.wsl,Project_Team,DataManager,200,0,0,0.0,0.0,0,0
+ethz.wsl,Project_Team,Editor,200,0,0,0.0,0.0,0,0
+ethz.wsl,Project_Team,HostingInstitution,200,0,0,0.0,0.0,0,0
+ethz.wsl,Project_Team,Other,200,0,0,0.0,0.0,0,0
+ethz.wsl,Project_Team,Producer,200,0,0,0.0,0.0,0,0
+ethz.wsl,Project_Team,ProjectLeader,200,0,0,0.0,0.0,0,0
+ethz.wsl,Project_Team,ProjectManager,200,0,0,0.0,0.0,0,0
+ethz.wsl,Project_Team,ProjectMember,200,0,0,0.0,0.0,0,0
+ethz.wsl,Project_Team,RegistrationAgency,200,0,0,0.0,0.0,0,0
+ethz.wsl,Project_Team,RelatedPerson,200,0,0,0.0,0.0,0,0
+ethz.wsl,Project_Team,Researcher,200,0,0,0.0,0.0,0,0
+ethz.wsl,Project_Team,Sponsor,200,0,0,0.0,0.0,0,0
+ethz.wsl,Project_Team,Supervisor,200,0,0,0.0,0.0,0,0
+ethz.wsl,Project_Team,WorkPackageLeader,200,0,0,0.0,0.0,0,0
+ethz.wsl,Project_Items,Audiovisual,200,0,0,0.0,0.0,0,0
+ethz.wsl,Project_Items,Award,200,0,0,0.0,0.0,0,0
+ethz.wsl,Project_Items,Book,200,0,0,0.0,0.0,0,0
+ethz.wsl,Project_Items,BookChapter,200,0,0,0.0,0.0,0,0
+ethz.wsl,Project_Items,Collection,200,0,0,0.0,0.0,0,0
+ethz.wsl,Project_Items,ComputationalNotebook,200,0,0,0.0,0.0,0,0
+ethz.wsl,Project_Items,ConferencePaper,200,0,0,0.0,0.0,0,0
+ethz.wsl,Project_Items,ConferenceProceeding,200,0,0,0.0,0.0,0,0
+ethz.wsl,Project_Items,Dataset,200,0,0,0.0,0.0,0,0
+ethz.wsl,Project_Items,Event,200,0,0,0.0,0.0,0,0
+ethz.wsl,Project_Items,JournalArticle,200,0,0,0.0,0.0,0,0
+ethz.wsl,Project_Items,Other,200,0,0,0.0,0.0,0,0
+ethz.wsl,Project_Items,OutputManagementPlan,200,0,0,0.0,0.0,0,0
+ethz.wsl,Project_Items,PhysicalObject,200,0,0,0.0,0.0,0,0
+ethz.wsl,Project_Items,Project,200,0,0,0.0,0.0,0,0
+ethz.wsl,Project_Items,Report,200,0,0,0.0,0.0,0,0
+ethz.wsl,Project_Items,Software,200,0,0,0.0,0.0,0,0
+ethz.wsl,Project_Items,Standard,200,0,0,0.0,0.0,0,0
+ethz.wsl,Project_Items,Text,200,0,0,0.0,0.0,0,0
+ethz.wsl,Project_Items,Workflow,200,0,0,0.0,0.0,0,0
+ethz.wsl,Project_Relations,Related Identifier,200,200,200,1.0,1.0,0,865
+ethz.wsl,Project_Relations,Related Identifier Type,200,200,200,1.0,1.0,0,865
+ethz.wsl,Project_Relations,Relation Type,200,200,200,1.0,1.0,0,865
+ethz.wsl,Project_Relations,Related Item Type,200,0,0,0.0,0.0,0,0
+ethz.wsl,Project_Relations,Continues,200,0,0,0.0,0.0,0,0
+ethz.wsl,Project_Relations,Describes,200,0,0,0.0,0.0,0,0
+ethz.wsl,Project_Relations,HasPart,200,0,0,0.0,0.0,0,0
+ethz.wsl,Project_Relations,HasVersion,200,0,0,0.0,0.0,0,0
+ethz.wsl,Project_Relations,IsCitedBy,200,0,0,0.0,0.0,0,0
+ethz.wsl,Project_Relations,IsContinuedBy,200,0,0,0.0,0.0,0,0
+ethz.wsl,Project_Relations,IsDerivedFrom,200,0,0,0.0,0.0,0,0
+ethz.wsl,Project_Relations,IsDocumentedBy,200,0,0,0.0,0.0,0,0
+ethz.wsl,Project_Relations,IsIdenticalTo,200,0,0,0.0,0.0,0,0
+ethz.wsl,Project_Relations,IsObsoletedBy,200,0,0,0.0,0.0,0,0
+ethz.wsl,Project_Relations,RelatedItems Item Type,200,200,200,1.0,1.0,0,710
+ethz.wsl,Project_Relations,RelatedItems Relation Type,200,200,200,1.0,1.0,0,710
+ethz.wsl,Project_Relations,IsPartOf,200,0,0,0.0,0.0,0,0
+ethz.wsl,Project_Relations,IsPublishedIn,200,0,0,0.0,0.0,0,0
+ethz.wsl,Project_Relations,IsReferencedBy,200,0,0,0.0,0.0,0,0
+ethz.wsl,Project_Relations,IsSourceOf,200,0,0,0.0,0.0,0,0
+ethz.wsl,Project_Relations,IsSupplementedBy,200,0,0,0.0,0.0,0,0
+ethz.wsl,Project_Relations,IsSupplementTo,200,55,55,0.275,0.275,0,89
+ethz.wsl,Project_Relations,IsVariantFormOf,200,0,0,0.0,0.0,0,0
+ethz.wsl,Project_Relations,IsVersionOf,200,0,0,0.0,0.0,0,0
+ethz.wsl,Project_Relations,Obsoletes,200,0,0,0.0,0.0,0,0
+ethz.wsl,Project_Relations,References,200,0,0,0.0,0.0,0,0
+ethz.wsl,SHARE_stewardship,Spatial Extent,200,193,193,0.965,0.965,0,926
+ethz.wsl,SHARE_stewardship,Date Collected,200,132,132,0.66,0.66,0,132
+ethz.wsl,SHARE_stewardship,Date Coverage,200,0,0,0.0,0.0,0,0
+ethz.wsl,SHARE_stewardship,Contributor Type,200,200,200,1.0,1.0,0,400
+ethz.wsl,SHARE_stewardship,Keyword,200,200,200,1.0,1.0,0,1430
+ethz.wsl,SHARE_harmonization,Methods,200,0,0,0.0,0.0,0,0
+ethz.wsl,SHARE_harmonization,Resource Author Identifier,200,138,138,0.69,0.69,0,373
+ethz.wsl,SHARE_harmonization,Resource Contributor Identifier,200,61,61,0.305,0.305,0,61
+ethz.wsl,SHARE_harmonization,IsCitedBy,200,0,0,0.0,0.0,0,0
+ethz.wsl,SHARE_harmonization,Abstract,200,200,200,1.0,1.0,0,200
+ethz.wsl,SHARE_harmonization,Resource Author Affiliation Identifier,200,193,193,0.965,0.965,0,757
+ethz.wsl,SHARE_harmonization,Resource Contributor Affiliation Identifier,200,116,116,0.58,0.58,0,116
+ethz.wsl,SHARE_harmonization,Resource Author Identifier Type,200,140,140,0.7,0.7,0,382
+ethz.wsl,SHARE_harmonization,Resource Author Affiliation Identifier Type,200,193,193,0.965,0.965,0,757
+ethz.wsl,SHARE_harmonization,Resource Contributor Identifier Type,200,64,64,0.32,0.32,0,64
+ethz.wsl,SHARE_harmonization,Resource Contributor Affiliation Identifier Type,200,116,116,0.58,0.58,0,116
+ethz.wsl,SHARE_access,Rights Identifier,200,135,135,0.675,0.675,0,135
+ethz.wsl,SHARE_access,Rights,200,200,200,1.0,1.0,0,200
+ethz.wsl,SHARE_access,Date Available,200,0,0,0.0,0.0,0,0
+ethz.wsl,SHARE_access,Resource Format,200,200,200,1.0,1.0,0,710
+ethz.wsl,SHARE_reuse,IsSourceOf,200,0,0,0.0,0.0,0,0
+ethz.wsl,SHARE_reuse,Discovery Metrics,200,0,0,0.0,0.0,0,0
+ethz.wsl,SHARE_reuse,Access Metrics,200,0,0,0.0,0.0,0,0
+ethz.wsl,SHARE_reuse,Citation Metrics,200,93,93,0.465,0.465,0,93
+ethz.wsl,SHARE_engagement,JournalArticle,200,0,0,0.0,0.0,0,0
+ethz.wsl,SHARE_engagement,Preprint,200,0,0,0.0,0.0,0,0
+ethz.wsl,SHARE_engagement,ConferencePaper,200,0,0,0.0,0.0,0,0
+ethz.wsl,SHARE_engagement,ConferenceProceeding,200,0,0,0.0,0.0,0,0
+ethz.wsl,SHARE_engagement,Dataset,200,0,0,0.0,0.0,0,0
+ethz.wsl,SHARE_engagement,Software,200,0,0,0.0,0.0,0,0
+ethz.wsl,SHARE_engagement,Project Funder,200,200,200,1.0,1.0,0,281
+ethz.wsl,SHARE_engagement,Funder Identifier,200,0,0,0.0,0.0,0,0
+ethz.wsl,SHARE_engagement,Award Title,200,0,0,0.0,0.0,0,0
+ethz.wsl,SHARE_engagement,Award Number,200,102,102,0.51,0.51,0,150
+ethz.wsl,SHARE_engagement,IsVersionOf,200,0,0,0.0,0.0,0,0
+ethz.wsl,SHARE_engagement,Funder Identifier Type,200,0,0,0.0,0.0,0,0
+ethz.psi,FAIR_Text,Abstract,196,184,184,0.9388,0.9388,0,184
+ethz.psi,FAIR_Text,Date Created,196,1,1,0.0051,0.0051,0,1
+ethz.psi,FAIR_Text,Keyword,196,19,19,0.0969,0.0969,0,106
+ethz.psi,FAIR_Text,Keyword Vocabulary,196,0,0,0.0,0.0,0,0
+ethz.psi,FAIR_Text,Resource Author Affiliation,196,184,184,0.9388,0.9388,0,544
+ethz.psi,FAIR_Text,Resource Author,196,196,196,1.0,1.0,0,547
+ethz.psi,FAIR_Text,Resource Identifier,196,196,196,1.0,1.0,0,196
+ethz.psi,FAIR_Text,Resource Publication Date,196,196,196,1.0,1.0,0,196
+ethz.psi,FAIR_Text,Resource Publisher,196,196,196,1.0,1.0,0,196
+ethz.psi,FAIR_Text,Resource Title,196,196,196,1.0,1.0,0,196
+ethz.psi,FAIR_Text,Resource Type General,196,196,196,1.0,1.0,0,196
+ethz.psi,FAIR_Text,Project Funder,196,0,0,0.0,0.0,0,0
+ethz.psi,FAIR_Text,Award Title,196,0,0,0.0,0.0,0,0
+ethz.psi,FAIR_Text,Temporal Extent,196,0,0,0.0,0.0,0,0
+ethz.psi,FAIR_Text,Spatial Extent,196,0,0,0.0,0.0,0,0
+ethz.psi,FAIR_Identifiers,Date Submitted,196,0,0,0.0,0.0,0,0
+ethz.psi,FAIR_Identifiers,Keyword Value URI,196,0,0,0.0,0.0,0,0
+ethz.psi,FAIR_Identifiers,Keyword Vocabulary URI,196,0,0,0.0,0.0,0,0
+ethz.psi,FAIR_Identifiers,Resource Author Type,196,191,191,0.9745,0.9745,0,542
+ethz.psi,FAIR_Identifiers,Resource Author Identifier,196,3,3,0.0153,0.0153,0,5
+ethz.psi,FAIR_Identifiers,Resource Author Identifier Type,196,3,3,0.0153,0.0153,0,5
+ethz.psi,FAIR_Identifiers,Publisher Identifier,196,184,184,0.9388,0.9388,0,184
+ethz.psi,FAIR_Identifiers,Publisher Identifier Type,196,184,184,0.9388,0.9388,0,184
+ethz.psi,FAIR_Identifiers,Publisher Identifier Scheme URI,196,184,184,0.9388,0.9388,0,184
+ethz.psi,FAIR_Identifiers,Resource Author Affiliation Identifier,196,22,22,0.1122,0.1122,0,40
+ethz.psi,FAIR_Identifiers,Resource Author Affiliation Identifier Type,196,21,21,0.1071,0.1071,0,39
+ethz.psi,FAIR_Identifiers,Resource Author Affiliation Identifier Scheme URI,196,21,21,0.1071,0.1071,0,39
+ethz.psi,FAIR_Identifiers,Resource Identifier Type,196,0,0,0.0,0.0,0,0
+ethz.psi,FAIR_Identifiers,Resource Type,196,162,162,0.8265,0.8265,0,162
+ethz.psi,FAIR_Identifiers,Funder Identifier,196,0,0,0.0,0.0,0,0
+ethz.psi,FAIR_Identifiers,Funder Identifier Type,196,0,0,0.0,0.0,0,0
+ethz.psi,FAIR_Identifiers,Award URI,196,0,0,0.0,0.0,0,0
+ethz.psi,FAIR_Identifiers,Award Number,196,0,0,0.0,0.0,0,0
+ethz.psi,FAIR_Connections,CitedBy,196,0,0,0.0,0.0,0,0
+ethz.psi,FAIR_Connections,Date Available,196,195,195,0.9949,0.9949,0,195
+ethz.psi,FAIR_Connections,DescribedBy,196,0,0,0.0,0.0,0,0
+ethz.psi,FAIR_Connections,Distribution Contact,196,0,0,0.0,0.0,0,0
+ethz.psi,FAIR_Connections,DocumentedBy,196,0,0,0.0,0.0,0,0
+ethz.psi,FAIR_Connections,Resource Contact,196,0,0,0.0,0.0,0,0
+ethz.psi,FAIR_Connections,HasMetadata,196,0,0,0.0,0.0,0,0
+ethz.psi,FAIR_Connections,Resource Format,196,0,0,0.0,0.0,0,0
+ethz.psi,FAIR_Connections,Resource Size,196,180,180,0.9184,0.9184,0,180
+ethz.psi,FAIR_Connections,Resource URL,196,196,196,1.0,1.0,0,196
+ethz.psi,FAIR_Connections,Rights,196,187,187,0.9541,0.9541,0,187
+ethz.psi,FAIR_Connections,RightsHolder,196,0,0,0.0,0.0,0,0
+ethz.psi,FAIR_Connections,Methods,196,0,0,0.0,0.0,0,0
+ethz.psi,FAIR_Connections,Technical Information,196,2,2,0.0102,0.0102,0,2
+ethz.psi,FAIR_Connections,ReferencedBy,196,0,0,0.0,0.0,0,0
+ethz.psi,FAIR_Connections,ReviewedBy,196,0,0,0.0,0.0,0,0
+ethz.psi,FAIR_Connections,SourceOf,196,0,0,0.0,0.0,0,0
+ethz.psi,FAIR_Connections,SupplementTo,196,67,67,0.3418,0.3418,0,91
+ethz.psi,FAIR_Contacts,Resource Contact Identifier,196,0,0,0.0,0.0,0,0
+ethz.psi,FAIR_Contacts,Resource Contact Identifier Scheme,196,0,0,0.0,0.0,0,0
+ethz.psi,FAIR_Contacts,Resource Contact Identifier Scheme URI,196,0,0,0.0,0.0,0,0
+ethz.psi,FAIR_Contacts,Distribution Contact Identifier,196,0,0,0.0,0.0,0,0
+ethz.psi,FAIR_Contacts,Distribution Contact Identifier Scheme,196,0,0,0.0,0.0,0,0
+ethz.psi,FAIR_Contacts,Distribution Contact Identifier Scheme URI,196,0,0,0.0,0.0,0,0
+ethz.psi,FAIR_Contacts,Rights Holder Identifier,196,0,0,0.0,0.0,0,0
+ethz.psi,FAIR_Contacts,Rights Holder Identifier Scheme,196,0,0,0.0,0.0,0,0
+ethz.psi,FAIR_Contacts,Rights Holder Identifier Scheme URI,196,0,0,0.0,0.0,0,0
+ethz.psi,FAIR_Contacts,Rights URI,196,184,184,0.9388,0.9388,0,184
+ethz.psi,DataCite_Relations,Related Identifier,196,67,67,0.3418,0.3418,0,91
+ethz.psi,DataCite_Relations,Related Identifier Type,196,67,67,0.3418,0.3418,0,91
+ethz.psi,DataCite_Relations,Related Item Type,196,67,67,0.3418,0.3418,0,91
+ethz.psi,DataCite_Relations,Cites,196,0,0,0.0,0.0,0,0
+ethz.psi,DataCite_Relations,IsCitedBy,196,0,0,0.0,0.0,0,0
+ethz.psi,DataCite_Relations,Collects,196,0,0,0.0,0.0,0,0
+ethz.psi,DataCite_Relations,IsCollectedBy,196,0,0,0.0,0.0,0,0
+ethz.psi,DataCite_Relations,IsSupplementTo,196,67,67,0.3418,0.3418,0,91
+ethz.psi,DataCite_Relations,IsSupplementedBy,196,0,0,0.0,0.0,0,0
+ethz.psi,DataCite_Relations,IsTranslationOf,196,0,0,0.0,0.0,0,0
+ethz.psi,DataCite_Relations,HasTranslation,196,0,0,0.0,0.0,0,0
+ethz.psi,DataCite_Relations,Continues,196,0,0,0.0,0.0,0,0
+ethz.psi,DataCite_Relations,IsContinuedBy,196,0,0,0.0,0.0,0,0
+ethz.psi,DataCite_Relations,IsNewVersionOf,196,0,0,0.0,0.0,0,0
+ethz.psi,DataCite_Relations,IsPreviousVersionOf,196,0,0,0.0,0.0,0,0
+ethz.psi,DataCite_Relations,IsPartOf,196,0,0,0.0,0.0,0,0
+ethz.psi,DataCite_Relations,HasPart,196,0,0,0.0,0.0,0,0
+ethz.psi,DataCite_Relations,IsPublishedIn,196,0,0,0.0,0.0,0,0
+ethz.psi,DataCite_Relations,IsReferencedBy,196,0,0,0.0,0.0,0,0
+ethz.psi,DataCite_Relations,References,196,0,0,0.0,0.0,0,0
+ethz.psi,DataCite_Relations,Documents,196,0,0,0.0,0.0,0,0
+ethz.psi,DataCite_Relations,IsDocumentedBy,196,0,0,0.0,0.0,0,0
+ethz.psi,DataCite_Relations,IsCompiledBy,196,0,0,0.0,0.0,0,0
+ethz.psi,DataCite_Relations,Compiles,196,0,0,0.0,0.0,0,0
+ethz.psi,DataCite_Relations,IsVariantFormOf,196,0,0,0.0,0.0,0,0
+ethz.psi,DataCite_Relations,IsOriginalFormOf,196,0,0,0.0,0.0,0,0
+ethz.psi,DataCite_Relations,IsIdenticalTo,196,0,0,0.0,0.0,0,0
+ethz.psi,DataCite_Relations,HasMetadata,196,0,0,0.0,0.0,0,0
+ethz.psi,DataCite_Relations,IsMetadataFor,196,0,0,0.0,0.0,0,0
+ethz.psi,DataCite_Relations,Reviews,196,0,0,0.0,0.0,0,0
+ethz.psi,DataCite_Relations,IsReviewedBy,196,0,0,0.0,0.0,0,0
+ethz.psi,DataCite_Relations,IsDerivedFrom,196,0,0,0.0,0.0,0,0
+ethz.psi,DataCite_Relations,IsSourceOf,196,0,0,0.0,0.0,0,0
+ethz.psi,DataCite_Relations,Describes,196,0,0,0.0,0.0,0,0
+ethz.psi,DataCite_Relations,IsDescribedBy,196,0,0,0.0,0.0,0,0
+ethz.psi,DataCite_Relations,HasVersion,196,0,0,0.0,0.0,0,0
+ethz.psi,DataCite_Relations,IsVersionOf,196,0,0,0.0,0.0,0,0
+ethz.psi,DataCite_Relations,Requires,196,0,0,0.0,0.0,0,0
+ethz.psi,DataCite_Relations,IsRequiredBy,196,0,0,0.0,0.0,0,0
+ethz.psi,DataCite_Relations,Obsoletes,196,0,0,0.0,0.0,0,0
+ethz.psi,DataCite_Relations,IsObsoletedBy,196,0,0,0.0,0.0,0,0
+ethz.psi,DataCite_ContributorTypes,ContactPerson,196,0,0,0.0,0.0,0,0
+ethz.psi,DataCite_ContributorTypes,DataCollector,196,5,5,0.0255,0.0255,0,27
+ethz.psi,DataCite_ContributorTypes,DataCurator,196,3,3,0.0153,0.0153,0,3
+ethz.psi,DataCite_ContributorTypes,DataManager,196,0,0,0.0,0.0,0,0
+ethz.psi,DataCite_ContributorTypes,Distributor,196,0,0,0.0,0.0,0,0
+ethz.psi,DataCite_ContributorTypes,HostingInstitution,196,0,0,0.0,0.0,0,0
+ethz.psi,DataCite_ContributorTypes,OtherContributor,196,0,0,0.0,0.0,0,0
+ethz.psi,DataCite_ContributorTypes,Producer,196,0,0,0.0,0.0,0,0
+ethz.psi,DataCite_ContributorTypes,ProjectLeader,196,3,3,0.0153,0.0153,0,6
+ethz.psi,DataCite_ContributorTypes,ProjectManager,196,0,0,0.0,0.0,0,0
+ethz.psi,DataCite_ContributorTypes,ProjectMember,196,0,0,0.0,0.0,0,0
+ethz.psi,DataCite_ContributorTypes,RegistrationAgency,196,0,0,0.0,0.0,0,0
+ethz.psi,DataCite_ContributorTypes,RegistrationAuthority,196,0,0,0.0,0.0,0,0
+ethz.psi,DataCite_ContributorTypes,RelatedPerson,196,0,0,0.0,0.0,0,0
+ethz.psi,DataCite_ContributorTypes,ResearchGroup,196,0,0,0.0,0.0,0,0
+ethz.psi,DataCite_ContributorTypes,RightsHolder,196,0,0,0.0,0.0,0,0
+ethz.psi,DataCite_ContributorTypes,Researcher,196,0,0,0.0,0.0,0,0
+ethz.psi,DataCite_ContributorTypes,Sponsor,196,0,0,0.0,0.0,0,0
+ethz.psi,DataCite_ContributorTypes,Supervisor,196,0,0,0.0,0.0,0,0
+ethz.psi,DataCite_ContributorTypes,WorkPackageLeader,196,0,0,0.0,0.0,0,0
+ethz.psi,Project_Team,Resource Author,196,196,196,1.0,1.0,0,547
+ethz.psi,Project_Team,Resource Author Type,196,191,191,0.9745,0.9745,0,542
+ethz.psi,Project_Team,Resource Author Identifier,196,3,3,0.0153,0.0153,0,5
+ethz.psi,Project_Team,Resource Author Identifier Type,196,3,3,0.0153,0.0153,0,5
+ethz.psi,Project_Team,Resource Author Affiliation,196,184,184,0.9388,0.9388,0,544
+ethz.psi,Project_Team,Resource Author Affiliation Identifier,196,22,22,0.1122,0.1122,0,40
+ethz.psi,Project_Team,Resource Author Affiliation Identifier Type,196,21,21,0.1071,0.1071,0,39
+ethz.psi,Project_Team,Temporal Extent,196,0,0,0.0,0.0,0,0
+ethz.psi,Project_Team,Resource Contributor Name,196,5,5,0.0255,0.0255,0,36
+ethz.psi,Project_Team,Resource Contributor Identifier,196,1,1,0.0051,0.0051,0,1
+ethz.psi,Project_Team,Resource Contributor Identifier Type,196,1,1,0.0051,0.0051,0,1
+ethz.psi,Project_Team,Resource Contributor Affiliation,196,5,5,0.0255,0.0255,0,36
+ethz.psi,Project_Team,Resource Contributor Affiliation Identifier,196,0,0,0.0,0.0,0,0
+ethz.psi,Project_Team,Funder Name,196,0,0,0.0,0.0,0,0
+ethz.psi,Project_Team,Funder Identifier,196,0,0,0.0,0.0,0,0
+ethz.psi,Project_Team,ContactPerson,196,0,0,0.0,0.0,0,0
+ethz.psi,Project_Team,DataManager,196,0,0,0.0,0.0,0,0
+ethz.psi,Project_Team,Editor,196,0,0,0.0,0.0,0,0
+ethz.psi,Project_Team,HostingInstitution,196,0,0,0.0,0.0,0,0
+ethz.psi,Project_Team,Other,196,0,0,0.0,0.0,0,0
+ethz.psi,Project_Team,Producer,196,0,0,0.0,0.0,0,0
+ethz.psi,Project_Team,ProjectLeader,196,3,3,0.0153,0.0153,0,6
+ethz.psi,Project_Team,ProjectManager,196,0,0,0.0,0.0,0,0
+ethz.psi,Project_Team,ProjectMember,196,0,0,0.0,0.0,0,0
+ethz.psi,Project_Team,RegistrationAgency,196,0,0,0.0,0.0,0,0
+ethz.psi,Project_Team,RelatedPerson,196,0,0,0.0,0.0,0,0
+ethz.psi,Project_Team,Researcher,196,0,0,0.0,0.0,0,0
+ethz.psi,Project_Team,Sponsor,196,0,0,0.0,0.0,0,0
+ethz.psi,Project_Team,Supervisor,196,0,0,0.0,0.0,0,0
+ethz.psi,Project_Team,WorkPackageLeader,196,0,0,0.0,0.0,0,0
+ethz.psi,Project_Items,Audiovisual,196,0,0,0.0,0.0,0,0
+ethz.psi,Project_Items,Award,196,0,0,0.0,0.0,0,0
+ethz.psi,Project_Items,Book,196,0,0,0.0,0.0,0,0
+ethz.psi,Project_Items,BookChapter,196,0,0,0.0,0.0,0,0
+ethz.psi,Project_Items,Collection,196,0,0,0.0,0.0,0,0
+ethz.psi,Project_Items,ComputationalNotebook,196,0,0,0.0,0.0,0,0
+ethz.psi,Project_Items,ConferencePaper,196,0,0,0.0,0.0,0,0
+ethz.psi,Project_Items,ConferenceProceeding,196,0,0,0.0,0.0,0,0
+ethz.psi,Project_Items,Dataset,196,0,0,0.0,0.0,0,0
+ethz.psi,Project_Items,Event,196,0,0,0.0,0.0,0,0
+ethz.psi,Project_Items,JournalArticle,196,67,67,0.3418,0.3418,0,91
+ethz.psi,Project_Items,Other,196,0,0,0.0,0.0,0,0
+ethz.psi,Project_Items,OutputManagementPlan,196,0,0,0.0,0.0,0,0
+ethz.psi,Project_Items,PhysicalObject,196,0,0,0.0,0.0,0,0
+ethz.psi,Project_Items,Project,196,0,0,0.0,0.0,0,0
+ethz.psi,Project_Items,Report,196,0,0,0.0,0.0,0,0
+ethz.psi,Project_Items,Software,196,0,0,0.0,0.0,0,0
+ethz.psi,Project_Items,Standard,196,0,0,0.0,0.0,0,0
+ethz.psi,Project_Items,Text,196,0,0,0.0,0.0,0,0
+ethz.psi,Project_Items,Workflow,196,0,0,0.0,0.0,0,0
+ethz.psi,Project_Relations,Related Identifier,196,67,67,0.3418,0.3418,0,91
+ethz.psi,Project_Relations,Related Identifier Type,196,67,67,0.3418,0.3418,0,91
+ethz.psi,Project_Relations,Relation Type,196,67,67,0.3418,0.3418,0,91
+ethz.psi,Project_Relations,Related Item Type,196,67,67,0.3418,0.3418,0,91
+ethz.psi,Project_Relations,Continues,196,0,0,0.0,0.0,0,0
+ethz.psi,Project_Relations,Describes,196,0,0,0.0,0.0,0,0
+ethz.psi,Project_Relations,HasPart,196,0,0,0.0,0.0,0,0
+ethz.psi,Project_Relations,HasVersion,196,0,0,0.0,0.0,0,0
+ethz.psi,Project_Relations,IsCitedBy,196,0,0,0.0,0.0,0,0
+ethz.psi,Project_Relations,IsContinuedBy,196,0,0,0.0,0.0,0,0
+ethz.psi,Project_Relations,IsDerivedFrom,196,0,0,0.0,0.0,0,0
+ethz.psi,Project_Relations,IsDocumentedBy,196,0,0,0.0,0.0,0,0
+ethz.psi,Project_Relations,IsIdenticalTo,196,0,0,0.0,0.0,0,0
+ethz.psi,Project_Relations,IsObsoletedBy,196,0,0,0.0,0.0,0,0
+ethz.psi,Project_Relations,RelatedItems Item Type,196,184,184,0.9388,0.9388,0,4722
+ethz.psi,Project_Relations,RelatedItems Relation Type,196,184,184,0.9388,0.9388,0,4722
+ethz.psi,Project_Relations,IsPartOf,196,0,0,0.0,0.0,0,0
+ethz.psi,Project_Relations,IsPublishedIn,196,0,0,0.0,0.0,0,0
+ethz.psi,Project_Relations,IsReferencedBy,196,0,0,0.0,0.0,0,0
+ethz.psi,Project_Relations,IsSourceOf,196,0,0,0.0,0.0,0,0
+ethz.psi,Project_Relations,IsSupplementedBy,196,0,0,0.0,0.0,0,0
+ethz.psi,Project_Relations,IsSupplementTo,196,67,67,0.3418,0.3418,0,91
+ethz.psi,Project_Relations,IsVariantFormOf,196,0,0,0.0,0.0,0,0
+ethz.psi,Project_Relations,IsVersionOf,196,0,0,0.0,0.0,0,0
+ethz.psi,Project_Relations,Obsoletes,196,0,0,0.0,0.0,0,0
+ethz.psi,Project_Relations,References,196,0,0,0.0,0.0,0,0
+ethz.psi,SHARE_stewardship,Spatial Extent,196,0,0,0.0,0.0,0,0
+ethz.psi,SHARE_stewardship,Date Collected,196,0,0,0.0,0.0,0,0
+ethz.psi,SHARE_stewardship,Date Coverage,196,0,0,0.0,0.0,0,0
+ethz.psi,SHARE_stewardship,Contributor Type,196,5,5,0.0255,0.0255,0,36
+ethz.psi,SHARE_stewardship,Keyword,196,19,19,0.0969,0.0969,0,106
+ethz.psi,SHARE_harmonization,Methods,196,0,0,0.0,0.0,0,0
+ethz.psi,SHARE_harmonization,Resource Author Identifier,196,3,3,0.0153,0.0153,0,5
+ethz.psi,SHARE_harmonization,Resource Contributor Identifier,196,1,1,0.0051,0.0051,0,1
+ethz.psi,SHARE_harmonization,IsCitedBy,196,0,0,0.0,0.0,0,0
+ethz.psi,SHARE_harmonization,Abstract,196,184,184,0.9388,0.9388,0,184
+ethz.psi,SHARE_harmonization,Resource Author Affiliation Identifier,196,22,22,0.1122,0.1122,0,40
+ethz.psi,SHARE_harmonization,Resource Contributor Affiliation Identifier,196,0,0,0.0,0.0,0,0
+ethz.psi,SHARE_harmonization,Resource Author Identifier Type,196,3,3,0.0153,0.0153,0,5
+ethz.psi,SHARE_harmonization,Resource Author Affiliation Identifier Type,196,21,21,0.1071,0.1071,0,39
+ethz.psi,SHARE_harmonization,Resource Contributor Identifier Type,196,1,1,0.0051,0.0051,0,1
+ethz.psi,SHARE_harmonization,Resource Contributor Affiliation Identifier Type,196,1,1,0.0051,0.0051,0,1
+ethz.psi,SHARE_access,Rights Identifier,196,184,184,0.9388,0.9388,0,184
+ethz.psi,SHARE_access,Rights,196,187,187,0.9541,0.9541,0,187
+ethz.psi,SHARE_access,Date Available,196,195,195,0.9949,0.9949,0,195
+ethz.psi,SHARE_access,Resource Format,196,0,0,0.0,0.0,0,0
+ethz.psi,SHARE_reuse,IsSourceOf,196,0,0,0.0,0.0,0,0
+ethz.psi,SHARE_reuse,Discovery Metrics,196,0,0,0.0,0.0,0,0
+ethz.psi,SHARE_reuse,Access Metrics,196,0,0,0.0,0.0,0,0
+ethz.psi,SHARE_reuse,Citation Metrics,196,33,33,0.1684,0.1684,0,33
+ethz.psi,SHARE_engagement,JournalArticle,196,67,67,0.3418,0.3418,0,91
+ethz.psi,SHARE_engagement,Preprint,196,0,0,0.0,0.0,0,0
+ethz.psi,SHARE_engagement,ConferencePaper,196,0,0,0.0,0.0,0,0
+ethz.psi,SHARE_engagement,ConferenceProceeding,196,0,0,0.0,0.0,0,0
+ethz.psi,SHARE_engagement,Dataset,196,0,0,0.0,0.0,0,0
+ethz.psi,SHARE_engagement,Software,196,0,0,0.0,0.0,0,0
+ethz.psi,SHARE_engagement,Project Funder,196,0,0,0.0,0.0,0,0
+ethz.psi,SHARE_engagement,Funder Identifier,196,0,0,0.0,0.0,0,0
+ethz.psi,SHARE_engagement,Award Title,196,0,0,0.0,0.0,0,0
+ethz.psi,SHARE_engagement,Award Number,196,0,0,0.0,0.0,0,0
+ethz.psi,SHARE_engagement,IsVersionOf,196,0,0,0.0,0.0,0,0
+ethz.psi,SHARE_engagement,Funder Identifier Type,196,0,0,0.0,0.0,0,0
+eawag.rdm,FAIR_Text,Abstract,200,195,195,0.975,0.975,0,195
+eawag.rdm,FAIR_Text,Date Created,200,0,0,0.0,0.0,0,0
+eawag.rdm,FAIR_Text,Keyword,200,199,199,0.995,0.995,0,9333
+eawag.rdm,FAIR_Text,Keyword Vocabulary,200,1,1,0.005,0.005,0,1
+eawag.rdm,FAIR_Text,Resource Author Affiliation,200,184,184,0.92,0.92,0,955
+eawag.rdm,FAIR_Text,Resource Author,200,200,200,1.0,1.0,0,1238
+eawag.rdm,FAIR_Text,Resource Identifier,200,200,200,1.0,1.0,0,201
+eawag.rdm,FAIR_Text,Resource Publication Date,200,200,200,1.0,1.0,0,200
+eawag.rdm,FAIR_Text,Resource Publisher,200,200,200,1.0,1.0,0,200
+eawag.rdm,FAIR_Text,Resource Title,200,200,200,1.0,1.0,0,201
+eawag.rdm,FAIR_Text,Resource Type General,200,200,200,1.0,1.0,0,200
+eawag.rdm,FAIR_Text,Project Funder,200,0,0,0.0,0.0,0,0
+eawag.rdm,FAIR_Text,Award Title,200,0,0,0.0,0.0,0,0
+eawag.rdm,FAIR_Text,Temporal Extent,200,173,173,0.865,0.865,0,207
+eawag.rdm,FAIR_Text,Spatial Extent,200,140,140,0.7,0.7,0,1015
+eawag.rdm,FAIR_Identifiers,Date Submitted,200,197,197,0.985,0.985,0,197
+eawag.rdm,FAIR_Identifiers,Keyword Value URI,200,2,0,0.01,0.0,46,46
+eawag.rdm,FAIR_Identifiers,Keyword Vocabulary URI,200,0,0,0.0,0.0,0,0
+eawag.rdm,FAIR_Identifiers,Resource Author Type,200,200,200,1.0,1.0,0,1238
+eawag.rdm,FAIR_Identifiers,Resource Author Identifier,200,181,181,0.905,0.905,0,785
+eawag.rdm,FAIR_Identifiers,Resource Author Identifier Type,200,182,182,0.91,0.91,0,786
+eawag.rdm,FAIR_Identifiers,Publisher Identifier,200,0,0,0.0,0.0,0,0
+eawag.rdm,FAIR_Identifiers,Publisher Identifier Type,200,0,0,0.0,0.0,0,0
+eawag.rdm,FAIR_Identifiers,Publisher Identifier Scheme URI,200,0,0,0.0,0.0,0,0
+eawag.rdm,FAIR_Identifiers,Resource Author Affiliation Identifier,200,0,0,0.0,0.0,0,0
+eawag.rdm,FAIR_Identifiers,Resource Author Affiliation Identifier Type,200,0,0,0.0,0.0,0,0
+eawag.rdm,FAIR_Identifiers,Resource Author Affiliation Identifier Scheme URI,200,0,0,0.0,0.0,0,0
+eawag.rdm,FAIR_Identifiers,Resource Identifier Type,200,1,1,0.005,0.005,0,1
+eawag.rdm,FAIR_Identifiers,Resource Type,200,200,200,1.0,1.0,0,200
+eawag.rdm,FAIR_Identifiers,Funder Identifier,200,0,0,0.0,0.0,0,0
+eawag.rdm,FAIR_Identifiers,Funder Identifier Type,200,0,0,0.0,0.0,0,0
+eawag.rdm,FAIR_Identifiers,Award URI,200,0,0,0.0,0.0,0,0
+eawag.rdm,FAIR_Identifiers,Award Number,200,0,0,0.0,0.0,0,0
+eawag.rdm,FAIR_Connections,CitedBy,200,0,0,0.0,0.0,0,0
+eawag.rdm,FAIR_Connections,Date Available,200,0,0,0.0,0.0,0,0
+eawag.rdm,FAIR_Connections,DescribedBy,200,0,0,0.0,0.0,0,0
+eawag.rdm,FAIR_Connections,Distribution Contact,200,0,0,0.0,0.0,0,0
+eawag.rdm,FAIR_Connections,DocumentedBy,200,2,2,0.01,0.01,0,2
+eawag.rdm,FAIR_Connections,Resource Contact,200,0,0,0.0,0.0,0,0
+eawag.rdm,FAIR_Connections,HasMetadata,200,0,0,0.0,0.0,0,0
+eawag.rdm,FAIR_Connections,Resource Format,200,1,1,0.005,0.005,0,1
+eawag.rdm,FAIR_Connections,Resource Size,200,1,1,0.005,0.005,0,2
+eawag.rdm,FAIR_Connections,Resource URL,200,200,200,1.0,1.0,0,200
+eawag.rdm,FAIR_Connections,Rights,200,199,199,0.995,0.995,0,201
+eawag.rdm,FAIR_Connections,RightsHolder,200,0,0,0.0,0.0,0,0
+eawag.rdm,FAIR_Connections,Methods,200,0,0,0.0,0.0,0,0
+eawag.rdm,FAIR_Connections,Technical Information,200,0,0,0.0,0.0,0,0
+eawag.rdm,FAIR_Connections,ReferencedBy,200,0,0,0.0,0.0,0,0
+eawag.rdm,FAIR_Connections,ReviewedBy,200,0,0,0.0,0.0,0,0
+eawag.rdm,FAIR_Connections,SourceOf,200,0,0,0.0,0.0,0,0
+eawag.rdm,FAIR_Connections,SupplementTo,200,111,111,0.555,0.555,0,114
+eawag.rdm,FAIR_Contacts,Resource Contact Identifier,200,0,0,0.0,0.0,0,0
+eawag.rdm,FAIR_Contacts,Resource Contact Identifier Scheme,200,0,0,0.0,0.0,0,0
+eawag.rdm,FAIR_Contacts,Resource Contact Identifier Scheme URI,200,0,0,0.0,0.0,0,0
+eawag.rdm,FAIR_Contacts,Distribution Contact Identifier,200,0,0,0.0,0.0,0,0
+eawag.rdm,FAIR_Contacts,Distribution Contact Identifier Scheme,200,0,0,0.0,0.0,0,0
+eawag.rdm,FAIR_Contacts,Distribution Contact Identifier Scheme URI,200,0,0,0.0,0.0,0,0
+eawag.rdm,FAIR_Contacts,Rights Holder Identifier,200,0,0,0.0,0.0,0,0
+eawag.rdm,FAIR_Contacts,Rights Holder Identifier Scheme,200,0,0,0.0,0.0,0,0
+eawag.rdm,FAIR_Contacts,Rights Holder Identifier Scheme URI,200,0,0,0.0,0.0,0,0
+eawag.rdm,FAIR_Contacts,Rights URI,200,199,199,0.995,0.995,0,201
+eawag.rdm,DataCite_Relations,Related Identifier,200,120,120,0.6,0.6,0,255
+eawag.rdm,DataCite_Relations,Related Identifier Type,200,120,120,0.6,0.6,0,255
+eawag.rdm,DataCite_Relations,Related Item Type,200,119,119,0.595,0.595,0,250
+eawag.rdm,DataCite_Relations,Cites,200,2,2,0.01,0.01,0,2
+eawag.rdm,DataCite_Relations,IsCitedBy,200,0,0,0.0,0.0,0,0
+eawag.rdm,DataCite_Relations,Collects,200,0,0,0.0,0.0,0,0
+eawag.rdm,DataCite_Relations,IsCollectedBy,200,0,0,0.0,0.0,0,0
+eawag.rdm,DataCite_Relations,IsSupplementTo,200,111,111,0.555,0.555,0,114
+eawag.rdm,DataCite_Relations,IsSupplementedBy,200,98,98,0.49,0.49,0,103
+eawag.rdm,DataCite_Relations,IsTranslationOf,200,0,0,0.0,0.0,0,0
+eawag.rdm,DataCite_Relations,HasTranslation,200,0,0,0.0,0.0,0,0
+eawag.rdm,DataCite_Relations,Continues,200,0,0,0.0,0.0,0,0
+eawag.rdm,DataCite_Relations,IsContinuedBy,200,0,0,0.0,0.0,0,0
+eawag.rdm,DataCite_Relations,IsNewVersionOf,200,8,8,0.04,0.04,0,9
+eawag.rdm,DataCite_Relations,IsPreviousVersionOf,200,5,5,0.025,0.025,0,5
+eawag.rdm,DataCite_Relations,IsPartOf,200,4,4,0.02,0.02,0,4
+eawag.rdm,DataCite_Relations,HasPart,200,1,1,0.005,0.005,0,10
+eawag.rdm,DataCite_Relations,IsPublishedIn,200,0,0,0.0,0.0,0,0
+eawag.rdm,DataCite_Relations,IsReferencedBy,200,0,0,0.0,0.0,0,0
+eawag.rdm,DataCite_Relations,References,200,0,0,0.0,0.0,0,0
+eawag.rdm,DataCite_Relations,Documents,200,0,0,0.0,0.0,0,0
+eawag.rdm,DataCite_Relations,IsDocumentedBy,200,2,2,0.01,0.01,0,2
+eawag.rdm,DataCite_Relations,IsCompiledBy,200,0,0,0.0,0.0,0,0
+eawag.rdm,DataCite_Relations,Compiles,200,0,0,0.0,0.0,0,0
+eawag.rdm,DataCite_Relations,IsVariantFormOf,200,0,0,0.0,0.0,0,0
+eawag.rdm,DataCite_Relations,IsOriginalFormOf,200,0,0,0.0,0.0,0,0
+eawag.rdm,DataCite_Relations,IsIdenticalTo,200,3,3,0.015,0.015,0,3
+eawag.rdm,DataCite_Relations,HasMetadata,200,0,0,0.0,0.0,0,0
+eawag.rdm,DataCite_Relations,IsMetadataFor,200,0,0,0.0,0.0,0,0
+eawag.rdm,DataCite_Relations,Reviews,200,0,0,0.0,0.0,0,0
+eawag.rdm,DataCite_Relations,IsReviewedBy,200,0,0,0.0,0.0,0,0
+eawag.rdm,DataCite_Relations,IsDerivedFrom,200,0,0,0.0,0.0,0,0
+eawag.rdm,DataCite_Relations,IsSourceOf,200,0,0,0.0,0.0,0,0
+eawag.rdm,DataCite_Relations,Describes,200,0,0,0.0,0.0,0,0
+eawag.rdm,DataCite_Relations,IsDescribedBy,200,0,0,0.0,0.0,0,0
+eawag.rdm,DataCite_Relations,HasVersion,200,0,0,0.0,0.0,0,0
+eawag.rdm,DataCite_Relations,IsVersionOf,200,0,0,0.0,0.0,0,0
+eawag.rdm,DataCite_Relations,Requires,200,0,0,0.0,0.0,0,0
+eawag.rdm,DataCite_Relations,IsRequiredBy,200,0,0,0.0,0.0,0,0
+eawag.rdm,DataCite_Relations,Obsoletes,200,1,1,0.005,0.005,0,1
+eawag.rdm,DataCite_Relations,IsObsoletedBy,200,2,2,0.01,0.01,0,2
+eawag.rdm,DataCite_ContributorTypes,ContactPerson,200,0,0,0.0,0.0,0,0
+eawag.rdm,DataCite_ContributorTypes,DataCollector,200,0,0,0.0,0.0,0,0
+eawag.rdm,DataCite_ContributorTypes,DataCurator,200,0,0,0.0,0.0,0,0
+eawag.rdm,DataCite_ContributorTypes,DataManager,200,0,0,0.0,0.0,0,0
+eawag.rdm,DataCite_ContributorTypes,Distributor,200,0,0,0.0,0.0,0,0
+eawag.rdm,DataCite_ContributorTypes,HostingInstitution,200,0,0,0.0,0.0,0,0
+eawag.rdm,DataCite_ContributorTypes,OtherContributor,200,0,0,0.0,0.0,0,0
+eawag.rdm,DataCite_ContributorTypes,Producer,200,0,0,0.0,0.0,0,0
+eawag.rdm,DataCite_ContributorTypes,ProjectLeader,200,0,0,0.0,0.0,0,0
+eawag.rdm,DataCite_ContributorTypes,ProjectManager,200,0,0,0.0,0.0,0,0
+eawag.rdm,DataCite_ContributorTypes,ProjectMember,200,0,0,0.0,0.0,0,0
+eawag.rdm,DataCite_ContributorTypes,RegistrationAgency,200,0,0,0.0,0.0,0,0
+eawag.rdm,DataCite_ContributorTypes,RegistrationAuthority,200,0,0,0.0,0.0,0,0
+eawag.rdm,DataCite_ContributorTypes,RelatedPerson,200,0,0,0.0,0.0,0,0
+eawag.rdm,DataCite_ContributorTypes,ResearchGroup,200,0,0,0.0,0.0,0,0
+eawag.rdm,DataCite_ContributorTypes,RightsHolder,200,0,0,0.0,0.0,0,0
+eawag.rdm,DataCite_ContributorTypes,Researcher,200,0,0,0.0,0.0,0,0
+eawag.rdm,DataCite_ContributorTypes,Sponsor,200,0,0,0.0,0.0,0,0
+eawag.rdm,DataCite_ContributorTypes,Supervisor,200,0,0,0.0,0.0,0,0
+eawag.rdm,DataCite_ContributorTypes,WorkPackageLeader,200,0,0,0.0,0.0,0,0
+eawag.rdm,Project_Team,Resource Author,200,200,200,1.0,1.0,0,1238
+eawag.rdm,Project_Team,Resource Author Type,200,200,200,1.0,1.0,0,1238
+eawag.rdm,Project_Team,Resource Author Identifier,200,181,181,0.905,0.905,0,785
+eawag.rdm,Project_Team,Resource Author Identifier Type,200,182,182,0.91,0.91,0,786
+eawag.rdm,Project_Team,Resource Author Affiliation,200,184,184,0.92,0.92,0,955
+eawag.rdm,Project_Team,Resource Author Affiliation Identifier,200,0,0,0.0,0.0,0,0
+eawag.rdm,Project_Team,Resource Author Affiliation Identifier Type,200,0,0,0.0,0.0,0,0
+eawag.rdm,Project_Team,Temporal Extent,200,0,0,0.0,0.0,0,0
+eawag.rdm,Project_Team,Resource Contributor Name,200,0,0,0.0,0.0,0,0
+eawag.rdm,Project_Team,Resource Contributor Identifier,200,0,0,0.0,0.0,0,0
+eawag.rdm,Project_Team,Resource Contributor Identifier Type,200,0,0,0.0,0.0,0,0
+eawag.rdm,Project_Team,Resource Contributor Affiliation,200,0,0,0.0,0.0,0,0
+eawag.rdm,Project_Team,Resource Contributor Affiliation Identifier,200,0,0,0.0,0.0,0,0
+eawag.rdm,Project_Team,Funder Name,200,0,0,0.0,0.0,0,0
+eawag.rdm,Project_Team,Funder Identifier,200,0,0,0.0,0.0,0,0
+eawag.rdm,Project_Team,ContactPerson,200,0,0,0.0,0.0,0,0
+eawag.rdm,Project_Team,DataManager,200,0,0,0.0,0.0,0,0
+eawag.rdm,Project_Team,Editor,200,0,0,0.0,0.0,0,0
+eawag.rdm,Project_Team,HostingInstitution,200,0,0,0.0,0.0,0,0
+eawag.rdm,Project_Team,Other,200,0,0,0.0,0.0,0,0
+eawag.rdm,Project_Team,Producer,200,0,0,0.0,0.0,0,0
+eawag.rdm,Project_Team,ProjectLeader,200,0,0,0.0,0.0,0,0
+eawag.rdm,Project_Team,ProjectManager,200,0,0,0.0,0.0,0,0
+eawag.rdm,Project_Team,ProjectMember,200,0,0,0.0,0.0,0,0
+eawag.rdm,Project_Team,RegistrationAgency,200,0,0,0.0,0.0,0,0
+eawag.rdm,Project_Team,RelatedPerson,200,0,0,0.0,0.0,0,0
+eawag.rdm,Project_Team,Researcher,200,0,0,0.0,0.0,0,0
+eawag.rdm,Project_Team,Sponsor,200,0,0,0.0,0.0,0,0
+eawag.rdm,Project_Team,Supervisor,200,0,0,0.0,0.0,0,0
+eawag.rdm,Project_Team,WorkPackageLeader,200,0,0,0.0,0.0,0,0
+eawag.rdm,Project_Items,Audiovisual,200,0,0,0.0,0.0,0,0
+eawag.rdm,Project_Items,Award,200,0,0,0.0,0.0,0,0
+eawag.rdm,Project_Items,Book,200,0,0,0.0,0.0,0,0
+eawag.rdm,Project_Items,BookChapter,200,0,0,0.0,0.0,0,0
+eawag.rdm,Project_Items,Collection,200,16,16,0.08,0.08,0,22
+eawag.rdm,Project_Items,ComputationalNotebook,200,0,0,0.0,0.0,0,0
+eawag.rdm,Project_Items,ConferencePaper,200,0,0,0.0,0.0,0,0
+eawag.rdm,Project_Items,ConferenceProceeding,200,0,0,0.0,0.0,0,0
+eawag.rdm,Project_Items,Dataset,200,11,11,0.055,0.055,0,21
+eawag.rdm,Project_Items,Event,200,0,0,0.0,0.0,0,0
+eawag.rdm,Project_Items,JournalArticle,200,1,1,0.005,0.005,0,1
+eawag.rdm,Project_Items,Other,200,0,0,0.0,0.0,0,0
+eawag.rdm,Project_Items,OutputManagementPlan,200,0,0,0.0,0.0,0,0
+eawag.rdm,Project_Items,PhysicalObject,200,0,0,0.0,0.0,0,0
+eawag.rdm,Project_Items,Project,200,0,0,0.0,0.0,0,0
+eawag.rdm,Project_Items,Report,200,0,0,0.0,0.0,0,0
+eawag.rdm,Project_Items,Software,200,0,0,0.0,0.0,0,0
+eawag.rdm,Project_Items,Standard,200,0,0,0.0,0.0,0,0
+eawag.rdm,Project_Items,Text,200,100,100,0.5,0.5,0,206
+eawag.rdm,Project_Items,Workflow,200,0,0,0.0,0.0,0,0
+eawag.rdm,Project_Relations,Related Identifier,200,120,120,0.6,0.6,0,255
+eawag.rdm,Project_Relations,Related Identifier Type,200,120,120,0.6,0.6,0,255
+eawag.rdm,Project_Relations,Relation Type,200,120,120,0.6,0.6,0,255
+eawag.rdm,Project_Relations,Related Item Type,200,119,119,0.595,0.595,0,250
+eawag.rdm,Project_Relations,Continues,200,0,0,0.0,0.0,0,0
+eawag.rdm,Project_Relations,Describes,200,0,0,0.0,0.0,0,0
+eawag.rdm,Project_Relations,HasPart,200,1,1,0.005,0.005,0,10
+eawag.rdm,Project_Relations,HasVersion,200,0,0,0.0,0.0,0,0
+eawag.rdm,Project_Relations,IsCitedBy,200,0,0,0.0,0.0,0,0
+eawag.rdm,Project_Relations,IsContinuedBy,200,0,0,0.0,0.0,0,0
+eawag.rdm,Project_Relations,IsDerivedFrom,200,0,0,0.0,0.0,0,0
+eawag.rdm,Project_Relations,IsDocumentedBy,200,2,2,0.01,0.01,0,2
+eawag.rdm,Project_Relations,IsIdenticalTo,200,3,3,0.015,0.015,0,3
+eawag.rdm,Project_Relations,IsObsoletedBy,200,2,2,0.01,0.01,0,2
+eawag.rdm,Project_Relations,RelatedItems Item Type,200,0,0,0.0,0.0,0,0
+eawag.rdm,Project_Relations,RelatedItems Relation Type,200,0,0,0.0,0.0,0,0
+eawag.rdm,Project_Relations,IsPartOf,200,4,4,0.02,0.02,0,4
+eawag.rdm,Project_Relations,IsPublishedIn,200,0,0,0.0,0.0,0,0
+eawag.rdm,Project_Relations,IsReferencedBy,200,0,0,0.0,0.0,0,0
+eawag.rdm,Project_Relations,IsSourceOf,200,0,0,0.0,0.0,0,0
+eawag.rdm,Project_Relations,IsSupplementedBy,200,98,98,0.49,0.49,0,103
+eawag.rdm,Project_Relations,IsSupplementTo,200,111,111,0.555,0.555,0,114
+eawag.rdm,Project_Relations,IsVariantFormOf,200,0,0,0.0,0.0,0,0
+eawag.rdm,Project_Relations,IsVersionOf,200,0,0,0.0,0.0,0,0
+eawag.rdm,Project_Relations,Obsoletes,200,1,1,0.005,0.005,0,1
+eawag.rdm,Project_Relations,References,200,0,0,0.0,0.0,0,0
+eawag.rdm,SHARE_stewardship,Spatial Extent,200,140,140,0.7,0.7,0,1015
+eawag.rdm,SHARE_stewardship,Date Collected,200,173,173,0.865,0.865,0,207
+eawag.rdm,SHARE_stewardship,Date Coverage,200,0,0,0.0,0.0,0,0
+eawag.rdm,SHARE_stewardship,Contributor Type,200,0,0,0.0,0.0,0,0
+eawag.rdm,SHARE_stewardship,Keyword,200,199,199,0.995,0.995,0,9333
+eawag.rdm,SHARE_harmonization,Methods,200,0,0,0.0,0.0,0,0
+eawag.rdm,SHARE_harmonization,Resource Author Identifier,200,181,181,0.905,0.905,0,785
+eawag.rdm,SHARE_harmonization,Resource Contributor Identifier,200,0,0,0.0,0.0,0,0
+eawag.rdm,SHARE_harmonization,IsCitedBy,200,0,0,0.0,0.0,0,0
+eawag.rdm,SHARE_harmonization,Abstract,200,195,195,0.975,0.975,0,195
+eawag.rdm,SHARE_harmonization,Resource Author Affiliation Identifier,200,0,0,0.0,0.0,0,0
+eawag.rdm,SHARE_harmonization,Resource Contributor Affiliation Identifier,200,0,0,0.0,0.0,0,0
+eawag.rdm,SHARE_harmonization,Resource Author Identifier Type,200,182,182,0.91,0.91,0,786
+eawag.rdm,SHARE_harmonization,Resource Author Affiliation Identifier Type,200,0,0,0.0,0.0,0,0
+eawag.rdm,SHARE_harmonization,Resource Contributor Identifier Type,200,0,0,0.0,0.0,0,0
+eawag.rdm,SHARE_harmonization,Resource Contributor Affiliation Identifier Type,200,0,0,0.0,0.0,0,0
+eawag.rdm,SHARE_access,Rights Identifier,200,170,170,0.85,0.85,0,170
+eawag.rdm,SHARE_access,Rights,200,199,199,0.995,0.995,0,201
+eawag.rdm,SHARE_access,Date Available,200,0,0,0.0,0.0,0,0
+eawag.rdm,SHARE_access,Resource Format,200,1,1,0.005,0.005,0,1
+eawag.rdm,SHARE_reuse,IsSourceOf,200,0,0,0.0,0.0,0,0
+eawag.rdm,SHARE_reuse,Discovery Metrics,200,6,6,0.03,0.03,0,6
+eawag.rdm,SHARE_reuse,Access Metrics,200,0,0,0.0,0.0,0,0
+eawag.rdm,SHARE_reuse,Citation Metrics,200,61,61,0.305,0.305,0,61
+eawag.rdm,SHARE_engagement,JournalArticle,200,1,1,0.005,0.005,0,1
+eawag.rdm,SHARE_engagement,Preprint,200,0,0,0.0,0.0,0,0
+eawag.rdm,SHARE_engagement,ConferencePaper,200,0,0,0.0,0.0,0,0
+eawag.rdm,SHARE_engagement,ConferenceProceeding,200,0,0,0.0,0.0,0,0
+eawag.rdm,SHARE_engagement,Dataset,200,11,11,0.055,0.055,0,21
+eawag.rdm,SHARE_engagement,Software,200,0,0,0.0,0.0,0,0
+eawag.rdm,SHARE_engagement,Project Funder,200,0,0,0.0,0.0,0,0
+eawag.rdm,SHARE_engagement,Funder Identifier,200,0,0,0.0,0.0,0,0
+eawag.rdm,SHARE_engagement,Award Title,200,0,0,0.0,0.0,0,0
+eawag.rdm,SHARE_engagement,Award Number,200,0,0,0.0,0.0,0,0
+eawag.rdm,SHARE_engagement,IsVersionOf,200,0,0,0.0,0.0,0,0
+eawag.rdm,SHARE_engagement,Funder Identifier Type,200,0,0,0.0,0.0,0,0
+sjyq.oozvia,FAIR_Text,Abstract,32,32,32,1.0,1.0,0,32
+sjyq.oozvia,FAIR_Text,Date Created,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,FAIR_Text,Keyword,32,29,29,0.9062,0.9062,0,125
+sjyq.oozvia,FAIR_Text,Keyword Vocabulary,32,28,28,0.875,0.875,0,34
+sjyq.oozvia,FAIR_Text,Resource Author Affiliation,32,32,32,1.0,1.0,0,86
+sjyq.oozvia,FAIR_Text,Resource Author,32,32,32,1.0,1.0,0,68
+sjyq.oozvia,FAIR_Text,Resource Identifier,32,32,32,1.0,1.0,0,32
+sjyq.oozvia,FAIR_Text,Resource Publication Date,32,32,32,1.0,1.0,0,32
+sjyq.oozvia,FAIR_Text,Resource Publisher,32,32,32,1.0,1.0,0,32
+sjyq.oozvia,FAIR_Text,Resource Title,32,32,32,1.0,1.0,0,45
+sjyq.oozvia,FAIR_Text,Resource Type General,32,32,32,1.0,1.0,0,32
+sjyq.oozvia,FAIR_Text,Project Funder,32,32,32,1.0,1.0,0,33
+sjyq.oozvia,FAIR_Text,Award Title,32,20,20,0.625,0.625,0,21
+sjyq.oozvia,FAIR_Text,Temporal Extent,32,15,15,0.4688,0.4688,0,15
+sjyq.oozvia,FAIR_Text,Spatial Extent,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,FAIR_Identifiers,Date Submitted,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,FAIR_Identifiers,Keyword Value URI,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,FAIR_Identifiers,Keyword Vocabulary URI,32,28,28,0.875,0.875,0,34
+sjyq.oozvia,FAIR_Identifiers,Resource Author Type,32,32,32,1.0,1.0,0,68
+sjyq.oozvia,FAIR_Identifiers,Resource Author Identifier,32,32,32,1.0,1.0,0,68
+sjyq.oozvia,FAIR_Identifiers,Resource Author Identifier Type,32,32,32,1.0,1.0,0,68
+sjyq.oozvia,FAIR_Identifiers,Publisher Identifier,32,32,32,1.0,1.0,0,32
+sjyq.oozvia,FAIR_Identifiers,Publisher Identifier Type,32,32,32,1.0,1.0,0,32
+sjyq.oozvia,FAIR_Identifiers,Publisher Identifier Scheme URI,32,30,30,0.9375,0.9375,0,30
+sjyq.oozvia,FAIR_Identifiers,Resource Author Affiliation Identifier,32,32,32,1.0,1.0,0,86
+sjyq.oozvia,FAIR_Identifiers,Resource Author Affiliation Identifier Type,32,32,32,1.0,1.0,0,86
+sjyq.oozvia,FAIR_Identifiers,Resource Author Affiliation Identifier Scheme URI,32,27,27,0.8438,0.8438,0,81
+sjyq.oozvia,FAIR_Identifiers,Resource Identifier Type,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,FAIR_Identifiers,Resource Type,32,32,32,1.0,1.0,0,32
+sjyq.oozvia,FAIR_Identifiers,Funder Identifier,32,32,32,1.0,1.0,0,33
+sjyq.oozvia,FAIR_Identifiers,Funder Identifier Type,32,32,32,1.0,1.0,0,33
+sjyq.oozvia,FAIR_Identifiers,Award URI,32,11,11,0.3438,0.3438,0,11
+sjyq.oozvia,FAIR_Identifiers,Award Number,32,17,17,0.5312,0.5312,0,17
+sjyq.oozvia,FAIR_Connections,CitedBy,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,FAIR_Connections,Date Available,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,FAIR_Connections,DescribedBy,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,FAIR_Connections,Distribution Contact,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,FAIR_Connections,DocumentedBy,32,11,11,0.3438,0.3438,0,72
+sjyq.oozvia,FAIR_Connections,Resource Contact,32,22,22,0.6875,0.6875,0,22
+sjyq.oozvia,FAIR_Connections,HasMetadata,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,FAIR_Connections,Resource Format,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,FAIR_Connections,Resource Size,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,FAIR_Connections,Resource URL,32,32,32,1.0,1.0,0,32
+sjyq.oozvia,FAIR_Connections,Rights,32,32,32,1.0,1.0,0,32
+sjyq.oozvia,FAIR_Connections,RightsHolder,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,FAIR_Connections,Methods,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,FAIR_Connections,Technical Information,32,7,7,0.2188,0.2188,0,7
+sjyq.oozvia,FAIR_Connections,ReferencedBy,32,1,1,0.0312,0.0312,0,1
+sjyq.oozvia,FAIR_Connections,ReviewedBy,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,FAIR_Connections,SourceOf,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,FAIR_Connections,SupplementTo,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,FAIR_Contacts,Resource Contact Identifier,32,22,22,0.6875,0.6875,0,22
+sjyq.oozvia,FAIR_Contacts,Resource Contact Identifier Scheme,32,22,22,0.6875,0.6875,0,22
+sjyq.oozvia,FAIR_Contacts,Resource Contact Identifier Scheme URI,32,11,11,0.3438,0.3438,0,11
+sjyq.oozvia,FAIR_Contacts,Distribution Contact Identifier,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,FAIR_Contacts,Distribution Contact Identifier Scheme,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,FAIR_Contacts,Distribution Contact Identifier Scheme URI,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,FAIR_Contacts,Rights Holder Identifier,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,FAIR_Contacts,Rights Holder Identifier Scheme,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,FAIR_Contacts,Rights Holder Identifier Scheme URI,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,FAIR_Contacts,Rights URI,32,32,32,1.0,1.0,0,32
+sjyq.oozvia,DataCite_Relations,Related Identifier,32,28,28,0.875,0.875,0,214
+sjyq.oozvia,DataCite_Relations,Related Identifier Type,32,28,28,0.875,0.875,0,214
+sjyq.oozvia,DataCite_Relations,Related Item Type,32,28,28,0.875,0.875,0,201
+sjyq.oozvia,DataCite_Relations,Cites,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,DataCite_Relations,IsCitedBy,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,DataCite_Relations,Collects,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,DataCite_Relations,IsCollectedBy,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,DataCite_Relations,IsSupplementTo,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,DataCite_Relations,IsSupplementedBy,32,6,6,0.1875,0.1875,0,6
+sjyq.oozvia,DataCite_Relations,IsTranslationOf,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,DataCite_Relations,HasTranslation,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,DataCite_Relations,Continues,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,DataCite_Relations,IsContinuedBy,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,DataCite_Relations,IsNewVersionOf,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,DataCite_Relations,IsPreviousVersionOf,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,DataCite_Relations,IsPartOf,32,16,16,0.5,0.5,0,16
+sjyq.oozvia,DataCite_Relations,HasPart,32,11,11,0.3438,0.3438,0,104
+sjyq.oozvia,DataCite_Relations,IsPublishedIn,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,DataCite_Relations,IsReferencedBy,32,1,1,0.0312,0.0312,0,1
+sjyq.oozvia,DataCite_Relations,References,32,4,4,0.125,0.125,0,10
+sjyq.oozvia,DataCite_Relations,Documents,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,DataCite_Relations,IsDocumentedBy,32,11,11,0.3438,0.3438,0,72
+sjyq.oozvia,DataCite_Relations,IsCompiledBy,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,DataCite_Relations,Compiles,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,DataCite_Relations,IsVariantFormOf,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,DataCite_Relations,IsOriginalFormOf,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,DataCite_Relations,IsIdenticalTo,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,DataCite_Relations,HasMetadata,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,DataCite_Relations,IsMetadataFor,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,DataCite_Relations,Reviews,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,DataCite_Relations,IsReviewedBy,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,DataCite_Relations,IsDerivedFrom,32,3,3,0.0938,0.0938,0,3
+sjyq.oozvia,DataCite_Relations,IsSourceOf,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,DataCite_Relations,Describes,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,DataCite_Relations,IsDescribedBy,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,DataCite_Relations,HasVersion,32,1,1,0.0312,0.0312,0,1
+sjyq.oozvia,DataCite_Relations,IsVersionOf,32,1,1,0.0312,0.0312,0,1
+sjyq.oozvia,DataCite_Relations,Requires,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,DataCite_Relations,IsRequiredBy,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,DataCite_Relations,Obsoletes,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,DataCite_Relations,IsObsoletedBy,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,DataCite_ContributorTypes,ContactPerson,32,22,22,0.6875,0.6875,0,22
+sjyq.oozvia,DataCite_ContributorTypes,DataCollector,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,DataCite_ContributorTypes,DataCurator,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,DataCite_ContributorTypes,DataManager,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,DataCite_ContributorTypes,Distributor,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,DataCite_ContributorTypes,HostingInstitution,32,7,7,0.2188,0.2188,0,7
+sjyq.oozvia,DataCite_ContributorTypes,OtherContributor,32,7,7,0.2188,0.2188,0,200
+sjyq.oozvia,DataCite_ContributorTypes,Producer,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,DataCite_ContributorTypes,ProjectLeader,32,19,19,0.5938,0.5938,0,31
+sjyq.oozvia,DataCite_ContributorTypes,ProjectManager,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,DataCite_ContributorTypes,ProjectMember,32,6,6,0.1875,0.1875,0,20
+sjyq.oozvia,DataCite_ContributorTypes,RegistrationAgency,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,DataCite_ContributorTypes,RegistrationAuthority,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,DataCite_ContributorTypes,RelatedPerson,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,DataCite_ContributorTypes,ResearchGroup,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,DataCite_ContributorTypes,RightsHolder,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,DataCite_ContributorTypes,Researcher,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,DataCite_ContributorTypes,Sponsor,32,2,2,0.0625,0.0625,0,2
+sjyq.oozvia,DataCite_ContributorTypes,Supervisor,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,DataCite_ContributorTypes,WorkPackageLeader,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,Project_Team,Resource Author,32,32,32,1.0,1.0,0,68
+sjyq.oozvia,Project_Team,Resource Author Type,32,32,32,1.0,1.0,0,68
+sjyq.oozvia,Project_Team,Resource Author Identifier,32,32,32,1.0,1.0,0,68
+sjyq.oozvia,Project_Team,Resource Author Identifier Type,32,32,32,1.0,1.0,0,68
+sjyq.oozvia,Project_Team,Resource Author Affiliation,32,32,32,1.0,1.0,0,86
+sjyq.oozvia,Project_Team,Resource Author Affiliation Identifier,32,32,32,1.0,1.0,0,86
+sjyq.oozvia,Project_Team,Resource Author Affiliation Identifier Type,32,32,32,1.0,1.0,0,86
+sjyq.oozvia,Project_Team,Temporal Extent,32,15,15,0.4688,0.4688,0,15
+sjyq.oozvia,Project_Team,Resource Contributor Name,32,32,32,1.0,1.0,0,282
+sjyq.oozvia,Project_Team,Resource Contributor Identifier,32,32,32,1.0,1.0,0,242
+sjyq.oozvia,Project_Team,Resource Contributor Identifier Type,32,32,32,1.0,1.0,0,242
+sjyq.oozvia,Project_Team,Resource Contributor Affiliation,32,24,24,0.75,0.75,0,78
+sjyq.oozvia,Project_Team,Resource Contributor Affiliation Identifier,32,24,24,0.75,0.75,0,78
+sjyq.oozvia,Project_Team,Funder Name,32,32,32,1.0,1.0,0,33
+sjyq.oozvia,Project_Team,Funder Identifier,32,32,32,1.0,1.0,0,33
+sjyq.oozvia,Project_Team,ContactPerson,32,22,22,0.6875,0.6875,0,22
+sjyq.oozvia,Project_Team,DataManager,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,Project_Team,Editor,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,Project_Team,HostingInstitution,32,7,7,0.2188,0.2188,0,7
+sjyq.oozvia,Project_Team,Other,32,7,7,0.2188,0.2188,0,200
+sjyq.oozvia,Project_Team,Producer,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,Project_Team,ProjectLeader,32,19,19,0.5938,0.5938,0,31
+sjyq.oozvia,Project_Team,ProjectManager,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,Project_Team,ProjectMember,32,6,6,0.1875,0.1875,0,20
+sjyq.oozvia,Project_Team,RegistrationAgency,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,Project_Team,RelatedPerson,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,Project_Team,Researcher,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,Project_Team,Sponsor,32,2,2,0.0625,0.0625,0,2
+sjyq.oozvia,Project_Team,Supervisor,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,Project_Team,WorkPackageLeader,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,Project_Items,Audiovisual,32,4,4,0.125,0.125,0,4
+sjyq.oozvia,Project_Items,Award,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,Project_Items,Book,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,Project_Items,BookChapter,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,Project_Items,Collection,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,Project_Items,ComputationalNotebook,32,2,2,0.0625,0.0625,0,3
+sjyq.oozvia,Project_Items,ConferencePaper,32,3,3,0.0938,0.0938,0,4
+sjyq.oozvia,Project_Items,ConferenceProceeding,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,Project_Items,Dataset,32,3,3,0.0938,0.0938,0,3
+sjyq.oozvia,Project_Items,Event,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,Project_Items,JournalArticle,32,5,5,0.1562,0.1562,0,6
+sjyq.oozvia,Project_Items,Other,32,1,1,0.0312,0.0312,0,4
+sjyq.oozvia,Project_Items,OutputManagementPlan,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,Project_Items,PhysicalObject,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,Project_Items,Project,32,18,18,0.5625,0.5625,0,18
+sjyq.oozvia,Project_Items,Report,32,1,1,0.0312,0.0312,0,1
+sjyq.oozvia,Project_Items,Software,32,3,3,0.0938,0.0938,0,6
+sjyq.oozvia,Project_Items,Standard,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,Project_Items,Text,32,20,20,0.625,0.625,0,152
+sjyq.oozvia,Project_Items,Workflow,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,Project_Relations,Related Identifier,32,28,28,0.875,0.875,0,214
+sjyq.oozvia,Project_Relations,Related Identifier Type,32,28,28,0.875,0.875,0,214
+sjyq.oozvia,Project_Relations,Relation Type,32,28,28,0.875,0.875,0,214
+sjyq.oozvia,Project_Relations,Related Item Type,32,28,28,0.875,0.875,0,201
+sjyq.oozvia,Project_Relations,Continues,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,Project_Relations,Describes,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,Project_Relations,HasPart,32,11,11,0.3438,0.3438,0,104
+sjyq.oozvia,Project_Relations,HasVersion,32,1,1,0.0312,0.0312,0,1
+sjyq.oozvia,Project_Relations,IsCitedBy,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,Project_Relations,IsContinuedBy,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,Project_Relations,IsDerivedFrom,32,3,3,0.0938,0.0938,0,3
+sjyq.oozvia,Project_Relations,IsDocumentedBy,32,11,11,0.3438,0.3438,0,72
+sjyq.oozvia,Project_Relations,IsIdenticalTo,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,Project_Relations,IsObsoletedBy,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,Project_Relations,RelatedItems Item Type,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,Project_Relations,RelatedItems Relation Type,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,Project_Relations,IsPartOf,32,16,16,0.5,0.5,0,16
+sjyq.oozvia,Project_Relations,IsPublishedIn,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,Project_Relations,IsReferencedBy,32,1,1,0.0312,0.0312,0,1
+sjyq.oozvia,Project_Relations,IsSourceOf,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,Project_Relations,IsSupplementedBy,32,6,6,0.1875,0.1875,0,6
+sjyq.oozvia,Project_Relations,IsSupplementTo,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,Project_Relations,IsVariantFormOf,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,Project_Relations,IsVersionOf,32,1,1,0.0312,0.0312,0,1
+sjyq.oozvia,Project_Relations,Obsoletes,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,Project_Relations,References,32,4,4,0.125,0.125,0,10
+sjyq.oozvia,SHARE_stewardship,Spatial Extent,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,SHARE_stewardship,Date Collected,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,SHARE_stewardship,Date Coverage,32,15,15,0.4688,0.4688,0,15
+sjyq.oozvia,SHARE_stewardship,Contributor Type,32,32,32,1.0,1.0,0,282
+sjyq.oozvia,SHARE_stewardship,Keyword,32,29,29,0.9062,0.9062,0,125
+sjyq.oozvia,SHARE_harmonization,Methods,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,SHARE_harmonization,Resource Author Identifier,32,32,32,1.0,1.0,0,68
+sjyq.oozvia,SHARE_harmonization,Resource Contributor Identifier,32,32,32,1.0,1.0,0,242
+sjyq.oozvia,SHARE_harmonization,IsCitedBy,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,SHARE_harmonization,Abstract,32,32,32,1.0,1.0,0,32
+sjyq.oozvia,SHARE_harmonization,Resource Author Affiliation Identifier,32,32,32,1.0,1.0,0,86
+sjyq.oozvia,SHARE_harmonization,Resource Contributor Affiliation Identifier,32,24,24,0.75,0.75,0,78
+sjyq.oozvia,SHARE_harmonization,Resource Author Identifier Type,32,32,32,1.0,1.0,0,68
+sjyq.oozvia,SHARE_harmonization,Resource Author Affiliation Identifier Type,32,32,32,1.0,1.0,0,86
+sjyq.oozvia,SHARE_harmonization,Resource Contributor Identifier Type,32,32,32,1.0,1.0,0,242
+sjyq.oozvia,SHARE_harmonization,Resource Contributor Affiliation Identifier Type,32,24,24,0.75,0.75,0,78
+sjyq.oozvia,SHARE_access,Rights Identifier,32,32,32,1.0,1.0,0,32
+sjyq.oozvia,SHARE_access,Rights,32,32,32,1.0,1.0,0,32
+sjyq.oozvia,SHARE_access,Date Available,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,SHARE_access,Resource Format,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,SHARE_reuse,IsSourceOf,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,SHARE_reuse,Discovery Metrics,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,SHARE_reuse,Access Metrics,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,SHARE_reuse,Citation Metrics,32,13,13,0.4062,0.4062,0,13
+sjyq.oozvia,SHARE_engagement,JournalArticle,32,5,5,0.1562,0.1562,0,6
+sjyq.oozvia,SHARE_engagement,Preprint,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,SHARE_engagement,ConferencePaper,32,3,3,0.0938,0.0938,0,4
+sjyq.oozvia,SHARE_engagement,ConferenceProceeding,32,0,0,0.0,0.0,0,0
+sjyq.oozvia,SHARE_engagement,Dataset,32,3,3,0.0938,0.0938,0,3
+sjyq.oozvia,SHARE_engagement,Software,32,3,3,0.0938,0.0938,0,6
+sjyq.oozvia,SHARE_engagement,Project Funder,32,32,32,1.0,1.0,0,33
+sjyq.oozvia,SHARE_engagement,Funder Identifier,32,32,32,1.0,1.0,0,33
+sjyq.oozvia,SHARE_engagement,Award Title,32,20,20,0.625,0.625,0,21
+sjyq.oozvia,SHARE_engagement,Award Number,32,17,17,0.5312,0.5312,0,17
+sjyq.oozvia,SHARE_engagement,IsVersionOf,32,1,1,0.0312,0.0312,0,1
+sjyq.oozvia,SHARE_engagement,Funder Identifier Type,32,32,32,1.0,1.0,0,33
+iris.iris,FAIR_Text,Abstract,200,4,4,0.02,0.02,0,4
+iris.iris,FAIR_Text,Date Created,200,0,0,0.0,0.0,0,0
+iris.iris,FAIR_Text,Keyword,200,0,0,0.0,0.0,0,0
+iris.iris,FAIR_Text,Keyword Vocabulary,200,0,0,0.0,0.0,0,0
+iris.iris,FAIR_Text,Resource Author Affiliation,200,186,186,0.93,0.93,0,188
+iris.iris,FAIR_Text,Resource Author,200,200,200,1.0,1.0,0,202
+iris.iris,FAIR_Text,Resource Identifier,200,200,200,1.0,1.0,0,200
+iris.iris,FAIR_Text,Resource Publication Date,200,200,200,1.0,1.0,0,200
+iris.iris,FAIR_Text,Resource Publisher,200,200,200,1.0,1.0,0,200
+iris.iris,FAIR_Text,Resource Title,200,200,200,1.0,1.0,0,200
+iris.iris,FAIR_Text,Resource Type General,200,86,86,0.43,0.43,0,86
+iris.iris,FAIR_Text,Project Funder,200,0,0,0.0,0.0,0,0
+iris.iris,FAIR_Text,Award Title,200,0,0,0.0,0.0,0,0
+iris.iris,FAIR_Text,Temporal Extent,200,4,4,0.02,0.02,0,4
+iris.iris,FAIR_Text,Spatial Extent,200,4,4,0.02,0.02,0,6
+iris.iris,FAIR_Identifiers,Date Submitted,200,0,0,0.0,0.0,0,0
+iris.iris,FAIR_Identifiers,Keyword Value URI,200,0,0,0.0,0.0,0,0
+iris.iris,FAIR_Identifiers,Keyword Vocabulary URI,200,0,0,0.0,0.0,0,0
+iris.iris,FAIR_Identifiers,Resource Author Type,200,193,193,0.965,0.965,0,195
+iris.iris,FAIR_Identifiers,Resource Author Identifier,200,190,190,0.95,0.95,0,190
+iris.iris,FAIR_Identifiers,Resource Author Identifier Type,200,190,190,0.95,0.95,0,190
+iris.iris,FAIR_Identifiers,Publisher Identifier,200,200,200,1.0,1.0,0,200
+iris.iris,FAIR_Identifiers,Publisher Identifier Type,200,200,200,1.0,1.0,0,200
+iris.iris,FAIR_Identifiers,Publisher Identifier Scheme URI,200,200,200,1.0,1.0,0,200
+iris.iris,FAIR_Identifiers,Resource Author Affiliation Identifier,200,186,186,0.93,0.93,0,186
+iris.iris,FAIR_Identifiers,Resource Author Affiliation Identifier Type,200,186,186,0.93,0.93,0,186
+iris.iris,FAIR_Identifiers,Resource Author Affiliation Identifier Scheme URI,200,186,186,0.93,0.93,0,186
+iris.iris,FAIR_Identifiers,Resource Identifier Type,200,0,0,0.0,0.0,0,0
+iris.iris,FAIR_Identifiers,Resource Type,200,86,86,0.43,0.43,0,86
+iris.iris,FAIR_Identifiers,Funder Identifier,200,0,0,0.0,0.0,0,0
+iris.iris,FAIR_Identifiers,Funder Identifier Type,200,0,0,0.0,0.0,0,0
+iris.iris,FAIR_Identifiers,Award URI,200,0,0,0.0,0.0,0,0
+iris.iris,FAIR_Identifiers,Award Number,200,0,0,0.0,0.0,0,0
+iris.iris,FAIR_Connections,CitedBy,200,0,0,0.0,0.0,0,0
+iris.iris,FAIR_Connections,Date Available,200,3,3,0.015,0.015,0,3
+iris.iris,FAIR_Connections,DescribedBy,200,0,0,0.0,0.0,0,0
+iris.iris,FAIR_Connections,Distribution Contact,200,0,0,0.0,0.0,0,0
+iris.iris,FAIR_Connections,DocumentedBy,200,0,0,0.0,0.0,0,0
+iris.iris,FAIR_Connections,Resource Contact,200,0,0,0.0,0.0,0,0
+iris.iris,FAIR_Connections,HasMetadata,200,0,0,0.0,0.0,0,0
+iris.iris,FAIR_Connections,Resource Format,200,4,4,0.02,0.02,0,4
+iris.iris,FAIR_Connections,Resource Size,200,2,2,0.01,0.01,0,2
+iris.iris,FAIR_Connections,Resource URL,200,200,200,1.0,1.0,0,200
+iris.iris,FAIR_Connections,Rights,200,196,196,0.98,0.98,0,196
+iris.iris,FAIR_Connections,RightsHolder,200,196,196,0.98,0.98,0,196
+iris.iris,FAIR_Connections,Methods,200,0,0,0.0,0.0,0,0
+iris.iris,FAIR_Connections,Technical Information,200,0,0,0.0,0.0,0,0
+iris.iris,FAIR_Connections,ReferencedBy,200,0,0,0.0,0.0,0,0
+iris.iris,FAIR_Connections,ReviewedBy,200,0,0,0.0,0.0,0,0
+iris.iris,FAIR_Connections,SourceOf,200,0,0,0.0,0.0,0,0
+iris.iris,FAIR_Connections,SupplementTo,200,0,0,0.0,0.0,0,0
+iris.iris,FAIR_Contacts,Resource Contact Identifier,200,0,0,0.0,0.0,0,0
+iris.iris,FAIR_Contacts,Resource Contact Identifier Scheme,200,0,0,0.0,0.0,0,0
+iris.iris,FAIR_Contacts,Resource Contact Identifier Scheme URI,200,0,0,0.0,0.0,0,0
+iris.iris,FAIR_Contacts,Distribution Contact Identifier,200,0,0,0.0,0.0,0,0
+iris.iris,FAIR_Contacts,Distribution Contact Identifier Scheme,200,0,0,0.0,0.0,0,0
+iris.iris,FAIR_Contacts,Distribution Contact Identifier Scheme URI,200,0,0,0.0,0.0,0,0
+iris.iris,FAIR_Contacts,Rights Holder Identifier,200,196,196,0.98,0.98,0,196
+iris.iris,FAIR_Contacts,Rights Holder Identifier Scheme,200,196,196,0.98,0.98,0,196
+iris.iris,FAIR_Contacts,Rights Holder Identifier Scheme URI,200,196,196,0.98,0.98,0,196
+iris.iris,FAIR_Contacts,Rights URI,200,196,196,0.98,0.98,0,196
+iris.iris,DataCite_Relations,Related Identifier,200,0,0,0.0,0.0,0,0
+iris.iris,DataCite_Relations,Related Identifier Type,200,0,0,0.0,0.0,0,0
+iris.iris,DataCite_Relations,Related Item Type,200,0,0,0.0,0.0,0,0
+iris.iris,DataCite_Relations,Cites,200,0,0,0.0,0.0,0,0
+iris.iris,DataCite_Relations,IsCitedBy,200,0,0,0.0,0.0,0,0
+iris.iris,DataCite_Relations,Collects,200,0,0,0.0,0.0,0,0
+iris.iris,DataCite_Relations,IsCollectedBy,200,0,0,0.0,0.0,0,0
+iris.iris,DataCite_Relations,IsSupplementTo,200,0,0,0.0,0.0,0,0
+iris.iris,DataCite_Relations,IsSupplementedBy,200,0,0,0.0,0.0,0,0
+iris.iris,DataCite_Relations,IsTranslationOf,200,0,0,0.0,0.0,0,0
+iris.iris,DataCite_Relations,HasTranslation,200,0,0,0.0,0.0,0,0
+iris.iris,DataCite_Relations,Continues,200,0,0,0.0,0.0,0,0
+iris.iris,DataCite_Relations,IsContinuedBy,200,0,0,0.0,0.0,0,0
+iris.iris,DataCite_Relations,IsNewVersionOf,200,0,0,0.0,0.0,0,0
+iris.iris,DataCite_Relations,IsPreviousVersionOf,200,0,0,0.0,0.0,0,0
+iris.iris,DataCite_Relations,IsPartOf,200,0,0,0.0,0.0,0,0
+iris.iris,DataCite_Relations,HasPart,200,0,0,0.0,0.0,0,0
+iris.iris,DataCite_Relations,IsPublishedIn,200,0,0,0.0,0.0,0,0
+iris.iris,DataCite_Relations,IsReferencedBy,200,0,0,0.0,0.0,0,0
+iris.iris,DataCite_Relations,References,200,0,0,0.0,0.0,0,0
+iris.iris,DataCite_Relations,Documents,200,0,0,0.0,0.0,0,0
+iris.iris,DataCite_Relations,IsDocumentedBy,200,0,0,0.0,0.0,0,0
+iris.iris,DataCite_Relations,IsCompiledBy,200,0,0,0.0,0.0,0,0
+iris.iris,DataCite_Relations,Compiles,200,0,0,0.0,0.0,0,0
+iris.iris,DataCite_Relations,IsVariantFormOf,200,0,0,0.0,0.0,0,0
+iris.iris,DataCite_Relations,IsOriginalFormOf,200,0,0,0.0,0.0,0,0
+iris.iris,DataCite_Relations,IsIdenticalTo,200,0,0,0.0,0.0,0,0
+iris.iris,DataCite_Relations,HasMetadata,200,0,0,0.0,0.0,0,0
+iris.iris,DataCite_Relations,IsMetadataFor,200,0,0,0.0,0.0,0,0
+iris.iris,DataCite_Relations,Reviews,200,0,0,0.0,0.0,0,0
+iris.iris,DataCite_Relations,IsReviewedBy,200,0,0,0.0,0.0,0,0
+iris.iris,DataCite_Relations,IsDerivedFrom,200,0,0,0.0,0.0,0,0
+iris.iris,DataCite_Relations,IsSourceOf,200,0,0,0.0,0.0,0,0
+iris.iris,DataCite_Relations,Describes,200,0,0,0.0,0.0,0,0
+iris.iris,DataCite_Relations,IsDescribedBy,200,0,0,0.0,0.0,0,0
+iris.iris,DataCite_Relations,HasVersion,200,0,0,0.0,0.0,0,0
+iris.iris,DataCite_Relations,IsVersionOf,200,0,0,0.0,0.0,0,0
+iris.iris,DataCite_Relations,Requires,200,0,0,0.0,0.0,0,0
+iris.iris,DataCite_Relations,IsRequiredBy,200,0,0,0.0,0.0,0,0
+iris.iris,DataCite_Relations,Obsoletes,200,0,0,0.0,0.0,0,0
+iris.iris,DataCite_Relations,IsObsoletedBy,200,0,0,0.0,0.0,0,0
+iris.iris,DataCite_ContributorTypes,ContactPerson,200,0,0,0.0,0.0,0,0
+iris.iris,DataCite_ContributorTypes,DataCollector,200,0,0,0.0,0.0,0,0
+iris.iris,DataCite_ContributorTypes,DataCurator,200,0,0,0.0,0.0,0,0
+iris.iris,DataCite_ContributorTypes,DataManager,200,0,0,0.0,0.0,0,0
+iris.iris,DataCite_ContributorTypes,Distributor,200,0,0,0.0,0.0,0,0
+iris.iris,DataCite_ContributorTypes,HostingInstitution,200,0,0,0.0,0.0,0,0
+iris.iris,DataCite_ContributorTypes,OtherContributor,200,0,0,0.0,0.0,0,0
+iris.iris,DataCite_ContributorTypes,Producer,200,0,0,0.0,0.0,0,0
+iris.iris,DataCite_ContributorTypes,ProjectLeader,200,0,0,0.0,0.0,0,0
+iris.iris,DataCite_ContributorTypes,ProjectManager,200,0,0,0.0,0.0,0,0
+iris.iris,DataCite_ContributorTypes,ProjectMember,200,0,0,0.0,0.0,0,0
+iris.iris,DataCite_ContributorTypes,RegistrationAgency,200,0,0,0.0,0.0,0,0
+iris.iris,DataCite_ContributorTypes,RegistrationAuthority,200,0,0,0.0,0.0,0,0
+iris.iris,DataCite_ContributorTypes,RelatedPerson,200,0,0,0.0,0.0,0,0
+iris.iris,DataCite_ContributorTypes,ResearchGroup,200,0,0,0.0,0.0,0,0
+iris.iris,DataCite_ContributorTypes,RightsHolder,200,196,196,0.98,0.98,0,196
+iris.iris,DataCite_ContributorTypes,Researcher,200,0,0,0.0,0.0,0,0
+iris.iris,DataCite_ContributorTypes,Sponsor,200,0,0,0.0,0.0,0,0
+iris.iris,DataCite_ContributorTypes,Supervisor,200,0,0,0.0,0.0,0,0
+iris.iris,DataCite_ContributorTypes,WorkPackageLeader,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Team,Resource Author,200,200,200,1.0,1.0,0,202
+iris.iris,Project_Team,Resource Author Type,200,193,193,0.965,0.965,0,195
+iris.iris,Project_Team,Resource Author Identifier,200,190,190,0.95,0.95,0,190
+iris.iris,Project_Team,Resource Author Identifier Type,200,190,190,0.95,0.95,0,190
+iris.iris,Project_Team,Resource Author Affiliation,200,186,186,0.93,0.93,0,188
+iris.iris,Project_Team,Resource Author Affiliation Identifier,200,186,186,0.93,0.93,0,186
+iris.iris,Project_Team,Resource Author Affiliation Identifier Type,200,186,186,0.93,0.93,0,186
+iris.iris,Project_Team,Temporal Extent,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Team,Resource Contributor Name,200,196,196,0.98,0.98,0,196
+iris.iris,Project_Team,Resource Contributor Identifier,200,196,196,0.98,0.98,0,196
+iris.iris,Project_Team,Resource Contributor Identifier Type,200,196,196,0.98,0.98,0,196
+iris.iris,Project_Team,Resource Contributor Affiliation,200,196,196,0.98,0.98,0,196
+iris.iris,Project_Team,Resource Contributor Affiliation Identifier,200,196,196,0.98,0.98,0,196
+iris.iris,Project_Team,Funder Name,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Team,Funder Identifier,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Team,ContactPerson,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Team,DataManager,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Team,Editor,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Team,HostingInstitution,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Team,Other,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Team,Producer,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Team,ProjectLeader,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Team,ProjectManager,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Team,ProjectMember,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Team,RegistrationAgency,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Team,RelatedPerson,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Team,Researcher,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Team,Sponsor,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Team,Supervisor,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Team,WorkPackageLeader,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Items,Audiovisual,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Items,Award,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Items,Book,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Items,BookChapter,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Items,Collection,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Items,ComputationalNotebook,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Items,ConferencePaper,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Items,ConferenceProceeding,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Items,Dataset,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Items,Event,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Items,JournalArticle,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Items,Other,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Items,OutputManagementPlan,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Items,PhysicalObject,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Items,Project,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Items,Report,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Items,Software,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Items,Standard,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Items,Text,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Items,Workflow,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Relations,Related Identifier,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Relations,Related Identifier Type,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Relations,Relation Type,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Relations,Related Item Type,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Relations,Continues,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Relations,Describes,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Relations,HasPart,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Relations,HasVersion,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Relations,IsCitedBy,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Relations,IsContinuedBy,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Relations,IsDerivedFrom,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Relations,IsDocumentedBy,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Relations,IsIdenticalTo,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Relations,IsObsoletedBy,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Relations,RelatedItems Item Type,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Relations,RelatedItems Relation Type,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Relations,IsPartOf,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Relations,IsPublishedIn,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Relations,IsReferencedBy,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Relations,IsSourceOf,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Relations,IsSupplementedBy,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Relations,IsSupplementTo,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Relations,IsVariantFormOf,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Relations,IsVersionOf,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Relations,Obsoletes,200,0,0,0.0,0.0,0,0
+iris.iris,Project_Relations,References,200,0,0,0.0,0.0,0,0
+iris.iris,SHARE_stewardship,Spatial Extent,200,4,4,0.02,0.02,0,6
+iris.iris,SHARE_stewardship,Date Collected,200,4,4,0.02,0.02,0,4
+iris.iris,SHARE_stewardship,Date Coverage,200,0,0,0.0,0.0,0,0
+iris.iris,SHARE_stewardship,Contributor Type,200,196,196,0.98,0.98,0,196
+iris.iris,SHARE_stewardship,Keyword,200,0,0,0.0,0.0,0,0
+iris.iris,SHARE_harmonization,Methods,200,0,0,0.0,0.0,0,0
+iris.iris,SHARE_harmonization,Resource Author Identifier,200,190,190,0.95,0.95,0,190
+iris.iris,SHARE_harmonization,Resource Contributor Identifier,200,196,196,0.98,0.98,0,196
+iris.iris,SHARE_harmonization,IsCitedBy,200,0,0,0.0,0.0,0,0
+iris.iris,SHARE_harmonization,Abstract,200,4,4,0.02,0.02,0,4
+iris.iris,SHARE_harmonization,Resource Author Affiliation Identifier,200,186,186,0.93,0.93,0,186
+iris.iris,SHARE_harmonization,Resource Contributor Affiliation Identifier,200,196,196,0.98,0.98,0,196
+iris.iris,SHARE_harmonization,Resource Author Identifier Type,200,190,190,0.95,0.95,0,190
+iris.iris,SHARE_harmonization,Resource Author Affiliation Identifier Type,200,186,186,0.93,0.93,0,186
+iris.iris,SHARE_harmonization,Resource Contributor Identifier Type,200,196,196,0.98,0.98,0,196
+iris.iris,SHARE_harmonization,Resource Contributor Affiliation Identifier Type,200,196,196,0.98,0.98,0,196
+iris.iris,SHARE_access,Rights Identifier,200,196,196,0.98,0.98,0,196
+iris.iris,SHARE_access,Rights,200,196,196,0.98,0.98,0,196
+iris.iris,SHARE_access,Date Available,200,3,3,0.015,0.015,0,3
+iris.iris,SHARE_access,Resource Format,200,4,4,0.02,0.02,0,4
+iris.iris,SHARE_reuse,IsSourceOf,200,0,0,0.0,0.0,0,0
+iris.iris,SHARE_reuse,Discovery Metrics,200,0,0,0.0,0.0,0,0
+iris.iris,SHARE_reuse,Access Metrics,200,0,0,0.0,0.0,0,0
+iris.iris,SHARE_reuse,Citation Metrics,200,1,1,0.005,0.005,0,1
+iris.iris,SHARE_engagement,JournalArticle,200,0,0,0.0,0.0,0,0
+iris.iris,SHARE_engagement,Preprint,200,0,0,0.0,0.0,0,0
+iris.iris,SHARE_engagement,ConferencePaper,200,0,0,0.0,0.0,0,0
+iris.iris,SHARE_engagement,ConferenceProceeding,200,0,0,0.0,0.0,0,0
+iris.iris,SHARE_engagement,Dataset,200,0,0,0.0,0.0,0,0
+iris.iris,SHARE_engagement,Software,200,0,0,0.0,0.0,0,0
+iris.iris,SHARE_engagement,Project Funder,200,0,0,0.0,0.0,0,0
+iris.iris,SHARE_engagement,Funder Identifier,200,0,0,0.0,0.0,0,0
+iris.iris,SHARE_engagement,Award Title,200,0,0,0.0,0.0,0,0
+iris.iris,SHARE_engagement,Award Number,200,0,0,0.0,0.0,0,0
+iris.iris,SHARE_engagement,IsVersionOf,200,0,0,0.0,0.0,0,0
+iris.iris,SHARE_engagement,Funder Identifier Type,200,0,0,0.0,0.0,0,0
+tdl.tamu,FAIR_Text,Abstract,200,143,143,0.715,0.715,0,143
+tdl.tamu,FAIR_Text,Date Created,200,0,0,0.0,0.0,0,0
+tdl.tamu,FAIR_Text,Keyword,200,5,5,0.025,0.025,0,17
+tdl.tamu,FAIR_Text,Keyword Vocabulary,200,0,0,0.0,0.0,0,0
+tdl.tamu,FAIR_Text,Resource Author Affiliation,200,0,0,0.0,0.0,0,0
+tdl.tamu,FAIR_Text,Resource Author,200,200,200,1.0,1.0,0,490
+tdl.tamu,FAIR_Text,Resource Identifier,200,200,200,1.0,1.0,0,327
+tdl.tamu,FAIR_Text,Resource Publication Date,200,200,200,1.0,1.0,0,200
+tdl.tamu,FAIR_Text,Resource Publisher,200,200,200,1.0,1.0,0,200
+tdl.tamu,FAIR_Text,Resource Title,200,200,200,1.0,1.0,0,200
+tdl.tamu,FAIR_Text,Resource Type General,200,200,200,1.0,1.0,0,200
+tdl.tamu,FAIR_Text,Project Funder,200,1,1,0.005,0.005,0,1
+tdl.tamu,FAIR_Text,Award Title,200,0,0,0.0,0.0,0,0
+tdl.tamu,FAIR_Text,Temporal Extent,200,0,0,0.0,0.0,0,0
+tdl.tamu,FAIR_Text,Spatial Extent,200,0,0,0.0,0.0,0,0
+tdl.tamu,FAIR_Identifiers,Date Submitted,200,156,156,0.78,0.78,0,156
+tdl.tamu,FAIR_Identifiers,Keyword Value URI,200,0,0,0.0,0.0,0,0
+tdl.tamu,FAIR_Identifiers,Keyword Vocabulary URI,200,0,0,0.0,0.0,0,0
+tdl.tamu,FAIR_Identifiers,Resource Author Type,200,197,197,0.985,0.985,0,487
+tdl.tamu,FAIR_Identifiers,Resource Author Identifier,200,0,0,0.0,0.0,0,0
+tdl.tamu,FAIR_Identifiers,Resource Author Identifier Type,200,0,0,0.0,0.0,0,0
+tdl.tamu,FAIR_Identifiers,Publisher Identifier,200,0,0,0.0,0.0,0,0
+tdl.tamu,FAIR_Identifiers,Publisher Identifier Type,200,0,0,0.0,0.0,0,0
+tdl.tamu,FAIR_Identifiers,Publisher Identifier Scheme URI,200,0,0,0.0,0.0,0,0
+tdl.tamu,FAIR_Identifiers,Resource Author Affiliation Identifier,200,0,0,0.0,0.0,0,0
+tdl.tamu,FAIR_Identifiers,Resource Author Affiliation Identifier Type,200,0,0,0.0,0.0,0,0
+tdl.tamu,FAIR_Identifiers,Resource Author Affiliation Identifier Scheme URI,200,0,0,0.0,0.0,0,0
+tdl.tamu,FAIR_Identifiers,Resource Identifier Type,200,127,127,0.635,0.635,0,127
+tdl.tamu,FAIR_Identifiers,Resource Type,200,159,159,0.795,0.795,0,159
+tdl.tamu,FAIR_Identifiers,Funder Identifier,200,1,1,0.005,0.005,0,1
+tdl.tamu,FAIR_Identifiers,Funder Identifier Type,200,1,1,0.005,0.005,0,1
+tdl.tamu,FAIR_Identifiers,Award URI,200,0,0,0.0,0.0,0,0
+tdl.tamu,FAIR_Identifiers,Award Number,200,1,1,0.005,0.005,0,1
+tdl.tamu,FAIR_Connections,CitedBy,200,0,0,0.0,0.0,0,0
+tdl.tamu,FAIR_Connections,Date Available,200,2,2,0.01,0.01,0,2
+tdl.tamu,FAIR_Connections,DescribedBy,200,0,0,0.0,0.0,0,0
+tdl.tamu,FAIR_Connections,Distribution Contact,200,0,0,0.0,0.0,0,0
+tdl.tamu,FAIR_Connections,DocumentedBy,200,0,0,0.0,0.0,0,0
+tdl.tamu,FAIR_Connections,Resource Contact,200,0,0,0.0,0.0,0,0
+tdl.tamu,FAIR_Connections,HasMetadata,200,0,0,0.0,0.0,0,0
+tdl.tamu,FAIR_Connections,Resource Format,200,0,0,0.0,0.0,0,0
+tdl.tamu,FAIR_Connections,Resource Size,200,148,148,0.74,0.74,0,148
+tdl.tamu,FAIR_Connections,Resource URL,200,200,200,1.0,1.0,0,200
+tdl.tamu,FAIR_Connections,Rights,200,3,3,0.015,0.015,0,3
+tdl.tamu,FAIR_Connections,RightsHolder,200,0,0,0.0,0.0,0,0
+tdl.tamu,FAIR_Connections,Methods,200,0,0,0.0,0.0,0,0
+tdl.tamu,FAIR_Connections,Technical Information,200,0,0,0.0,0.0,0,0
+tdl.tamu,FAIR_Connections,ReferencedBy,200,0,0,0.0,0.0,0,0
+tdl.tamu,FAIR_Connections,ReviewedBy,200,0,0,0.0,0.0,0,0
+tdl.tamu,FAIR_Connections,SourceOf,200,0,0,0.0,0.0,0,0
+tdl.tamu,FAIR_Connections,SupplementTo,200,0,0,0.0,0.0,0,0
+tdl.tamu,FAIR_Contacts,Resource Contact Identifier,200,0,0,0.0,0.0,0,0
+tdl.tamu,FAIR_Contacts,Resource Contact Identifier Scheme,200,0,0,0.0,0.0,0,0
+tdl.tamu,FAIR_Contacts,Resource Contact Identifier Scheme URI,200,0,0,0.0,0.0,0,0
+tdl.tamu,FAIR_Contacts,Distribution Contact Identifier,200,0,0,0.0,0.0,0,0
+tdl.tamu,FAIR_Contacts,Distribution Contact Identifier Scheme,200,0,0,0.0,0.0,0,0
+tdl.tamu,FAIR_Contacts,Distribution Contact Identifier Scheme URI,200,0,0,0.0,0.0,0,0
+tdl.tamu,FAIR_Contacts,Rights Holder Identifier,200,0,0,0.0,0.0,0,0
+tdl.tamu,FAIR_Contacts,Rights Holder Identifier Scheme,200,0,0,0.0,0.0,0,0
+tdl.tamu,FAIR_Contacts,Rights Holder Identifier Scheme URI,200,0,0,0.0,0.0,0,0
+tdl.tamu,FAIR_Contacts,Rights URI,200,3,3,0.015,0.015,0,3
+tdl.tamu,DataCite_Relations,Related Identifier,200,13,13,0.065,0.065,0,13
+tdl.tamu,DataCite_Relations,Related Identifier Type,200,13,13,0.065,0.065,0,13
+tdl.tamu,DataCite_Relations,Related Item Type,200,0,0,0.0,0.0,0,0
+tdl.tamu,DataCite_Relations,Cites,200,0,0,0.0,0.0,0,0
+tdl.tamu,DataCite_Relations,IsCitedBy,200,0,0,0.0,0.0,0,0
+tdl.tamu,DataCite_Relations,Collects,200,0,0,0.0,0.0,0,0
+tdl.tamu,DataCite_Relations,IsCollectedBy,200,0,0,0.0,0.0,0,0
+tdl.tamu,DataCite_Relations,IsSupplementTo,200,0,0,0.0,0.0,0,0
+tdl.tamu,DataCite_Relations,IsSupplementedBy,200,0,0,0.0,0.0,0,0
+tdl.tamu,DataCite_Relations,IsTranslationOf,200,0,0,0.0,0.0,0,0
+tdl.tamu,DataCite_Relations,HasTranslation,200,0,0,0.0,0.0,0,0
+tdl.tamu,DataCite_Relations,Continues,200,0,0,0.0,0.0,0,0
+tdl.tamu,DataCite_Relations,IsContinuedBy,200,0,0,0.0,0.0,0,0
+tdl.tamu,DataCite_Relations,IsNewVersionOf,200,0,0,0.0,0.0,0,0
+tdl.tamu,DataCite_Relations,IsPreviousVersionOf,200,0,0,0.0,0.0,0,0
+tdl.tamu,DataCite_Relations,IsPartOf,200,13,13,0.065,0.065,0,13
+tdl.tamu,DataCite_Relations,HasPart,200,0,0,0.0,0.0,0,0
+tdl.tamu,DataCite_Relations,IsPublishedIn,200,0,0,0.0,0.0,0,0
+tdl.tamu,DataCite_Relations,IsReferencedBy,200,0,0,0.0,0.0,0,0
+tdl.tamu,DataCite_Relations,References,200,0,0,0.0,0.0,0,0
+tdl.tamu,DataCite_Relations,Documents,200,0,0,0.0,0.0,0,0
+tdl.tamu,DataCite_Relations,IsDocumentedBy,200,0,0,0.0,0.0,0,0
+tdl.tamu,DataCite_Relations,IsCompiledBy,200,0,0,0.0,0.0,0,0
+tdl.tamu,DataCite_Relations,Compiles,200,0,0,0.0,0.0,0,0
+tdl.tamu,DataCite_Relations,IsVariantFormOf,200,0,0,0.0,0.0,0,0
+tdl.tamu,DataCite_Relations,IsOriginalFormOf,200,0,0,0.0,0.0,0,0
+tdl.tamu,DataCite_Relations,IsIdenticalTo,200,0,0,0.0,0.0,0,0
+tdl.tamu,DataCite_Relations,HasMetadata,200,0,0,0.0,0.0,0,0
+tdl.tamu,DataCite_Relations,IsMetadataFor,200,0,0,0.0,0.0,0,0
+tdl.tamu,DataCite_Relations,Reviews,200,0,0,0.0,0.0,0,0
+tdl.tamu,DataCite_Relations,IsReviewedBy,200,0,0,0.0,0.0,0,0
+tdl.tamu,DataCite_Relations,IsDerivedFrom,200,0,0,0.0,0.0,0,0
+tdl.tamu,DataCite_Relations,IsSourceOf,200,0,0,0.0,0.0,0,0
+tdl.tamu,DataCite_Relations,Describes,200,0,0,0.0,0.0,0,0
+tdl.tamu,DataCite_Relations,IsDescribedBy,200,0,0,0.0,0.0,0,0
+tdl.tamu,DataCite_Relations,HasVersion,200,0,0,0.0,0.0,0,0
+tdl.tamu,DataCite_Relations,IsVersionOf,200,0,0,0.0,0.0,0,0
+tdl.tamu,DataCite_Relations,Requires,200,0,0,0.0,0.0,0,0
+tdl.tamu,DataCite_Relations,IsRequiredBy,200,0,0,0.0,0.0,0,0
+tdl.tamu,DataCite_Relations,Obsoletes,200,0,0,0.0,0.0,0,0
+tdl.tamu,DataCite_Relations,IsObsoletedBy,200,0,0,0.0,0.0,0,0
+tdl.tamu,DataCite_ContributorTypes,ContactPerson,200,0,0,0.0,0.0,0,0
+tdl.tamu,DataCite_ContributorTypes,DataCollector,200,0,0,0.0,0.0,0,0
+tdl.tamu,DataCite_ContributorTypes,DataCurator,200,0,0,0.0,0.0,0,0
+tdl.tamu,DataCite_ContributorTypes,DataManager,200,0,0,0.0,0.0,0,0
+tdl.tamu,DataCite_ContributorTypes,Distributor,200,0,0,0.0,0.0,0,0
+tdl.tamu,DataCite_ContributorTypes,HostingInstitution,200,0,0,0.0,0.0,0,0
+tdl.tamu,DataCite_ContributorTypes,OtherContributor,200,0,0,0.0,0.0,0,0
+tdl.tamu,DataCite_ContributorTypes,Producer,200,0,0,0.0,0.0,0,0
+tdl.tamu,DataCite_ContributorTypes,ProjectLeader,200,0,0,0.0,0.0,0,0
+tdl.tamu,DataCite_ContributorTypes,ProjectManager,200,0,0,0.0,0.0,0,0
+tdl.tamu,DataCite_ContributorTypes,ProjectMember,200,0,0,0.0,0.0,0,0
+tdl.tamu,DataCite_ContributorTypes,RegistrationAgency,200,0,0,0.0,0.0,0,0
+tdl.tamu,DataCite_ContributorTypes,RegistrationAuthority,200,0,0,0.0,0.0,0,0
+tdl.tamu,DataCite_ContributorTypes,RelatedPerson,200,0,0,0.0,0.0,0,0
+tdl.tamu,DataCite_ContributorTypes,ResearchGroup,200,0,0,0.0,0.0,0,0
+tdl.tamu,DataCite_ContributorTypes,RightsHolder,200,0,0,0.0,0.0,0,0
+tdl.tamu,DataCite_ContributorTypes,Researcher,200,0,0,0.0,0.0,0,0
+tdl.tamu,DataCite_ContributorTypes,Sponsor,200,0,0,0.0,0.0,0,0
+tdl.tamu,DataCite_ContributorTypes,Supervisor,200,0,0,0.0,0.0,0,0
+tdl.tamu,DataCite_ContributorTypes,WorkPackageLeader,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Team,Resource Author,200,200,200,1.0,1.0,0,490
+tdl.tamu,Project_Team,Resource Author Type,200,197,197,0.985,0.985,0,487
+tdl.tamu,Project_Team,Resource Author Identifier,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Team,Resource Author Identifier Type,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Team,Resource Author Affiliation,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Team,Resource Author Affiliation Identifier,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Team,Resource Author Affiliation Identifier Type,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Team,Temporal Extent,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Team,Resource Contributor Name,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Team,Resource Contributor Identifier,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Team,Resource Contributor Identifier Type,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Team,Resource Contributor Affiliation,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Team,Resource Contributor Affiliation Identifier,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Team,Funder Name,200,1,1,0.005,0.005,0,1
+tdl.tamu,Project_Team,Funder Identifier,200,1,1,0.005,0.005,0,1
+tdl.tamu,Project_Team,ContactPerson,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Team,DataManager,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Team,Editor,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Team,HostingInstitution,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Team,Other,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Team,Producer,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Team,ProjectLeader,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Team,ProjectManager,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Team,ProjectMember,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Team,RegistrationAgency,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Team,RelatedPerson,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Team,Researcher,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Team,Sponsor,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Team,Supervisor,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Team,WorkPackageLeader,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Items,Audiovisual,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Items,Award,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Items,Book,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Items,BookChapter,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Items,Collection,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Items,ComputationalNotebook,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Items,ConferencePaper,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Items,ConferenceProceeding,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Items,Dataset,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Items,Event,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Items,JournalArticle,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Items,Other,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Items,OutputManagementPlan,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Items,PhysicalObject,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Items,Project,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Items,Report,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Items,Software,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Items,Standard,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Items,Text,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Items,Workflow,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Relations,Related Identifier,200,13,13,0.065,0.065,0,13
+tdl.tamu,Project_Relations,Related Identifier Type,200,13,13,0.065,0.065,0,13
+tdl.tamu,Project_Relations,Relation Type,200,13,13,0.065,0.065,0,13
+tdl.tamu,Project_Relations,Related Item Type,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Relations,Continues,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Relations,Describes,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Relations,HasPart,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Relations,HasVersion,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Relations,IsCitedBy,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Relations,IsContinuedBy,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Relations,IsDerivedFrom,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Relations,IsDocumentedBy,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Relations,IsIdenticalTo,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Relations,IsObsoletedBy,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Relations,RelatedItems Item Type,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Relations,RelatedItems Relation Type,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Relations,IsPartOf,200,13,13,0.065,0.065,0,13
+tdl.tamu,Project_Relations,IsPublishedIn,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Relations,IsReferencedBy,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Relations,IsSourceOf,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Relations,IsSupplementedBy,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Relations,IsSupplementTo,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Relations,IsVariantFormOf,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Relations,IsVersionOf,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Relations,Obsoletes,200,0,0,0.0,0.0,0,0
+tdl.tamu,Project_Relations,References,200,0,0,0.0,0.0,0,0
+tdl.tamu,SHARE_stewardship,Spatial Extent,200,0,0,0.0,0.0,0,0
+tdl.tamu,SHARE_stewardship,Date Collected,200,0,0,0.0,0.0,0,0
+tdl.tamu,SHARE_stewardship,Date Coverage,200,0,0,0.0,0.0,0,0
+tdl.tamu,SHARE_stewardship,Contributor Type,200,0,0,0.0,0.0,0,0
+tdl.tamu,SHARE_stewardship,Keyword,200,5,5,0.025,0.025,0,17
+tdl.tamu,SHARE_harmonization,Methods,200,0,0,0.0,0.0,0,0
+tdl.tamu,SHARE_harmonization,Resource Author Identifier,200,0,0,0.0,0.0,0,0
+tdl.tamu,SHARE_harmonization,Resource Contributor Identifier,200,0,0,0.0,0.0,0,0
+tdl.tamu,SHARE_harmonization,IsCitedBy,200,0,0,0.0,0.0,0,0
+tdl.tamu,SHARE_harmonization,Abstract,200,143,143,0.715,0.715,0,143
+tdl.tamu,SHARE_harmonization,Resource Author Affiliation Identifier,200,0,0,0.0,0.0,0,0
+tdl.tamu,SHARE_harmonization,Resource Contributor Affiliation Identifier,200,0,0,0.0,0.0,0,0
+tdl.tamu,SHARE_harmonization,Resource Author Identifier Type,200,0,0,0.0,0.0,0,0
+tdl.tamu,SHARE_harmonization,Resource Author Affiliation Identifier Type,200,0,0,0.0,0.0,0,0
+tdl.tamu,SHARE_harmonization,Resource Contributor Identifier Type,200,0,0,0.0,0.0,0,0
+tdl.tamu,SHARE_harmonization,Resource Contributor Affiliation Identifier Type,200,0,0,0.0,0.0,0,0
+tdl.tamu,SHARE_access,Rights Identifier,200,3,3,0.015,0.015,0,3
+tdl.tamu,SHARE_access,Rights,200,3,3,0.015,0.015,0,3
+tdl.tamu,SHARE_access,Date Available,200,2,2,0.01,0.01,0,2
+tdl.tamu,SHARE_access,Resource Format,200,0,0,0.0,0.0,0,0
+tdl.tamu,SHARE_reuse,IsSourceOf,200,0,0,0.0,0.0,0,0
+tdl.tamu,SHARE_reuse,Discovery Metrics,200,0,0,0.0,0.0,0,0
+tdl.tamu,SHARE_reuse,Access Metrics,200,0,0,0.0,0.0,0,0
+tdl.tamu,SHARE_reuse,Citation Metrics,200,2,2,0.01,0.01,0,2
+tdl.tamu,SHARE_engagement,JournalArticle,200,0,0,0.0,0.0,0,0
+tdl.tamu,SHARE_engagement,Preprint,200,0,0,0.0,0.0,0,0
+tdl.tamu,SHARE_engagement,ConferencePaper,200,0,0,0.0,0.0,0,0
+tdl.tamu,SHARE_engagement,ConferenceProceeding,200,0,0,0.0,0.0,0,0
+tdl.tamu,SHARE_engagement,Dataset,200,0,0,0.0,0.0,0,0
+tdl.tamu,SHARE_engagement,Software,200,0,0,0.0,0.0,0,0
+tdl.tamu,SHARE_engagement,Project Funder,200,1,1,0.005,0.005,0,1
+tdl.tamu,SHARE_engagement,Funder Identifier,200,1,1,0.005,0.005,0,1
+tdl.tamu,SHARE_engagement,Award Title,200,0,0,0.0,0.0,0,0
+tdl.tamu,SHARE_engagement,Award Number,200,1,1,0.005,0.005,0,1
+tdl.tamu,SHARE_engagement,IsVersionOf,200,0,0,0.0,0.0,0,0
+tdl.tamu,SHARE_engagement,Funder Identifier Type,200,1,1,0.005,0.005,0,1
