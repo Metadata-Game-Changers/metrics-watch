@@ -525,7 +525,8 @@ def main():
                     help='most-recent records instead of a random sample')
     ap.add_argument('--resource-type', default='', help='DataCite resource-type-id filter (e.g. dataset)')
     ap.add_argument('--query', default='', help='DataCite query filter (e.g. IOOS)')
-    ap.add_argument('--spirals', default='FAIR_spirals.json', help='use-case catalog (default FAIR_spirals.json)')
+    ap.add_argument('--spirals', default=str(Path(__file__).with_name('FAIR_spirals.json')),
+                    help='use-case catalog (default: the FAIR_spirals.json next to this script)')
     ap.add_argument('--out', default='reports', help='output directory (default reports/)')
     ap.add_argument('--due', action='store_true',
                     help='score only the sets whose schedule is due today (the scheduled '

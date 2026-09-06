@@ -199,7 +199,8 @@ def main():
     ap.add_argument('--no-all', action='store_true', help="skip the All-of-DataCite reference column")
     ap.add_argument('--resource-type', default='', help='DataCite resource-type-id filter (e.g. dataset)')
     ap.add_argument('--query', default='', help='extra DataCite query, ANDed with the ROR clause')
-    ap.add_argument('--spirals', default='FAIR_spirals.json', help='use-case catalog (default FAIR_spirals.json)')
+    ap.add_argument('--spirals', default=str(Path(__file__).with_name('FAIR_spirals.json')),
+                    help='use-case catalog (default: the FAIR_spirals.json next to this script)')
     ap.add_argument('--out', default='organizationReports', help='output directory (default organizationReports/)')
     args = ap.parse_args()
     args.top = max(1, min(10, args.top))

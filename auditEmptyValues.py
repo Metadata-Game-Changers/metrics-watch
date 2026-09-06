@@ -112,7 +112,7 @@ def main():
     ap.add_argument('--max', type=int, default=300, help='records sampled per fetched repository (default 300)')
     ap.add_argument('--resource-type', default='')
     ap.add_argument('--query', default='')
-    ap.add_argument('--spirals', default='FAIR_spirals.json')
+    ap.add_argument('--spirals', default=str(Path(__file__).with_name('FAIR_spirals.json')))
     ap.add_argument('--csv', default='', help='also write every concept row (all samples) to this CSV')
     args = ap.parse_args()
     if not args.client and not args.file:
