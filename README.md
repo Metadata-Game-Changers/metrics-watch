@@ -154,6 +154,30 @@ python3 scoreRepository.py --config config.json
 python3 makeTrendPage.py
 ```
 
+### Scoring organizations (batch Organization Completeness)
+
+`scoreOrganization.py` is the command-line companion to
+[Organization Completeness](https://metadata-game-changers.github.io/recuration-watch/organizationCompleteness.html),
+built for **lists of organizations**: for each ROR it finds the DataCite clients
+that hold the organization's ROR-identified records (the client facet), scores a
+sample within each client, and adds an All-of-DataCite reference column.
+
+```
+python3 scoreOrganization.py --ror 04qw24q55
+python3 scoreOrganization.py --ror 04qw24q55 --ror 017zqws13 --top 5 --max 100
+python3 scoreOrganization.py --file organizations.txt
+```
+
+`organizations.txt` is one ROR per line (bare id, `ror:` prefix, or full URL);
+`#` comments and text after the first whitespace are ignored. Each organization
+gets a per-run report JSON (the same structure the web tool downloads) under
+`organizationReports/ror_<id>/`, and every run writes one combined
+`organizationSummary__<stamp>.csv` — one row per organization × client, the web
+tool's Data Summary columns, ready for cross-organization analysis. Options
+mirror `scoreRepository.py` (`--max`, `--sequential`, `--resource-type`,
+`--query`), plus `--top N` clients per organization and `--no-all` to skip the
+reference column.
+
 ## What does it look like in practice?
 
 [`example/`](example/) holds a real history file from the IRIS seismology
