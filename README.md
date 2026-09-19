@@ -178,43 +178,13 @@ mirror `scoreRepository.py` (`--max`, `--sequential`, `--resource-type`,
 `--query`), plus `--top N` clients per organization and `--no-all` to skip the
 reference column.
 
-### Crossref Participation Reports (bulk)
+### Crossref tooling
 
-`crossrefParticipation.py` harvests Crossref's own precomputed coverage — the
-numbers behind [Participation Reports](https://www.crossref.org/members/prep/4374)
-— for many members at once, from the `coverage-type` block of `/members/<id>`
-(era current/backfile/all × content type × fourteen checks):
-
-```
-python3 crossrefParticipation.py --member 4374 --member 340
-python3 crossrefParticipation.py --file members.txt --era current --type journal-article
-python3 crossrefParticipation.py --search "university press" --rows 40
-```
-
-Writes one tidy CSV — one row per member × era × content type, with record
-counts, last-checked date, and all fourteen checks — ready for side-by-side
-member comparisons.
-
-`comparePrepConnectivity.py` goes a step further: it **samples each member's
-works and compares three countings in one CSV** — Crossref's own PReP coverage
-(`PReP_*`), the same record-level counting from our sample (`Record_*`, the
-apples-to-apples validation), and the connectivity-bar counting
-(`Occurrence_*`, identified occurrences ÷ all occurrences) — for ORCIDs,
-affiliations, affiliation ROR IDs, funder IDs, and funder ROR IDs. Eras follow
-the Participation Report definition (current = published in the current
-calendar year or the two previous ones):
-
-```
-python3 comparePrepConnectivity.py --member 4374 --member 340
-python3 comparePrepConnectivity.py --file members.txt --era all --era current --max 200
-```
-
-One row per member × era (default eras: all + current; default type
-journal-article), with sample sizes and occurrence denominators so every ratio
-is interpretable. Nothing is sampled or scored locally; these are Crossref's
-record-level percentages (the sampling-based companion is the
-[Crossref Connectivity](https://metadata-game-changers.github.io/recuration-watch/crossrefConnectivity.html)
-web tool, which shows a member's Participation Report beside its measured bars).
+The Crossref desktop tools — `crossrefParticipation.py` (bulk Participation
+Report harvester) and `comparePrepConnectivity.py` (PReP vs completeness vs
+connectivity in one CSV) — live in the
+[recuration-watch](https://github.com/Metadata-Game-Changers/recuration-watch)
+repository, beside the Crossref web tools they serve.
 
 ## What does it look like in practice?
 
