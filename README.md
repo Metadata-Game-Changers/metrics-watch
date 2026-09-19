@@ -178,6 +178,26 @@ mirror `scoreRepository.py` (`--max`, `--sequential`, `--resource-type`,
 `--query`), plus `--top N` clients per organization and `--no-all` to skip the
 reference column.
 
+### Crossref Participation Reports (bulk)
+
+`crossrefParticipation.py` harvests Crossref's own precomputed coverage — the
+numbers behind [Participation Reports](https://www.crossref.org/members/prep/4374)
+— for many members at once, from the `coverage-type` block of `/members/<id>`
+(era current/backfile/all × content type × fourteen checks):
+
+```
+python3 crossrefParticipation.py --member 4374 --member 340
+python3 crossrefParticipation.py --file members.txt --era current --type journal-article
+python3 crossrefParticipation.py --search "university press" --rows 40
+```
+
+Writes one tidy CSV — one row per member × era × content type, with record
+counts, last-checked date, and all fourteen checks — ready for side-by-side
+member comparisons. Nothing is sampled or scored locally; these are Crossref's
+record-level percentages (the sampling-based companion is the
+[Crossref Connectivity](https://metadata-game-changers.github.io/recuration-watch/crossrefConnectivity.html)
+web tool, which shows a member's Participation Report beside its measured bars).
+
 ## What does it look like in practice?
 
 [`example/`](example/) holds a real history file from the IRIS seismology
