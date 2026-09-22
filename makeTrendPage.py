@@ -113,32 +113,43 @@ def config_section():
     if isinstance(sets, list):
         active_n = sum(1 for s in sets if s.get('active', True) is not False)
         repo_n = sum(len(s.get('repositories') or []) for s in sets)
+        cons_n = sum(1 for s in sets if (s.get('consortium') or '').strip())
+        extra = f' · {cons_n} consortium set{"" if cons_n == 1 else "s"}' if cons_n else ''
         out.append(f'<p class="sub">{len(sets)} set{"" if len(sets) == 1 else "s"} '
-                   f'({active_n} active) · {repo_n} repositor{"y" if repo_n == 1 else "ies"} — '
-                   'the settings that drive this fork&rsquo;s scoring runs. Click a set to see its repositories.</p>')
+                   f'({active_n} active) · {repo_n} explicit repositor{"y" if repo_n == 1 else "ies"}{extra} — '
+                   'the settings that drive this fork&rsquo;s scoring runs. Click a set to see what it covers.</p>')
         for s in sets:
             active = s.get('active', True) is not False
+            # a set lists its members explicitly (repositories[]) OR names a whole DataCite
+            # consortium (consortium: "nasaco"); an empty-string consortium is not one.
+            consortium = (s.get('consortium') or '').strip()
             repos = s.get('repositories') or []
-            rows = []
-            for r in repos:
-                if isinstance(r, str):
-                    client, query, label = r, '', ''
-                else:
-                    client, query, label = r.get('client', ''), r.get('query', ''), r.get('label', '')
-                rows.append(f'<tr><td>{escape(client)}</td><td>{escape(query) if query else "—"}</td>'
-                            f'<td>{escape(label) if label else "—"}</td></tr>')
+            if consortium:
+                detail = f'consortium: {escape(consortium)}'
+                body = (f'<p class="sub" style="margin:.4rem 0 .2rem">Scores every repository in the DataCite '
+                        f'consortium <code>{escape(consortium)}</code> — members are resolved at scoring time.</p>')
+            else:
+                rows = ''
+                for r in repos:
+                    if isinstance(r, str):
+                        client, query, label = r, '', ''
+                    else:
+                        client, query, label = r.get('client', ''), r.get('query', ''), r.get('label', '')
+                    rows += (f'<tr><td>{escape(client)}</td><td>{escape(query) if query else "—"}</td>'
+                             f'<td>{escape(label) if label else "—"}</td></tr>')
+                detail = f'{len(repos)} repositor' + ('y' if len(repos) == 1 else 'ies')
+                body = '<table><tr><th>Client</th><th>Query</th><th>Label</th></tr>' + rows + '</table>'
             meta = ''.join(f'<span>{x}</span>' for x in [
                 'Active' if active else 'Inactive',
                 escape(str(s.get('schedule'))) if s.get('schedule') else '',
                 f'max {s["max"]:,}' if isinstance(s.get('max'), int) else '',
-                f'{len(repos)} repositor' + ('y' if len(repos) == 1 else 'ies'),
+                detail,
             ] if x)
             out.append(
                 f'<details class="cfg-set{"" if active else " inactive"}">'
                 f'<summary><span class="cfg-name">{escape(s.get("name") or "(unnamed set)")}</span>'
                 f'<span class="cfg-meta">{meta}</span></summary>'
-                '<div class="cfg-repos"><table><tr><th>Client</th><th>Query</th><th>Label</th></tr>'
-                + ''.join(rows) + '</table></div></details>')
+                f'<div class="cfg-repos">{body}</div></details>')
     elif isinstance(cfg, dict):
         labels = {'repositories': 'Repositories', 'consortium': 'Consortium', 'schedule': 'Schedule',
                   'max': 'Max records', 'random': 'Random sample', 'resourceType': 'Resource type', 'query': 'Query'}
