@@ -97,10 +97,13 @@ def chart_svg(snaps):
     return ''.join(s)
 
 
-def config_section():
+def config_section(set_links=None):
     """The fork's config.json as an openable directory tree (the { sets: […] } schema)
     or a Setting/Value table (the flat schema). '' when there is no config.json.
-    Pure HTML + <details> — no JavaScript, so it works on the static Pages site."""
+    Pure HTML + <details> — no JavaScript, so it works on the static Pages site.
+    set_links maps a set name → (Set Viewer href, series count); a set that has one
+    gets a Set Viewer link in its folder (this replaces the old standalone Sets line)."""
+    set_links = set_links or {}
     p = Path('config.json')
     if not p.exists():
         return ''
@@ -145,9 +148,13 @@ def config_section():
                 f'max {s["max"]:,}' if isinstance(s.get('max'), int) else '',
                 detail,
             ] if x)
+            name = s.get('name') or '(unnamed set)'
+            link = set_links.get(name)
+            viewer = (f' <a class="cfg-viewer" href="{link[0]}" target="_blank" rel="noopener" '
+                      f'title="Compare all members side by side in the Set Viewer">Set Viewer ↗</a>') if link else ''
             out.append(
                 f'<details class="cfg-set{"" if active else " inactive"}">'
-                f'<summary><span class="cfg-name">{escape(s.get("name") or "(unnamed set)")}</span>'
+                f'<summary><span class="cfg-name">{escape(name)}</span>{viewer}'
                 f'<span class="cfg-meta">{meta}</span></summary>'
                 f'<div class="cfg-repos">{body}</div></details>')
     elif isinstance(cfg, dict):
@@ -207,6 +214,8 @@ def main():
   details.cfg-set[open]>summary::before{transform:rotate(90deg)}
   details.cfg-set>summary:hover{background:#f0eaf5}
   details.cfg-set .cfg-name{font-weight:600;color:#673289}
+  details.cfg-set .cfg-viewer{font-size:.7rem;font-weight:600;color:#9167b0;text-decoration:none;white-space:nowrap}
+  details.cfg-set .cfg-viewer:hover{color:#673289;text-decoration:underline}
   details.cfg-set .cfg-meta{color:#6b7280;font-size:.74rem;margin-left:auto;display:flex;gap:.9rem;flex-wrap:wrap}
   details.cfg-set.inactive{opacity:.55}
   details.cfg-set .cfg-repos{border-top:1px solid #e6e3ec;padding:.1rem .7rem .5rem}
@@ -228,21 +237,20 @@ Every run scores the records <b>as they are that day</b> — a rising line is re
     if not histories:
         parts.append('<p class="sub">No reports yet — the first scheduled run will populate this page.</p>')
     slug, branch = repo_slug_branch()
-    # sets line: every set links into the suite's Set Viewer (whole-set radar grid, one run)
+    # Set Viewer links (whole-set radar grid, one run) are folded into the Configuration tree
+    # below, keyed by set name — a set gets one only when it has scored series in docs/sets.json.
+    set_links = {}
     manifest = Path('docs/sets.json')
     if slug and manifest.exists():
         try:
             m = json.loads(manifest.read_text(encoding='utf-8'))
         except Exception:
             m = None
-        with_series = [st for st in (m.get('sets', []) if m else []) if st.get('series')]
-        if with_series:
-            raw = f'https://raw.githubusercontent.com/{slug}/{branch}/docs/sets.json'
-            links = ' · '.join(
-                f'<a href="{SET_VIEWER}?src={escape(raw)}&amp;set={escape(st["name"])}" target="_blank" '
-                f'rel="noopener">{escape(st["name"])} ({len(st["series"])})</a>' for st in with_series)
-            parts.append(f'<p class="sub"><b>Sets</b> — compare all members side by side in the Set Viewer: {links}</p>')
-    parts.append(config_section())
+        raw = f'https://raw.githubusercontent.com/{slug}/{branch}/docs/sets.json'
+        for st in (m.get('sets', []) if m else []):
+            if st.get('series') and st.get('name'):
+                set_links[st['name']] = (f'{SET_VIEWER}?src={escape(raw)}&amp;set={escape(st["name"])}', len(st['series']))
+    parts.append(config_section(set_links))
     for client_dir, hpath, h in histories:
         snaps = h['snapshots']
         repo = h.get('repository') or {}
