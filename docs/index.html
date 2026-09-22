@@ -25,6 +25,18 @@
   th,td{border:1px solid #e6e3ec;padding:.3rem .55rem;text-align:right}
   th:first-child,td:first-child{text-align:left}
   th{background:#f0eaf5;color:#673289}
+  details.cfg-set{border:1px solid #e6e3ec;border-radius:8px;margin:.4rem 0;background:#fff;overflow:hidden}
+  details.cfg-set>summary{list-style:none;cursor:pointer;padding:.45rem .7rem;display:flex;align-items:center;gap:.6rem;font-size:.82rem}
+  details.cfg-set>summary::-webkit-details-marker{display:none}
+  details.cfg-set>summary::before{content:'\25B8';color:#9167b0;font-size:.72rem;transition:transform .12s ease;flex:none}
+  details.cfg-set[open]>summary::before{transform:rotate(90deg)}
+  details.cfg-set>summary:hover{background:#f0eaf5}
+  details.cfg-set .cfg-name{font-weight:600;color:#673289}
+  details.cfg-set .cfg-meta{color:#6b7280;font-size:.74rem;margin-left:auto;display:flex;gap:.9rem;flex-wrap:wrap}
+  details.cfg-set.inactive{opacity:.55}
+  details.cfg-set .cfg-repos{border-top:1px solid #e6e3ec;padding:.1rem .7rem .5rem}
+  details.cfg-set .cfg-repos table{margin-top:.3rem}
+  details.cfg-set .cfg-repos th,details.cfg-set .cfg-repos td{text-align:left}
   .foot{border-top:1px solid #e6e3ec;margin-top:2.5rem;padding:1rem 1.25rem;background:#fff;font-size:.72rem;color:#6b7280}
   .foot-inner{max-width:760px;margin:0 auto;display:flex;align-items:center;gap:.75rem;flex-wrap:wrap}
   .foot-inner img{height:20px;width:auto;display:block}
@@ -39,5 +51,15 @@
 Every run scores the records <b>as they are that day</b> — a rising line is re-curation you can see.</p></div>
 <div class="wrap">
 <p class="sub">No reports yet — the first scheduled run will populate this page.</p>
+<h2>Configuration <span>config.json</span></h2>
+<p class="sub">The settings that drive this fork&rsquo;s scoring runs.</p><table><tr><th>Setting</th><th>Value</th></tr>
+<tr><td>Repositories</td><td style="text-align:left">sjyq.oozvia</td></tr>
+<tr><td>Consortium</td><td style="text-align:left">(none)</td></tr>
+<tr><td>Schedule</td><td style="text-align:left">monthly</td></tr>
+<tr><td>Max records</td><td style="text-align:left">500</td></tr>
+<tr><td>Random sample</td><td style="text-align:left">Yes</td></tr>
+<tr><td>Resource type</td><td style="text-align:left">(all types)</td></tr>
+<tr><td>Query</td><td style="text-align:left">(none)</td></tr>
+</table>
 </div>
 <div class="foot"><div class="foot-inner"><a href="https://metadatagamechangers.com" target="_blank" rel="noopener"><img src="https://images.squarespace-cdn.com/content/v1/52ffa419e4b05b374032e6d9/1577498408185-9LMHCVUJMNL2UBCIUOB9/Metadata+Game+Changers+Logo-Light.png?format=300w" alt="Metadata Game Changers" onerror="this.style.display=&#39;none&#39;"/></a><span>Report JSONs and history files live in this repository under <code>reports/</code> — the formats of the <a href="https://metadata-game-changers.github.io/recuration-watch/completeness.html" target="_blank" rel="noopener">Metadata Completeness</a> tool and the MGC score archive. Powered by <a href="https://github.com/Metadata-Game-Changers/metrics-watch" target="_blank" rel="noopener">metrics-watch</a> from <a href="https://metadatagamechangers.com" target="_blank" rel="noopener">Metadata Game Changers</a> — Better Documentation | Better Data | Better Science · <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span></div></div></body></html>

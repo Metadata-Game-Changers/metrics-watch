@@ -97,6 +97,68 @@ def chart_svg(snaps):
     return ''.join(s)
 
 
+def config_section():
+    """The fork's config.json as an openable directory tree (the { sets: […] } schema)
+    or a Setting/Value table (the flat schema). '' when there is no config.json.
+    Pure HTML + <details> — no JavaScript, so it works on the static Pages site."""
+    p = Path('config.json')
+    if not p.exists():
+        return ''
+    try:
+        cfg = json.loads(p.read_text(encoding='utf-8'))
+    except Exception:
+        return ''
+    out = ['<h2>Configuration <span>config.json</span></h2>']
+    sets = cfg.get('sets') if isinstance(cfg, dict) else None
+    if isinstance(sets, list):
+        active_n = sum(1 for s in sets if s.get('active', True) is not False)
+        repo_n = sum(len(s.get('repositories') or []) for s in sets)
+        out.append(f'<p class="sub">{len(sets)} set{"" if len(sets) == 1 else "s"} '
+                   f'({active_n} active) · {repo_n} repositor{"y" if repo_n == 1 else "ies"} — '
+                   'the settings that drive this fork&rsquo;s scoring runs. Click a set to see its repositories.</p>')
+        for s in sets:
+            active = s.get('active', True) is not False
+            repos = s.get('repositories') or []
+            rows = []
+            for r in repos:
+                if isinstance(r, str):
+                    client, query, label = r, '', ''
+                else:
+                    client, query, label = r.get('client', ''), r.get('query', ''), r.get('label', '')
+                rows.append(f'<tr><td>{escape(client)}</td><td>{escape(query) if query else "—"}</td>'
+                            f'<td>{escape(label) if label else "—"}</td></tr>')
+            meta = ''.join(f'<span>{x}</span>' for x in [
+                'Active' if active else 'Inactive',
+                escape(str(s.get('schedule'))) if s.get('schedule') else '',
+                f'max {s["max"]:,}' if isinstance(s.get('max'), int) else '',
+                f'{len(repos)} repositor' + ('y' if len(repos) == 1 else 'ies'),
+            ] if x)
+            out.append(
+                f'<details class="cfg-set{"" if active else " inactive"}">'
+                f'<summary><span class="cfg-name">{escape(s.get("name") or "(unnamed set)")}</span>'
+                f'<span class="cfg-meta">{meta}</span></summary>'
+                '<div class="cfg-repos"><table><tr><th>Client</th><th>Query</th><th>Label</th></tr>'
+                + ''.join(rows) + '</table></div></details>')
+    elif isinstance(cfg, dict):
+        labels = {'repositories': 'Repositories', 'consortium': 'Consortium', 'schedule': 'Schedule',
+                  'max': 'Max records', 'random': 'Random sample', 'resourceType': 'Resource type', 'query': 'Query'}
+
+        def fmt(k, v):
+            if isinstance(v, list):
+                return '<br>'.join(escape(str(x)) for x in v) if v else '—'
+            if isinstance(v, bool):
+                return 'Yes' if v else 'No'
+            if v in ('', None):
+                return '(all types)' if k == 'resourceType' else ('(none)' if k in ('query', 'consortium') else '—')
+            return escape(str(v))
+        out.append('<p class="sub">The settings that drive this fork&rsquo;s scoring runs.</p>'
+                   '<table><tr><th>Setting</th><th>Value</th></tr>')
+        for k, v in cfg.items():
+            out.append(f'<tr><td>{escape(labels.get(k, k))}</td><td style="text-align:left">{fmt(k, v)}</td></tr>')
+        out.append('</table>')
+    return '\n'.join(out)
+
+
 def main():
     histories = load_histories()
     pct = lambda v: f'{v * 100:.0f}%' if isinstance(v, (int, float)) else '—'
@@ -127,6 +189,18 @@ def main():
   th,td{border:1px solid #e6e3ec;padding:.3rem .55rem;text-align:right}
   th:first-child,td:first-child{text-align:left}
   th{background:#f0eaf5;color:#673289}
+  details.cfg-set{border:1px solid #e6e3ec;border-radius:8px;margin:.4rem 0;background:#fff;overflow:hidden}
+  details.cfg-set>summary{list-style:none;cursor:pointer;padding:.45rem .7rem;display:flex;align-items:center;gap:.6rem;font-size:.82rem}
+  details.cfg-set>summary::-webkit-details-marker{display:none}
+  details.cfg-set>summary::before{content:'\\25B8';color:#9167b0;font-size:.72rem;transition:transform .12s ease;flex:none}
+  details.cfg-set[open]>summary::before{transform:rotate(90deg)}
+  details.cfg-set>summary:hover{background:#f0eaf5}
+  details.cfg-set .cfg-name{font-weight:600;color:#673289}
+  details.cfg-set .cfg-meta{color:#6b7280;font-size:.74rem;margin-left:auto;display:flex;gap:.9rem;flex-wrap:wrap}
+  details.cfg-set.inactive{opacity:.55}
+  details.cfg-set .cfg-repos{border-top:1px solid #e6e3ec;padding:.1rem .7rem .5rem}
+  details.cfg-set .cfg-repos table{margin-top:.3rem}
+  details.cfg-set .cfg-repos th,details.cfg-set .cfg-repos td{text-align:left}
   .foot{border-top:1px solid #e6e3ec;margin-top:2.5rem;padding:1rem 1.25rem;background:#fff;font-size:.72rem;color:#6b7280}
   .foot-inner{max-width:760px;margin:0 auto;display:flex;align-items:center;gap:.75rem;flex-wrap:wrap}
   .foot-inner img{height:20px;width:auto;display:block}
@@ -157,6 +231,7 @@ Every run scores the records <b>as they are that day</b> — a rising line is re
                 f'<a href="{SET_VIEWER}?src={escape(raw)}&amp;set={escape(st["name"])}" target="_blank" '
                 f'rel="noopener">{escape(st["name"])} ({len(st["series"])})</a>' for st in with_series)
             parts.append(f'<p class="sub"><b>Sets</b> — compare all members side by side in the Set Viewer: {links}</p>')
+    parts.append(config_section())
     for client_dir, hpath, h in histories:
         snaps = h['snapshots']
         repo = h.get('repository') or {}
